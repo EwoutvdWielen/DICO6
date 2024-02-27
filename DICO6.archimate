@@ -1,0 +1,1661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="DICO6" id="765d4e91-5054-45f9-a0f3-803745710996" version="5.0.0">
+  <folder name="Strategy" id="13848efc-d76d-4d8e-b850-75c4e83c1cd7" type="strategy"/>
+  <folder name="Business" id="24183477-4ea5-4368-abff-37c4b157588d" type="business">
+    <folder name="Intake onderhoudsorder" id="id-13f6595e30504831bd88846353605296">
+      <element xsi:type="archimate:BusinessEvent" name="Analyse defect dmv beslisboom" id="id-94bc1f8f8f844166acdcacb448a28ae8"/>
+      <element xsi:type="archimate:BusinessEvent" name="Aanmaken onderhoudsverzoek" id="id-ef91ec24ce19492e971bdcea61f3be34"/>
+      <element xsi:type="archimate:BusinessEvent" name="Aanmaken onderhoudsorder" id="id-70dea22f88e740f5945bdb45565cc5b9"/>
+    </folder>
+    <element xsi:type="archimate:BusinessProcess" name="BP Klantbediening" id="id-b00d1116ab0a4b0d8fb4112682ec33ff"/>
+    <element xsi:type="archimate:BusinessProcess" name="BP Regisseren Onderhoud" id="id-8ce4af2094e7428f80d5795d57fd0600"/>
+    <element xsi:type="archimate:BusinessProcess" name="BP Uitvoeren onderhoudsorder" id="id-cddfc477dcea47d4b8eac58d326f7c8b"/>
+  </folder>
+  <folder name="Application" id="115e81b2-6e15-42a0-98e6-ede3e12c9eb8" type="application">
+    <folder name="DICO6" id="5388fa5c-63f3-4e12-b621-7a0a818af5dc">
+      <folder name="Referentiedata" id="056b0f86-0ed8-406e-87b2-d3b66e4a4651">
+        <element xsi:type="archimate:DataObject" name="ContactgegevenSoort" id="0cb1a96f-cad6-4659-8189-2f7200e41b11">
+          <documentation>EMA	(E-mail)&#xD;
+FAX		(Fax)&#xD;
+MOB	(Mobiele telefoon)&#xD;
+PAG		(Pager)&#xD;
+POS		(Post)&#xD;
+SOC		(Social media)&#xD;
+TEL		(Telefoon)&#xD;
+</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="locatie" id="122bde83-01b9-4721-acc2-0d651f037302">
+          <documentation>AIR		(Airco/koelinstallatie)&#xD;
+BAD		(Badkamer / doucheruimte)&#xD;
+BAL		(Balkon)&#xD;
+BER		(Bergingsruimte)&#xD;
+BIJ		(Bijkeuken)&#xD;
+BUI		(Buitengevel)&#xD;
+CON	(Containerruimte)&#xD;
+DAK		(Dak)&#xD;
+DTE		(Dakterras)&#xD;
+ENT		(Entreehal / Ingang)&#xD;
+FIE		(Fietsenstalling)&#xD;
+GAL		(Galerij / galerijgang)&#xD;
+GAN	(Gangkast / trapkast)&#xD;
+GAR		(Garage (perceelgebonden) / carport)&#xD;
+HAL		(Hal / gang individueel)&#xD;
+KEL		(Kelder)&#xD;
+KEU		(Keuken)&#xD;
+KRU		(Kruipruimte)&#xD;
+LIF		(Lift)&#xD;
+OVE		(Overige ruimte)&#xD;
+OVL		(Overloop)&#xD;
+PAD		(Pad / brandgang)&#xD;
+PAN		(Pantry)&#xD;
+PAR		(Parkeerplaats)&#xD;
+SCH		(Schuur)&#xD;
+SCO		(Scootmobielruimte)&#xD;
+SLA		(Slaapkamer)&#xD;
+TRC		(Technische ruimte (collectief))&#xD;
+TRI		(Technische ruimte (individueel))&#xD;
+TOI		(Toiletruimte)&#xD;
+TRA		(Trap)&#xD;
+POR		(Trappenhuis / Portiek)&#xD;
+TUI		(Tuin)&#xD;
+VOE		(Voertuigingang)&#xD;
+WRC	(Wasruimte collectief)&#xD;
+WRI		(Wasruimte individueel)&#xD;
+WOO	(Woonkamer)&#xD;
+ZOL		(Zolder / vliering)</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="OnderhoudstaakStatus" id="1d43f3da-8d69-4661-bfd5-c5bbcbbff72d">
+          <documentation>CON	(Concept  / aangemaakt)&#xD;
+De taak in concept / aangemaakt&#xD;
+&#xD;
+GEP		(Gepland)&#xD;
+Voor de taak is een afspraak gepland&#xD;
+&#xD;
+GER		(Gereed)&#xD;
+De taak is gereed gemeld door de vakman&#xD;
+&#xD;
+GES		(Gesloten)&#xD;
+De taak is administratief afgesloten&#xD;
+&#xD;
+OND	(Onderbroken)&#xD;
+De taak is onderbroken door de vakman omdat hij niet verder kan met de uitvoering. Een reden kan zijn dat de vakman niet de juiste discipline heeft of dat er materiaal besteld moet worden&#xD;
+&#xD;
+PAU		(Gepauzeerd)&#xD;
+De vakman heeft de uitvoering van de taak voor korte tijd gepauzeerd, bijvoorbeeld voor een lunchbreak&#xD;
+&#xD;
+REI		(Onderweg)&#xD;
+De vakman is onderweg naar de onderhoudslocatie voor de uitvoering van de taak&#xD;
+&#xD;
+UIT		(In uitvoering)&#xD;
+De vakman is bezig met de uitvoering van de taak.&#xD;
+&#xD;
+UWT	(Uitwerktijd)&#xD;
+De vakman is gereed met de uitvoering van de taak en zit in de uitwerktijd. Wordt gebruikt bij bijvoorbeeld het opruimen van het gereedschap in de bus na de werkzaamheden.</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="OnderhoudstaakDetailStatus" id="31aebbd3-c597-4b98-9ec3-40ac36a776f5">
+          <documentation>INS		(Inspectie/beoordeling vereist)&#xD;
+De taak is onderbroken omdat inspectie/beoordeling door inspecteur noodzakelijk is&#xD;
+&#xD;
+AFW	(Klant niet aanwezig)&#xD;
+De taak is onderbroken omdat de klant niet aanwezig is&#xD;
+&#xD;
+MAT	(Materiaal bestellen)&#xD;
+De taak is onderbroken omdat materiaal besteld moet worden&#xD;
+&#xD;
+DIS		(Niet de juiste discipline)&#xD;
+De taak is onderbroken omdat de vakman niet de juiste discipline heeft&#xD;
+&#xD;
+OFF		(Offerte benodigd)&#xD;
+De taak is onderbroken omdat een offerte nodig is&#xD;
+&#xD;
+ONV	(Onvoldoende tijd)&#xD;
+De taak is onderbroken omdat er onvoldoende tijd voor de vakman is</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="InformatieobjectFormaat" id="3ff84259-50e6-4301-999b-777ab12e6ea8">
+          <documentation>DOC	(Document)&#xD;
+GIF		(Gif)&#xD;
+HTM	(HTML)&#xD;
+JPG		(JPEG)&#xD;
+MP4	(MP4)&#xD;
+MPE	(MPEG&#xD;
+PDF		(PDF)&#xD;
+PIN		(Ping)&#xD;
+TXT		(Text)&#xD;
+TIF		(Tiff)&#xD;
+Zie verder	http://www.iana.org/assignments/media-types/media-types.xhtml&#xD;
+</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="OnderhoudsverzoekStatus" id="688d1d32-eecd-4a6a-9faa-4d0b89c314e3">
+          <documentation>REG		(Geregistreerd)&#xD;
+Het onderzhoudsverzoek is geregistreerd maar nog niet in behandeling genomen. &#xD;
+&#xD;
+BEO		(Ter beoordeling)&#xD;
+Voor de situatie dat het KCC een verzoek mag aanmaken maar niet als opdracht verstrekken. (Verschil in verantwoordelijkheid bedrijfsproces Klantbediening en Onderhouden eenheden)&#xD;
+&#xD;
+INB		(In behandeling)&#xD;
+Het onderhoudsverzoek is in behandeling genomen en de uitvoering is nog niet afgerond&#xD;
+&#xD;
+TEC		(Technisch gereed)&#xD;
+Het onderhoudsverzoek is technisch afgehandeld en de uitvoering hiervan kan beoordeeld worden. Is het onderhoudsverzoek naar tevredenheid uitgevoerd?&#xD;
+&#xD;
+FIN		(Financieel afwikkelen)&#xD;
+Het onderhoudsverzoek wordt financieel afgewikkeld. Dit kan betekenen dat er kosten in rekening gebracht worden bij huurders of derden (bijv. verzekering)&#xD;
+&#xD;
+AFG		(Afgehandeld)&#xD;
+Het onderhoudsverzoek is volledig afgehandeld&#xD;
+&#xD;
+GEA		(Geannuleerd)&#xD;
+Het onderhoudsverzoek is geannuleerd, dat wil zeggen dat het verzoek niet  is uitgevoerd.</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="ContactgegevenDetailSoort" id="95358244-5ebd-49df-8d37-f41f668457b6">
+          <documentation>PRI	(Privé)&#xD;
+ZAK	(Zakelijk)&#xD;
+</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="InformatieobjectSoort" id="9c7e2246-38ce-4eda-a2f3-5c1e06ae8d70">
+          <documentation>BRO		(Brochure)&#xD;
+DOC	(Document)&#xD;
+FOT		(Foto)&#xD;
+KOP		(Kopie)&#xD;
+OVE		(Overeenkomst)&#xD;
+PLN		(Plan)&#xD;
+PLA		(Plattegrond)&#xD;
+RAP		(Rapport)&#xD;
+VER		(Verslag)&#xD;
+VID		(Video)</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="defectSoort" id="a3bd2fe5-1ad2-4ad8-8406-099ddf19c97f">
+          <documentation>BEK		(Beklad)&#xD;
+BET		(Betonrot)&#xD;
+BEV		(Bevroren)&#xD;
+BIJ		(Bijen)&#xD;
+BLI		(Blijft branden)&#xD;
+BOK		(Boktorren)&#xD;
+BRE		(Breuk / scheur)&#xD;
+BS0		(Beschadigd (omvang onbenoemd))&#xD;
+BS1		(Beschadigd &lt; 1m2)&#xD;
+BS2		(Beschadigd 1-5 m2)&#xD;
+BS3		(Beschadigd >5 m2)&#xD;
+DEF		(Defect / onderdeel defect)&#xD;
+DOO	(Doorboord)&#xD;
+DRP		(Druppelt)&#xD;
+DRU		(Waterdruk te laag)&#xD;
+GAS		(Gaslucht/gaslek)&#xD;
+GEL		(Maakt vreemd geluid)&#xD;
+GEZ		(Gezwollen)&#xD;
+GLA		(Glasbreuk)&#xD;
+HOR	(Houtrot)&#xD;
+HOW	(Houtwormen)&#xD;
+INB		(Inbraakschade)&#xD;
+KAL		(Verkalkt)&#xD;
+KEV		(Kevers)&#xD;
+KKL		(Kakkerlakken)&#xD;
+KLE		(Klemt / opent niet)&#xD;
+KNI		(Knippert)&#xD;
+LEK		(Lekt)&#xD;
+LOO	(Loopt door)&#xD;
+LOS		(Zit los / onderdeel zit los)&#xD;
+MIE		(Mieren)&#xD;
+MUI		(Muizen)&#xD;
+ONA	(Onvoldoende afzuiging)&#xD;
+ONK	(Onvoldoende kracht)&#xD;
+ONT	(Ontbreekt / onderdeel ontbreekt)&#xD;
+ONZ	(Ontzet)&#xD;
+OVE		(Overig)&#xD;
+PER		(Personen ingesloten)&#xD;
+RAT		(Ratten)&#xD;
+ROE		(Roest)&#xD;
+SAF		(Sleutel afgebroken)&#xD;
+SCH		(Schimmel)&#xD;
+SDE		(Slot defect)&#xD;
+SKW	(Sleutel kwijt)&#xD;
+SLU		(Sluit niet)&#xD;
+SPR		(Spraak/video slecht)&#xD;
+STA		(Staat stil)&#xD;
+STI		(Stinkt)&#xD;
+STO		(Storing)&#xD;
+TEM		(Onjuiste temperatuur)&#xD;
+TIJ		(Tijdschakelklok werkt niet)&#xD;
+TOC		(Tocht)&#xD;
+VBI		(Verf laat los (binnen))&#xD;
+VBU		(Verf laat los (buiten))&#xD;
+VLO		(Vlooien)&#xD;
+VOC	(Vochtig / nat)&#xD;
+VOG	(Vogelnest)&#xD;
+VOL		(Is vol)&#xD;
+VS0		(Verstopt (hoogte onbenoemd))&#xD;
+VS1		(Verstopt (lager dan 7,5 meter))&#xD;
+VS2		(Verstopt (hoger dan 7,5 meter))&#xD;
+VSC		(Verschoven)&#xD;
+VWE	(Verlichting werkt niet)&#xD;
+VZT		(Verzakt)&#xD;
+WAN	(Wandluizen)&#xD;
+WES		(Wespen)&#xD;
+ZIL		(Zilvervisjes)</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="defectOorzaak" id="aef845ba-6e3d-40c9-8365-5fd1bc8bf517">
+          <documentation>BEW (Bewonersopdracht/gedrag)&#xD;
+Bewoner heeft het defect zelf veroorzaakt (bijv. binnendeur ingetrapt)&#xD;
+Relatie met Ketenstandaard (SALES): oorzaakcode HUU - Huurder&quot;&#xD;
+&#xD;
+SLT (Normale slijtage)&#xD;
+Het element is versleten en defect geraakt. (bijv. door veelvuldig gebruik van het element). &#xD;
+Relatie met Ketenstandaard (SALES): oorzaakcode SLT - Slijtage&quot;&#xD;
+&#xD;
+OUD (Ouderdom)&#xD;
+Het element is versleten en defect geraakt. (bijv. kastdeur van 20 jaar oude keuken hangt scheef)&#xD;
+Relatie met Ketenstandaard (SALES): oorzaakcode OUD - Ouderdom&quot;&#xD;
+&#xD;
+STO	(Schade door storm)&#xD;
+Defect is veroorzaakt door externe invloeden. (bijv. schutting omgewaaid door storm).&#xD;
+&#xD;
+BRA (Schade door brand)&#xD;
+Defect is veroorzaakt door brand. (bijv. keukenbrand).&#xD;
+&#xD;
+WAT (Schade door water)&#xD;
+Defect is veroorzaakt door lekkage (van binnenuit) of overstroming (van buitenaf). (bijv. ondergelopen kelder).&#xD;
+&#xD;
+VAN (Schade door vandalisme)&#xD;
+Defect is veroorzaakt door vandalisme. (bijv. graffiti op gevel).&#xD;
+&#xD;
+SOP	(Slecht opgeleverd)&#xD;
+Defect is veroorzaakt door een slechte oplevering van het element bij de installatie (bijv. kraan lekt van nieuwe keuken).&#xD;
+&#xD;
+VGE (Verzoek van de vastgoedeigenaar)&#xD;
+Vastgoedeigenaar heeft expliciet verzoek gedaan om het defect op te lossen.</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="onderhoudSoort" id="afe24e83-c1a7-4f93-a5bf-70a4007691f7">
+          <documentation>REP (Reparatie)&#xD;
+Opdracht tot het uitvoeren van reparatiewerkzaamheden naar aanleiding van een geconstateerd defect&#xD;
+SALES: REP&#xD;
+&#xD;
+MUT (Mutatie)&#xD;
+Opdracht tot het uitvoeren van onderhoudswerkzaamheden naar aanleiding van een verhuurmutatie.&#xD;
+SALES: MUT&#xD;
+&#xD;
+INS (Inspectie)&#xD;
+Opdracht tot het uitvoeren van inspectie-/inventarisatie-werkzaamheden om vast te stellen óf en zo ja welke onderhoudswerkzaamheden moeten worden uitgevoerd. Dit kan een inspectie zijn naar aanleiding van een onduidelijk reparatieverzoek of naar aanleiding van een verhuurmutatie.&#xD;
+SALES: INS&#xD;
+&#xD;
+PLN (Planmatig)&#xD;
+Opdracht tot het uitvoeren van onderhoudswerkzaamheden naar aanleiding van een goedgekeurd MJO-budget&#xD;
+&#xD;
+WOV (Woningverbetering)&#xD;
+Bij aanpassing op verzoek van de huurder voor verbetering van het woongenot. Voorbeeld is het voortijdig vervangen van de wc-pot door een luxe uiitvoering&#xD;
+&#xD;
+WMO (WMO Aanpassing)&#xD;
+Bij benodigde aanpassing van de woning bij de zittende huurder (door ouderdom, invaliditeit aanbrengen van WMO-aanpassing)&#xD;
+&#xD;
+PRJ (Projectmatig)&#xD;
+Opdracht tot het uitvoeren van onderhoudswerkzaamheden naar aanleiding van een investeringsproject zoals verduurzaming, renovatie, etc.</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="OnderhoudsorderAfrekenwijze" id="b759c41f-8998-49c8-900c-ffacab24903b">
+          <documentation>AFK	(Afkoop)&#xD;
+De onderhoudsorder wordt niet afgerekend omdat dit type onderhoud is afgekocht op totaalniveau&#xD;
+SALES: AFK&#xD;
+&#xD;
+GAR (Garantie)&#xD;
+De onderhoudsorder wordt niet afgerekend omdat de werkzaamheden onder garantie vallen&#xD;
+SALES: niet aanwezig&#xD;
+&#xD;
+NCE (Nacalculatie eenheidsprijzen)&#xD;
+De onderhoudsorder wordt afgerekend op basis van aantal eenheden x eenheidsrpijs&#xD;
+SALES: EHP&#xD;
+&#xD;
+NCR (Nacalculatie regie)&#xD;
+De onderhoudsorder wordt afgerekend op basis van de werkelijke bestedingen (arbeidstijd, reistijd, materiaal)&#xD;
+SALES: REG&#xD;
+&#xD;
+VPR (Vaste prijs)&#xD;
+De onderhoudsorder wordt afgerekend op basis van een vaste (totaal-)prijs&#xD;
+SALES: ANS</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="InformatieobjectDetailSoort" id="d349f694-c09d-43a7-b8de-37ff6d0aa4cb">
+          <documentation>ADV		(Advies)&#xD;
+AGE		(Agenda)&#xD;
+DAG	(Dag)&#xD;
+EVA		(Evaluatie)&#xD;
+INS		(Inspectie)&#xD;
+JAA		(Jaar)&#xD;
+KWA	(Kwartaal)&#xD;
+MAA	(Maand)&#xD;
+NOT		(Notulen)&#xD;
+OND	(Onderhoud)&#xD;
+PRG		(Programma)&#xD;
+PRJ		(Project)&#xD;
+WEE		(Week)</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="BouwkundigElement" id="da74d4e7-5bc5-4216-855d-94beef1b5453">
+          <documentation>Definitie&#xD;
+Een bouwkundig element is een te onderhouden constructie of deel daarvan.  &#xD;
+&#xD;
+Toelichting&#xD;
+Een bouwkundig element is het kleinste deel van een gebouw of pand waar onderhoud op gepleegd wordt. Een bouwkundig element beschrijft een type constructie of deel daarvan dat onderhouden moet worden.  &lt;br />&#xD;
+Bouwkundige elementen kunnen samen een bouwdeel vormen. &lt;br />&#xD;
+Bouwkundige elementen en bouwdelen kennen beide een technisch/bouwkundige invalshoek, anders dan een collectief object (die ook kan bestaan uit bouwkundige elementen) die een meer administratieve invalshoek kent. &#xD;
+&#xD;
+Voorbeelden:&#xD;
+Bijvoorbeeld kozijnen buiten (schilderen),  dakbedekking, enzovoort. </documentation>
+          <property key="naam" value="De naam van het bouwkundig element."/>
+          <property key="omschrijving" value="De omschrijving van het bouwkundig element."/>
+        </element>
+        <element xsi:type="archimate:DataObject" name="onderhoudStatus" id="de54f333-68d1-426f-8194-74b9a9a6a30b">
+          <documentation>AFG		(Afgehandeld)&#xD;
+De order is volledig technisch en financieel afgehandeld &#xD;
+&#xD;
+FIN		(Financieel afwikkelen)&#xD;
+De order is technisch beoordeeld  en akkoord voor financiele afwikkeling. Op dat moment kan een eventueel externe onderhoudspartner de facturatie verzorgen van de onderhoudsorder&#xD;
+&#xD;
+GEA		(Geannuleerd)&#xD;
+De order is geannuleerd&#xD;
+&#xD;
+GUN	(Order gegund)&#xD;
+De order is verstrekt aan de uitvoerende partij&#xD;
+&#xD;
+INB		(In behandeling)&#xD;
+De order is opgepakt door de uitvoerende partij (vakgroep of externe onderhoudspartner) nadat deze gepland is. Deze status kan ook gebruikt worden als algemene status voor het in behandeling hebben van de order door de uitvoerende partij (geen differentiatie tussen &#xD;
+gegeund, gepland, etc)&#xD;
+&#xD;
+OFF		(Offertetraject)&#xD;
+Voor de order loopt een offertetraject bij 1 of meerdere partijen voordat gestart wordt met de uitvoering van de werkzaamheden. &#xD;
+&#xD;
+PLN		(Order gepland)&#xD;
+De order is gepland door de uitvoerende partij&#xD;
+&#xD;
+REG		(Geregistreerd)&#xD;
+De onderhoudsorder is slechts geregistreerd/vastgelegd&#xD;
+&#xD;
+STE		(Order in steekproef)&#xD;
+De order is na uitvoering van de werkzaamheden in de steekproef gevallen en moet worden beoordeeld door de corporatie&#xD;
+&#xD;
+TEC		(Technisch gereed)&#xD;
+De order is technisch gereed en de uitvoering kan inhoudelijk beoordeeld worden&#xD;
+&#xD;
+WOG	(Wacht op goedkeuring)&#xD;
+Order wordt voordat deze gegund kan worden intern eerst beoordeeld.</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Meeteenheid" id="ee28d52a-7c0d-47f6-b573-044d3f4f0b12">
+          <documentation>CM		(Centimeter)&#xD;
+Aantal uitgedrukt in centimeters&#xD;
+&#xD;
+GRM 	(Gram)&#xD;
+Aantal uitgedrukt in gram&#xD;
+&#xD;
+KGR 	(Kilogram)&#xD;
+M3		(Kubieke meter, m3)&#xD;
+LTR		(Liter)	&#xD;
+MTR	(Meter	)&#xD;
+MIN		(Minuten)&#xD;
+Aantal uitgedrukt in minuten, bijvoorbeeld 15 minuten reistijd&#xD;
+&#xD;
+FTE		(Omvang personeelsbestand)&#xD;
+STU		(Stuks)&#xD;
+Aantal uitgedrukt per stuk, bijvoorbeeld 2 stuks deurklink, 10 stuks schroeven, etc.&#xD;
+&#xD;
+UUR		(Uren)&#xD;
+Aantal uitgedrukt in uren, bijvoorbeeld 2,5 uur werktijd. 15 minuten kan uitgedrukt worden in 0,25 uur&#xD;
+&#xD;
+M2		(Vierkante meter, m2)</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Onderhoudspecialisme" id="fcebdb67-bfba-4723-8ab7-09141132c203">
+          <documentation>CVI		(CV Installateur)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+ELE		(Elektriciën)&#xD;
+Een volwaardige elektriciën. Relatie met Ketenstandaard (SALES): competentiecode ELE - Electra&#xD;
+&#xD;
+ELA		(Elektriciën allrounder)&#xD;
+De allrounder elektricien kan kleine elektra-werkzaamheden uitvoeren. Relatie met Ketenstandaard (SALES): competentiecode ELE - Electra&#xD;
+&#xD;
+GLA		(Glaszetter)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+HOV	(Hovenier)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+INS		(Inspecteur)&#xD;
+Medewerker die een inspectie uit gaat voeren. Dit kan voorafgaand aan de opdracht zijn (bijvoorbeeld bij mutatie of reparatie) maar ook achteraf (steekproef-controle). Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor beschikbaar&quot;&#xD;
+&#xD;
+LOO	(Loodgieter)&#xD;
+Een volwaardige loodgieter. Relatie met Ketenstandaard (SALES): competentiecode LOO  - Loodgieter&#xD;
+&#xD;
+LOA		(Loodgieter allrounder)&#xD;
+De allrounder loodgieter kan kleine loodgieter-werkzaamheden uitvoeren. Relatie met Ketenstandaard (SALES): competentiecode LOO  - Loodgieter&#xD;
+&#xD;
+ONG	(Ongediertebestrijder)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+ONT	(Ontstopper)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+BLI		(Specialist Bliksemgeleider)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+BLU		(Specialist Blusmiddelen)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+BRA		(Specialist Brandmeldinstallatie)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+ELT		(Specialist Elektrische Toegangsdeuren)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+GEI		(Specialist Geiser)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+HYD	(Specialist Hydrofoor)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+LIF		(Specialist Lift)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+WTW	(Specialist MV/WTW)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+WIT		(Specialist Witgoed)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+ZON	(Specialist Zonnepanelen)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+ZWE	(Specialist Zonwering)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+STU		(Stucadoor)&#xD;
+Een volwaardige stucadoor. Relatie met Ketenstandaard (SALES): competentiecode STU - Stucen&#xD;
+&#xD;
+TEG		(Tegelzetter)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+TIM		(Timmerman)&#xD;
+Een volwaardige timmerman. Relatie met Ketenstandaard (SALES): competentiecode TIM - Timmerman&#xD;
+&#xD;
+TAL		(Timmerman allrounder)&#xD;
+De allrounder timmerman kan kleine timmer-werkzaamheden uitvoeren. Relatie met Ketenstandaard (SALES): competentiecode TIM - Timmerman&#xD;
+&#xD;
+ZAN	(Zandleverancier)&#xD;
+Binnen Ketenstandaard is hier op dit moment geen specifieke codering voor, vooralsnog gebruik maken van competentiecode OVE - Overige&#xD;
+&#xD;
+OVE		(Overig)&#xD;
+Overige specialismen die niet onder één van de andere onderhoudspecialismen vallen</documentation>
+        </element>
+      </folder>
+      <folder name="Dossier" id="12cb949f-2955-454c-a3e5-7c8c40213c9f">
+        <element xsi:type="archimate:DataObject" name="InformatieobjectKenmerk" id="631268b6-186b-4a8d-a256-19e22104d8aa">
+          <property key="omschrijving" value="De omschrijving van het informatieobject kenmerk"/>
+          <property key="waarde" value="De waarde van het informatieobject kenmerk."/>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Bijlage" id="7a65e2b9-f974-4768-a07b-edd59b71f6fb">
+          <property key="bestandslocatie" value="Een link (URI) naar de binaire representatie van het informatieobject."/>
+          <property key="bestand" value="De binaire representatie van het informatieobject."/>
+          <property key="InformatieobjectSoort" value="Specificatie van het documenttype. Bijvoorbeeld verslag, rapport etc."/>
+          <property key="InformatieobjectDetailSoort" value="Detail specificatie van het documenttype. Bijvoorbeeld notulen, adviesrapport etc."/>
+          <property key="bestandsnaam" value="De naam van het fysieke bestand waarin de inhoud van het informatieobject is vastgelegd."/>
+          <property key="formaat" value="Het digitale formaat (IANA media type) van het informatieobject."/>
+        </element>
+      </folder>
+      <folder name="Vastgoed" id="23690635-5d75-4e30-b480-9a1553002f75">
+        <element xsi:type="archimate:DataObject" name="Adres" id="736de03a-b11d-4651-b3e1-05145dd7a954">
+          <documentation>&lt;h4>Definitie&lt;/h4>&#xD;
+Combinatie van de in BAG gedefinieerde objecten Woonplaats, Nummeraanduiding en Openbare ruimte naam of door de woningcorporatie in het verlengde hiervan zelf toegevoegde adressen. &#xD;
+&#xD;
+&lt;h4>Toelichting&lt;/h4>&#xD;
+Adressen zijn er in twee soorten, de officieel door de BAG uitgegeven adressen en extra adressen die de corporatie zelf aan eenheden toevoegt. De BAG kent bijvoorbeeld geen adressen aan onzelfstandige eenheden (studentenkamers) of garages toe. Corporaties gebruiken hiervoor wel adressen in hun systemen. &#xD;
+&#xD;
+ &#xD;
+&#xD;
+</documentation>
+          <property key="straatnaam" value="De straatnaam behorend bij het adres"/>
+          <property key="huisnummer" value="Het huisnummer dat door of namens het gemeentebestuur ten aanzien van een adresseerbaar object toegekende nummering."/>
+          <property key="huisletter" value="De huisletter door of namens het gemeentebestuur ten aanzien van een adresseerbaar object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken."/>
+          <property key="huisnummerToevoeging" value="De huisnummer toevoeging van het adres"/>
+          <property key="postcode" value="De postcode van het adres"/>
+          <property key="Woonplaats" value="De woonplaats waarin het adres zich bevindt"/>
+          <property key="land" value="Het land waarin het adres zich bevindt"/>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Eenheid" id="93833387-8e86-4935-91d5-3897b8cf24d1">
+          <documentation>&lt;h4>Definitie&lt;/h4>&#xD;
+Een eenheid is een afgebakend stuk vastgoed of een benoemd terrein wat in die hoedanigheid gebruikt kan worden in de dienstverlening van de woningcorporatie (m.u.v. onderhoud). &#xD;
+&#xD;
+&lt;h4>Toelichting&lt;/h4>&#xD;
+Een eenheid is datgene waar de corporatie overeenkomsten over afsluit met haar klanten. De eenheid is onderwerp van administratieve handelingen voor verhuur en verkoop (inclusief eventuele terugkoopregelingen).  &lt;br />&#xD;
+De eenheden kunnen in een boomstructuur georganiseerd zijn, een pand (andere klasse) kan een verblijfsobject bevatten (type eenheid, aansluitend op BAG) met daarin kamers (type eenheid). &lt;br />&#xD;
+Een eenheid heeft dus niet altijd een relatie met de fysieke vastgoedwereld. De eenheden kunnen zowel de fysieke wereld als de administratieve wereld (verhuur of verkoop) beschrijven. &lt;br />&#xD;
+De klasse eenheid is zodanig gemodelleerd dat vanuit een eenheid alle klassen uit het vastgoed domein opgevraagd kunnen worden. Er is gekozen om een generieke klasse voor alle te verhuren eenheden te modeleren. &lt;br />&#xD;
+Door deze keuze wordt het eenvoudiger om vastgoed gegevens te administreren. Een nadeel van deze keuze is dat de klasse eenheid niet eenduidig is over de betekenis (semantiek) van de gegevens in het object. Dit valt af te leiden op basis van het type van de eenheid. Een ander nadeel is dat de klasse eenheid veel attributen bevat die niet voor elk type eenheid (of op elk ‘niveau’ van eenheid) van toepassing zijn. &#xD;
+&#xD;
+&lt;h4>Voorbeelden&lt;/h4>&#xD;
+Dit kunnen bijvoorbeeld woningen, garages, bedrijfspanden of studentenkamers zijn. Een volledige galerijflat die te koop gezet wordt is ook een eenheid. &#xD;
+Een C.V. ketel of dakgoot waar onderhoud op gepleegd moet worden is géén eenheid. Ook trappenhuizen en andere algemene ruimtes die onderwerp van onderhoud zijn maar niet van andere dienstverlening zijn geen eenheden.  &#xD;
+&#xD;
+&lt;h4>Toepasbaar voor&lt;/h4>&#xD;
+Object, Bedrijfspand, Parkeerplaats, verzorgingseenheid, OGE, VHE, woning, verblijfsobject. </documentation>
+          <property key="businessKey" value="De sleutel van de eenheid zoals bekend in het bronsysteem (Businesskey of External id)."/>
+          <property key="beginBouwdatum" value="De begindatum van de bouw van de eenheid."/>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Geometrie" id="b00843ba-7585-4c37-862b-37e1ed7a73cb">
+          <documentation>&lt;h4>Definitie&lt;/h4>&#xD;
+Een set aan afmetingen en / of onderlinge verhoudingen van een bepaald object of gebied. &#xD;
+&#xD;
+&lt;h4>Toelichting&lt;/h4>&#xD;
+De geometrie klasse is een basisklasse om geometrische informatie op te slaan van objecten of gebieden. De geometrie klasse kan zelf geen geometrische informatie bevatten. De geometrische informatie wordt vastgelegd door zogenaamde subklassen. Deze subklassen bepalen welk geometrisch stelsel van toepassing is zodat de waarden van de klasse op een juiste manier eenduidig geïnterpreteerd kunnen worden. &#xD;
+&#xD;
+&lt;h4>Toepasbaar voor&lt;/h4>&#xD;
+Locatieaanduiding, contouraanduiding. </documentation>
+          <property key="lengtegraad" value="De lengtegraad"/>
+          <property key="breedtegraad" value="De breedtegraad"/>
+        </element>
+        <element xsi:type="archimate:DataObject" name="CollectiefObject" id="cb3e53ef-e1a6-44e3-b508-cc57860fade5">
+          <documentation>&lt;h4>Definitie&lt;/h4>&#xD;
+Een collectief object is een specifiek te identificeren onderdeel of ruimte in of rond een gebouw met een gemeenschappelijke functie, m.a.w. het wordt door meerdere bewoners gedeeld. &#xD;
+&#xD;
+&lt;h4>Toelichting&lt;/h4>&#xD;
+Binnen een collectief object kunnen zich bouwdelen of bouwkundige elementen bevinden die relevant zijn in het kader van onderhoud, bijvoorbeeld een bellenbord, een trap of een vloer.  &#xD;
+Een collectief object heeft een administratieve invalshoek. Het geeft aan welke gemeenschappelijke delen/ruimten er rondom een eenheid bestaan. Een collectief object kan een andere eigenaar hebben dan de eenheden die zich rondom het collectief object bevinden. In een gebouw waar sprake is van een VvE bijvoorbeeld, is die VvE de eigenaar van sommige collectieve objecten, niet de corporatie. &#xD;
+Het begrip maakt het mogelijk om een klacht over bijv. een tuin of een hal te herleiden tot een specifieke locatie in of rond de woning van de melder, en om daarbij vast te stellen wie de eigenaar is en door wie het object wordt onderhouden/beheerd. &#xD;
+&#xD;
+&lt;h4>Voorbeelden&lt;/h4>&#xD;
+In gebouw X, een grote portiekflat, zijn de volgende collectieve objecten te onderscheiden: Centrale hal noordzijde, Centrale hal zuidzijde, Ontmoetingsruimte X en Gemeenschappelijke tuin Y. &#xD;
+&#xD;
+&lt;h4>Toepasbaar voor&lt;/h4>&#xD;
+Hal, tuin, dak, parkeerplaats. </documentation>
+          <property key="Objecttype" value="Klasse"/>
+          <property key="Bron" value="VERA 1.0"/>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Cluster" id="ea29e25d-16d9-4ae6-b365-eda170cd2541">
+          <documentation>&lt;h4>Definitie&lt;/h4>&#xD;
+Een cluster is een groepering van eenheden die om administratieve redenen of andere bedrijfsmatige redenen onderscheiden worden, waardoor gelijke vorm van onderhoud, sturing en beleid mogelijk is. &#xD;
+&#xD;
+&lt;h4>Toelichting&lt;/h4>&#xD;
+Een cluster groepeert een set aan eenheden en vormt een bepaalde doorsnede op de totale set aan eenheden. Een eenheid kan daarom ook bij meerdere clusters (andere doorsnedes) horen. &#xD;
+&#xD;
+&lt;h4>Voorbeelden&lt;/h4>&#xD;
+Bijvoorbeeld een onderhoudscluster, een vereniging-van-eigenaren-cluster , een financieel cluster of een huurverhogingscluster.  &#xD;
+&#xD;
+</documentation>
+          <property key="businessKey" value="De sleutel van de cluster zoals bekend in het bronsysteem (Businesskey of External id)."/>
+        </element>
+      </folder>
+      <folder name="Onderhoud" id="8494a28a-e77f-423f-af04-cff94da94704">
+        <element xsi:type="archimate:DataObject" name="Onderhoudsorderregel" id="44fe8098-28ac-44fe-9552-2f84a118342c">
+          <documentation>&lt;h4>Definitie&lt;/h4>&#xD;
+Een onderhoudstaak is een specifieke verrichting die uitgevoerd wordt door een uitvoerende met een bepaald specialisme.&#xD;
+&#xD;
+&lt;h4>Toelichting&lt;/h4>&#xD;
+Een Onderhoudstaak wordt gebruikt voor het uitvoeren van werkzaamheden en kan heel gedetailleerd zijn (verwijder vloerbedekking, voer vloerbedekking af, egaliseer vloer, etc.) maar ook heel algemeen (vervang vloerbedekking). &#xD;
+VERA neemt geen standpunt in hoe gedetailleerd de corporatie of aannemer taken wil registreren, maar biedt een keuze: gedetailleerd door veel taken per order of globaal met één taak per order.&#xD;
+Een onderhoudstaak is gekoppeld aan een specialisme zodat de uitvoerende partij de onderhoudstaak kan plannen bij specifieke vakmannen met dit specialisme. Aan een onderhoudstaak kunnen onderhoudsbestedingen worden gekoppeld.&#xD;
+Bij onderhoudsorders die uitgezet zijn bij een aannemer kan de aannemer indien gewenst andere/meer gedetailleerde uitvoeringstaken definiëren. Deze detaillering valt op dit moment buiten de scope van VERA.&#xD;
+&#xD;
+&lt;h4>Voorbeelden&lt;/h4>&#xD;
+Voorbeeld 1: Naar aanleiding van de onderhoudsorder “Herstel badkamer naar aanleiding van lekkage” aan aannemer Pietersen is voor de loodgieter een onderhoudstaak aangemaakt “Vervang kitvoegen”. &#xD;
+Voorbeeld 2: Naar aanleiding van een huuropzegging van huurder Jansen is een inspectieorder gemaakt, met een onderhoudstaak voor het daadwerkelijk uitvoeren van de voorinspectie. De onderhoudstaak heeft als specialisme “Inspecteur”.&#xD;
+Voorbeeld 3: Omdat de corporatie heel gedetailleerd de uit te voeren werkzaamheden wil monitoren zijn er voor het vervangen van de vloerbedekking vier onderhoudstaken aangemaakt die afzonderlijk van elkaar gepland en uitgevoerd kunnen worden: “verwijder vloerbedekking”, “voer vloerbedekking af”, &quot;egaliseer vloer” en onderhoudstaak “leg nieuwe vloerbedekking”&#xD;
+Voorbeeld 4: De corporatie heeft aan aannemer Pietersen de opdracht gegeven om de vloerbedekking te vervangen en heeft daarvoor één onderhoudstaak aangemaakt: “vervangen vloerbedekking&quot;.</documentation>
+          <property key="businessKey" value="De sleutel van de onderhoudstaak zoals bekend in het bronsysteem (Businesskey of External id)."/>
+          <property key="omschrijving" value="De korte omschrijving van de taak."/>
+          <property key="OnderhoudstaakStatus" value="De status van de onderhoudstaak. Bijvoorbeeld; aangemaakt, ingepland, in uitvoer, afgerond. (Referentiedata)"/>
+          <property key="OnderhoudstaakDetailStatus" value="De detail status van de onderhoudstaak. Bijvoorbeeld: Klant niet aanwezig (Referentiedata)"/>
+          <property key="Onderhoudspecialisme" value="Het specialisme dat nodig is om de taak uit te voeren. Voorbeelden zijn Timmerman, Loodgieter, etc. (Referentiedata)"/>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Inspectierapport" id="45cf3497-f768-4021-a8c5-4dc9d4ea0527"/>
+        <element xsi:type="archimate:DataObject" name="Defect" id="4b5449f2-1603-4461-a444-6d6f693ccd05">
+          <property key="melder" value="De relatie die het defect heeft gemeld. Blijft leeg indien het element of object zelf een storing heeft gemeld."/>
+          <property key="locatie" value="De locatie waar het onderhoud moet plaatsvinden. Bijvoorbeeld huiskamer of toilet. (Referentiedata)"/>
+          <property key="defectSoort" value="Typering van het soort defect. Bijvoorbeeld lekt, klemt, gebroken etc. (Referentiedata)"/>
+          <property key="defectOorzaak" value="De oorzaak van het defect zoals initieel bij het melden van het defect is vastgelegd. Dit is vaak de oorzaak die de huurder aangeeft bij de melding. (Referentiedata)"/>
+          <property key="aangetroffenOorzaak" value="De oorzaak van het defect zoals initieel bij het melden van het defect is vastgelegd. Dit is vaak de oorzaak die de huurder aangeeft bij de melding. (Referentiedata defectOorzaak)"/>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Onderhoudsbesteding" id="52ae7e46-b9d3-42e3-9386-31396d6247be">
+          <documentation>&lt;h4>Definitie&lt;/h4>&#xD;
+Een Onderhoudsbesteding geeft informatie over de besteding van middelen en tijd betreffende de uitvoering van een Onderhoudstaak. &#xD;
+&#xD;
+&lt;h4>Toelichting&lt;/h4>&#xD;
+Onderhoudsbestedingen worden vastgelegd door de uitvoerende(n) van de werkzaamheden. Onderhoudsbestedingen kunnen reistijd en werktijd zijn alsmede de kosten van ver-/gebruikte materialen bij de uitvoering van de onderhoudstaak (opmerking: er is (nog) geen relatie met artikelen en artikelcodes op onderhoudsbestedingen). &lt;br />&#xD;
+Als de werkzaamheden uitgevoerd worden door een extern onderhoudsbedrijf is het een keuze of afzonderlijke Onderhoudsbestedingen worden geregistreerd of niet. Aan de hand van onderhoudsbestedingen kunnen kosten worden doorbelast aan bijvoorbeeld de huurder. Daarnaast kunnen de onderhoudsbestedingen gebruikt worden voor analyse (zoals bijvoorbeeld voorcalculatie t.o.v. nacalculatie). &#xD;
+&#xD;
+&lt;h4>Voorbeelden&lt;/h4>&#xD;
+Voorbeeld 1: De allround vakman Jansen heeft afgelopen maandag 30 minuten besteed aan het vervangen van de kitvoegen in de badkamer. Hierbij is anderhalf patroon kit verbruikt. &#xD;
+Voorbeeld 2: Inspecteur Pietersen heeft 10 minuten reistijd en 30 minuten werktijd besteed aan het inspecteren van een mutatiewoning. &#xD;
+</documentation>
+          <property key="Objecttype" value="Klasse"/>
+          <property key="Bron" value="VERA 1.0"/>
+        </element>
+        <element xsi:type="archimate:DataObject" name="OnderhoudstaakVoorcalculatie" id="758fefdd-c153-4803-a0a1-b32d494c919b">
+          <documentation>Definitie&#xD;
+De voorgecalculeerde kosten voor de uitvoering van een onderhoudstaak.&#xD;
+&#xD;
+Toelichting&#xD;
+OnderhoudstaakVoorcalculatie bevat informatie over de te verwachte prijs van een onderhoudstaak.&#xD;
+Per soort besteding (werktijd, reistijd, materiaal, etc.) kan een voorcalculatie worden vastgelegd. Deze voorcalculaties worden gekoppeld aan een onderhoudstaak zodat (na uitvoering van de werkzaamheden) een relatie gelegd kan worden met de daadwerkelijke kosten voor de onderhoudstaak.&#xD;
+Een verbijzondering naar bestedingsoort is niet verplicht; de voorcalculatie kan ook zonder bestedingsoort, op totaalniveau voor de onderhoudstaak worden gebruikt. &#xD;
+Via Standaardprijs kan een relatie worden gelegd met eenheidsprijzen c.q. normprijscodes (Ketenstandaard). &#xD;
+&#xD;
+Voorbeelden&#xD;
+Bij een onderhoudstaak “Vervang kraan” kan op twee manieren een OnderhoudstaakVoorcalculatie worden vastgelegd: &#xD;
+Een voorcalculatie voor de taak als geheel: &lt;br />&#xD;
+1x kraan vervangen à €90,- &lt;br />&#xD;
+Er is een 1:1- relatie met de onderhoudstaak. &lt;br />&#xD;
+Het attribuut bestedingssoort kan leeg blijven. &lt;br />&#xD;
+Als voor het vervangen van een kraan een vaste prijs (of normprijs) is afgesproken, dan kan deze voorcalculatie worden gekoppeld aan een Standaardprijs “Kraan vervangen”. &lt;br />&#xD;
+&lt;br />&#xD;
+Voorcalculaties per bestedingssoort: &lt;br />&#xD;
+30 min. werktijd à €80,- = €40,- &lt;br />&#xD;
+1 stuk keukenkraan type X à €30,- = €30,- &lt;br />&#xD;
+15 minuten reistijd à €80,- = €20,- &lt;br />&#xD;
+Er zijn in dit geval drie OnderhoudstaakVoorcalculaties bij de onderhoudstaak. &lt;br />&#xD;
+Als voor het vervangen van een kraan een vaste prijs (of normprijs) is afgesproken, dan kunnen de voorcalculaties worden gekoppeld een uurtarief werktijd, een uurtarief reistijd en een vaste materiaalprijs voor de kraan, via Standaardprijs. &#xD;
+</documentation>
+          <property key="aantal" value="Het verwachte aantal te besteden middelen of tijd (uitgedrukt in de meeteenheid van de voorcalculatie)."/>
+          <property key="meeteenheid" value="De meeteenheid waarin de voorcalculatie wordt gemeten. Bijv. uur, liter etc. (Referentiedata)"/>
+          <property key="bedrag" value="Een indicatie van de kosten van de verwachte bestedingen"/>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Onderhoudsverzoek" id="a74f5265-4ff9-456a-9d58-4e6e81afc5e3">
+          <documentation>Niveau Onderhoudsverzoek toegevoegd ivm het scenario waarin de intake van het verzoek ook door de aannemer gedaan wordt. In dat geval komt er een extra niveau bij.</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Standaardprijs" id="ea7235cc-9f38-48c2-913e-136ffa88259d">
+          <documentation>&lt;h4>Definitie &lt;/h4>&#xD;
+Standaardprijs bevat vaste (eenheids- of taak-) prijzen voor bestedingen bij een onderhoudstaak, of voor de onderhoudstaak als geheel.  &#xD;
+&#xD;
+&lt;h4>Toelichting&lt;/h4>&#xD;
+Per soort besteding (werktijd, reistijd, materiaal, etc.), of per onderhoudstaak kunnen Standaardprijzen worden vastgelegd. Deze standaard prijzen kunnen worden gekoppeld aan OnderhoudstaakVoorcalculaties. &#xD;
+Standaardprijs is equivalent aan de zgn. normprijscodes  binnen Ketenstandaard.  &#xD;
+&#xD;
+&lt;h4>Voorbeelden&lt;/h4> &#xD;
+Scenario 1: Voor een onderhoudstaak “Vervang kraan” is tussen opdrachtgever en opdrachtnemer een vaste taakprijs overeengekomen van €190,-: &#xD;
+* Meeteenheid: stuks &#xD;
+* Aantal: 1 &#xD;
+* Bedrag: €190,- &#xD;
+ &#xD;
+Scenario 2: Voor een onderhoudstaak “Vervang kraan” zijn tussen opdrachtgever en opdrachtnemer vaste eenheidsprijzen afgesproken voor werktijd, reistijd en de kraan. Er zijn drie Standaardprijzen voor de drie OnderhoudstaakVoorcalculaties: &#xD;
+* Werktijd &#xD;
+	** Meeteenheid: uren &#xD;
+	** Aantal: 1 &#xD;
+	** Bedrag: €80,- &#xD;
+* Reistijd &#xD;
+	** Meeteenheid: uren &#xD;
+	** Aantal: 1 &#xD;
+	** Bedrag: €80,- &#xD;
+* Materiaal &#xD;
+	** Meeteenheid: stuks &#xD;
+	** Aantal: 1 &#xD;
+	** Bedrag: €30,- &#xD;
+Scenario 3: Voor de taak “Vervangen 10 kranen in bulk”, is tussen opdrachtgever en opdrachtnemer een vaste taakprijs overeengekomen van €800,-: &#xD;
+* Meeteenheid: stuks &#xD;
+* Aantal: 10 &#xD;
+* Bedrag: €800,- </documentation>
+          <property key="code" value="De unieke code (Bijvoorbeeld om te tonen of te zoeken)"/>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Onderhoudsorder" id="f3c52eed-380b-45df-90f9-56f473bfa90b">
+          <documentation>Definitie&#xD;
+Een onderhoudsorder is een opdracht tot het uitvoeren van reparatie- of onderhoudswerkzaamheden, of een opdracht tot het uitvoeren van een inspectie aan het bezit van een woningcorporatie of andere vastgoedbeheerder, waarmee een onderhoudsovereenkomst is afgesloten. &#xD;
+&#xD;
+Toelichting&#xD;
+De opdrachtgever van de onderhoudsorder is de afdeling binnen de woningcorporatie die verantwoordelijk is voor het (laten) uitvoeren van onderhoudswerkzaamheden. Het is ook mogelijk dat deze verantwoordelijkheid is uitbesteed aan een externe partij (outsourcing). De opdrachtnemer is een externe uitvoerende (aannemer of service-/onderhoudsbedrijf) of een interne vakgroep. &lt;br /> &#xD;
+Een onderhoudsorder kan resulteren in één of meerdere afspraken met een relatie (meestal de huurder/bewoner).  &lt;br />&#xD;
+Een onderhoudsorder bestaat uit één of meer onderhoudstaken, die de uit te voeren werkzaamheden in detail kunnen beschrijven. Het is ook mogelijk dat een onderhoudsorder bestaat uit slechts 1 onderhoudstaak waarin de werkzaamheden globaal wordt beschreven. In dat geval wordt de detaillering van de uit te voeren werkzaamheden overgelaten aan de (externe) uitvoerende partij. &lt;br />&#xD;
+Een onderhoudsorder is gekoppeld aan een onderhoudsverzoek wanneer het reparatie- of mutatieonderhoud betreft. Bij de uitvoering van planmatig onderhoud is er geen relatie met een onderhoudsverzoek. &lt;br />&#xD;
+Zowel in het geval van reparatie-/klachtenonderhoud als bij mutatieonderhoud kan er sprake zijn van een 1-op-1 relatie tussen onderhoudsorder en onderhoudsverzoek, maar kunnen er ook meerdere orders aan het onderhoudsverzoek zijn gekoppeld. &#xD;
+De onderhoudsorder bevat het Defect of de Defecten, die meestal word(t)(en) overgenomen van het bovenliggende Onderhoudsverzoek. De informatie van het Defect ondersteunt bij het bepalen wie de opdracht tot uitvoering krijgt. Daarnaast bepaalt het defect ook of mogelijk sprake is van garanties of andere specifieke contractvoorwaarden.  &#xD;
+&#xD;
+Voorbeelden&#xD;
+Voorbeeld 1: Naar aanleiding van een onderhoudsverzoek van huurder Jansen voor het repareren van een lekkende waterleiding in de badkamer wordt een onderhoudsorder aangemaakt. Omdat de corporatie eigen vakmannen in dienst heeft die deze reparatie kunnen uitvoeren wordt de onderhoudsorder toegewezen aan de interne vakgroep Loodgieters. &lt;br />&#xD;
+Voorbeeld 2: Naar aanleiding van een huuropzegging van huurder Jansen wordt door de verhuurmakelaar een onderhoudsverzoek aangemaakt om de woning geschikt te maken voor wederverhuur. Voor het bepalen van de benodigde (herstel)werkzaamheden wordt een order gemaakt voor het inspecteren van de woning. De order (van het soort &quot;Inspectie)  wordt toegewezen aan de inspecteur die zijn bevindingen vastlegt in een inspectierapport. &lt;br />&#xD;
+Voorbeeld 3: Op basis van het mutatieproces rondom de woning van huurder Jansen is een inspectie uitgevoerd en vastgesteld dat het mutatiepakket BKT (badkamer-keuken-toilet) moet worden uitgevoerd. Omdat deze werkzaamheden niet uitgevoerd worden door de interne vakgroep wordt een onderhoudsorder aangemaakt voor de aannemer Pietersen voor het uitvoeren van de werkzaamheden.  &lt;br />&#xD;
+Voorbeeld 4: In de vastgestelde onderhoudsbegroting voor het huidige jaar is opgenomen dat de boeiboorden van de woningen in cluster X worden vervangen. Op basis daarvan wordt een onderhoudsorder toegewezen aan aannemer Pietersen. &#xD;
+&#xD;
+INS (Inspectie): Opdracht tot het uitvoeren van inspectie-/inventarisatie-werkzaamheden om vast te stellen óf en zo ja welke onderhoudswerkzaamheden moeten worden uitgevoerd. Dit kan een inspectie zijn naar aanleiding van een onduidelijk reparatieverzoek of naar aanleiding van een verhuurmutatie.&#xD;
+--MUT		Mutatie						Opdracht tot het uitvoeren van onderhoudswerkzaamheden naar aanleiding van een verhuurmutatie.&#xD;
+--PLN		Planmatig					Opdracht tot het uitvoeren van onderhoudswerkzaamheden naar aanleiding van een goedgekeurd MJO-budget&#xD;
+--WOV	Woningverbetering	Bij aanpassing op verzoek van de huurder voor verbetering van het woongenot. Voorbeeld is het voortijdig vervangen van de wc-pot door een luxe uiitvoering&#xD;
+--WMO	WMO Aanpassing		Bij benodigde aanpassing van de woning bij de zittende huurder (door ouderdom, invaliditeit aanbrengen van WMO-aanpassing)&#xD;
+--PRJ	Projectmatig					Opdracht tot het uitvoeren van onderhoudswerkzaamheden naar aanleiding van een investeringsproject zoals verduurzaming, renovatie, etc.&#xD;
+--REP	Reparatie						Opdracht tot het uitvoeren van reparatiewerkzaamheden naar aanleiding van een geconstateerd defect&#xD;
+</documentation>
+          <property key="businessKey" value="De sleutel van de onderhoudsorder zoals bekend in het bronsysteem (Businesskey of External id)."/>
+          <property key="code" value="De unieke code (Bijvoorbeeld om te tonen of te zoeken)"/>
+          <property key="opdrachtdatum" value="Datum (en tijdstip) waarop de opdracht is verstrekt aan het (extern) onderhoudsbedrijf of de interne vakgroep voor de uitvoering van de werkzaamheden."/>
+          <property key="onderhoudSoort" value="Typering van de onderhoudsorder zoals bijvoorbeeld inspectie, mutatiewerkzaamheden, reparatiewerkzaamheden, etc. (Referentiedata)"/>
+          <property key="onderhoudsorderAfrekenwijze" value="De wijze waarop de onderhoudsorder wordt afgerekend (of niet). Bijvoorbeeld: Nacalculatie regie, Nacalculatie eenheidsprijzen, Vaste prijs, Afkoop, Garantie. (Referentiedata)"/>
+          <property key="omschrijving" value="De korte omschrijving van de onderhoudsorder. Bijvoorbeeld: Herstel de lekkende kraan in de keuken."/>
+          <property key="uitersteGereeddatum" value="Uiterste datum waarop de onderhoudsorder technisch gereed moet zijn. Dit wordt vaak bepaald aan de hand van de LEDO."/>
+          <property key="OnderhoudsorderStatus" value="De status van de order. Bijvoorbeeld: Order zit in de steekproef of de order is technisch gereed. (Referentiedata)"/>
+          <property key="technischGereeddatum" value="De datum waarop de order technisch beëindigd is."/>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Onderhoudslocatie" id="id-63eff3c23def48d0ae90d8ad620560c5"/>
+        <element xsi:type="archimate:DataObject" name="AfspraakOptie" id="id-60dcba9b76be4db089c80a06745d7e20"/>
+        <element xsi:type="archimate:DataObject" name="Afspraak" id="id-aac3ee88325e40cc8f9a1c8767e97b53"/>
+      </folder>
+      <folder name="Relatie" id="9b9a7890-f11d-4c5d-9222-c21652abf4b5">
+        <element xsi:type="archimate:DataObject" name="Afspraak" id="23624335-bf1b-46b7-b723-8492c2d16839">
+          <documentation>&lt;h4>Definitie&lt;/h4>&#xD;
+Dit zijn de afspraken die gemaakt zijn met relaties. &#xD;
+&lt;h4>Toelichting&lt;/h4>&#xD;
+Er wordt een afspraak gemaakt tijdens een contactmoment. &#xD;
+&lt;h4>Voorbeelden&lt;/h4>&#xD;
+De aannemer komt volgende week langs. </documentation>
+          <property key="beginDatum" value="De datum en tijd waarop de afspraak plaatsvindt. Als (nog) geen afspraak begindatum bekend is kan er wel een bloktijd zijn opgeven."/>
+          <property key="einddatum" value="De datum en tijd tot wanneer de afspraak naar verwachting loopt."/>
+          <property key="id" value="unieke nummer van de afspraak"/>
+          <property key="bloktijdBegin" value="De datum en tijd die het begin van een blok markeert waarbinnen de afspraak bij voorkeur start. Pas als de afspraak daadwerkelijk ingepland is, is er ook een afspraak begindatum bekend."/>
+          <property key="bloktijdEind" value="De datum en tijd die het eind van een blok markeert waarbinnen de afspraak bij voorkeur start."/>
+          <property key="ondehroudspecialisme"/>
+        </element>
+        <element xsi:type="archimate:DataObject" name="NatuurlijkPersoon" id="3780fe32-bfaa-4ce2-86e6-a8a49129b6e5">
+          <documentation>&lt;h4>Definitie&lt;/h4>&#xD;
+Een natuurlijk persoon is per definitie een mens van vlees en bloed, met een identiteit (naam en voornamen), afstamming (al dan niet bekend of puur juridisch), geboorteplaats en –datum. &#xD;
+&#xD;
+&lt;h4>Toelichting&lt;/h4>&#xD;
+Een natuurlijk persoon is een relatie met extra eigenschappen. Een natuurlijk persoon kan als relatie worden gekoppeld aan overige klassen. &lt;br />&#xD;
+Voor het verwerven van juridische erkenning wordt in Nederland een geboorteakte opgemaakt in een gemeentelijk register. Het begrip natuurlijk persoon benadert de mens dus niet als een biologische entiteit maar als een juridische. &#xD;
+&#xD;
+&lt;h4>Voorbeelden&lt;/h4>&#xD;
+Huurder of vertegenwoordiger van een rechtspersoon. </documentation>
+          <property key="voornaam" value="De voornaam van de natuurlijk persoon."/>
+          <property key="initialen" value="De initialen van de natuurlijk persoon."/>
+          <property key="tussenvoegsel" value="De tussenvoegsels van de natuurlijk persoon."/>
+          <property key="achternaam" value="De achternaam van de natuurlijk persoon."/>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Contactgegeven" id="531cc22c-3fef-410a-a68b-bb09950181db">
+          <property key="ContactgegevenSoort" value="Het soort communicatie. Bijvoorbeeld: Telefoon, E-mail, .Social media etc. (Referentiedata)"/>
+          <property key="ContactgegevenDetailSoort" value="Het soort detail communicatie. Bijvoorbeeld: Mobiel, privé, werk. (Referentiedata)"/>
+          <property key="waarde" value="telefoonnummer of emailadres afhankelijk van ContactgegevenSoort"/>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Relatie" id="a871da7d-9104-49e3-a8d1-af4179978ffa">
+          <property key="globaalLocatienummer" value="Een wereldwijd nummer ter identificatie van een partij of locatie. Het dertiencijferige nummer (GLN) wordt uitgegeven door GS1."/>
+          <property key="naam" value="Naam van de rechtspersoon"/>
+          <property key="naam2" value="NIET AANWEZIG"/>
+          <property key="contactpersonen.*" value="samenstelling van voor- en achternaam met tussenvoegsels uit Relatie"/>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Rechtspersoon" id="b4814e35-6889-413a-a292-e1cc63bbbe76">
+          <documentation>&lt;h4>Definitie&lt;/h4>&#xD;
+Een rechtspersoon is een organisatie die een juridische vorm heeft (B.V., N.V., V.O.F. etc.), die volwaardig en handelingsbekwaam in het rechtsverkeer kan optreden. &#xD;
+&#xD;
+&lt;h4>Toelichting&lt;/h4>&#xD;
+Een rechtspersoon is een relatie met extra eigenschappen. Een rechtspersoon kan als relatie worden gekoppeld aan overige klassen. &#xD;
+De rechtspersoon wordt kan door één of meer natuurlijke personen worden vertegenwoordigd. &#xD;
+&#xD;
+&lt;h4>Voorbeelden&lt;/h4>&#xD;
+Leverancier of aannemer. </documentation>
+          <property key="Objecttype" value="Klasse"/>
+          <property key="Bron" value="VERA 1.0"/>
+          <property key="Relatie met CORA"/>
+        </element>
+      </folder>
+      <folder name="Overeenkomst" id="daadab97-7efc-4ffd-91d5-80e1ab4b4765">
+        <element xsi:type="archimate:DataObject" name="OvereenkomstRelatie" id="048d8091-471d-4ee8-bec0-cfe6143df3a3">
+          <documentation>&lt;h4>Definitie&lt;/h4>&#xD;
+Geeft aan welke relaties betrokken zijn bij een overeenkomst zonder dat deze relaties hoofdelijk aansprakelijk hoeven zijn. &#xD;
+&#xD;
+&lt;h4>Toelichting&lt;/h4>&#xD;
+Bij een overeenkomst kunnen meerdere relaties horen. Deze klasse koppelt een relatie aan een overeenkomst. Vervolgens wordt de rol van de relatie bepaald die de relatie heeft met betrekking tot de overeenkomst.  &#xD;
+&#xD;
+&lt;h4>Voorbeelden&lt;/h4>&#xD;
+Voorbeeld 1: De corporatie die een onderhoudsovereenkomst afsluit met een aannemer is de Opdrachtgever (In SALES005: Buyer)&#xD;
+Voorbeeld 2: De aannemer die onder financiele voorwaarden een onderhoudsovereenkomst aangaat met een corporatie is de Opdrachtnemer (In SALES005: Contractor) &#xD;
+Voorbeeld 3: De VVE die aan de corporatie het volmacht geeft om namens haar onderhoudsopdrachten uit te geven aan een aannemer is de Opdrachtgever. De corporatie in dit voorbeeld is dan de gevolmachtigde derde (In SALES005: Affiliate)&#xD;
+Voorbeeld 4: De corporatie kan een derde partij (onderhoudsbedrijf) opdracht geven om het onderhoud te regisseren. In dat geval is de corporatie de Opdrachtgever en het onderhoudsbedrijf de gevolmachtigde derde (In SALES005: Affiliate)&#xD;
+&#xD;
+</documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Onderhoudsovereenkomst" id="c93f4d88-512d-4d97-baea-544db8ee979d">
+          <documentation>&lt;h4>Definitie&lt;/h4>&#xD;
+Een onderhoudsovereenkomst is een type overeenkomst waarin de corporatie afspraken met een leverancier heeft vastgelegd over het onderhoud aan (delen van) een eenheid.&#xD;
+&#xD;
+&lt;h4>Toelichting&lt;/h4>&#xD;
+In de onderhoudsovereenkomst wordt vastgelegd of er voor niet-planmatig onderhoud op bijvoorbeeld de CV ketel of het glas van de ramen een raamovereenkomst met een leverancier is afgesloten.&#xD;
+Wanneer er sprake is van onderhoudscontracten op elementen zal de corporatie niet zelf de storing of het defect verhelpen maar dit door de leverancier laten uitvoeren waarmee de onderhoudsovereenkomst is afgesloten. </documentation>
+          <property key="businessKey" value="De sleutel van de overeenkomst zoals bekend in het bronsysteem (Businesskey of External id)."/>
+          <property key="begindatum" value="De begindatum van de overeenkomst. "/>
+        </element>
+      </folder>
+      <element xsi:type="archimate:DataObject" name="Bouwdeel" id="35292366-3142-45d7-baa6-0a064f77e926">
+        <documentation>&lt;h4>Definitie&lt;/h4>&#xD;
+Aggregatie van bouwkundige elementen vanuit een technisch/bouwkundige invalshoek &#xD;
+&#xD;
+&lt;h4>Toelichting&lt;/h4>&#xD;
+Een bouwdeel aggregeert een aantal bouwkundige elementen en definieert daarmee een relevant object in het kader van onderhoud. De bouwdelen benoemen niet elke specifieke instantie, maar benoemen alleen de verschillende typen bouwdelen die er bestaan.  &lt;br />&#xD;
+Een bouwdeel moet niet verward worden met de klasse CollectiefObject waarmee (ook) een administratief doel wordt aangegeven. &lt;br />&#xD;
+De bouwdelen vormen in feite een catalogus van relevante elementen van onderhoud op een eenheid, collectief object of een gebouw. Met een bouwdeel wordt aangegeven dat er een lift aanwezig is in een gebouw. &#xD;
+&#xD;
+&lt;h4>Voorbeelden&lt;/h4>&#xD;
+Een bouwdeel is bijvoorbeeld een lift. Voor bijvoorbeeld hal 1 (specifieke instantie van collectief object) is aangegeven dat hier zich een bouwdeel ‘lift’ in bevindt. Het zelfde bouwdeel ‘lift’ zal onderdeel zijn van nog een groot aantal andere collectieve objecten. Het bouwdeel lift bestaat uit de bouwkundige elementen ‘deur’, ‘paneel’, ‘cabine’, ‘motor’ enzovoort.  &lt;br />&#xD;
+Wanneer een corporatie meer detail op wil nemen en bijvoorbeeld onderscheid wil maken naar de verschillende typen liften zullen hiervoor verschillende bouwdelen opgevoerd worden. De bouwdelen en bouwkundige elementen zijn daarmee te vergelijken met een productcatalogus, gericht op onderdelen waar onderhoud op gepleegd kan worden. </documentation>
+        <property key="Objecttype" value="Klasse"/>
+        <property key="Bron" value="VERA 1.0"/>
+      </element>
+    </folder>
+    <folder name="SALES005" id="d81a3957-ec59-47b6-98b3-c38bfc72b802">
+      <element xsi:type="archimate:DataObject" name="PlanningResponseType (SALES:Planningsreactie)" id="13ba271d-f654-4de2-89f8-d3879164b698"/>
+      <element xsi:type="archimate:DataObject" name="PriceBaseType" id="170bef91-1d73-478b-a702-7234a2a27671">
+        <documentation>Gegevens over de basiseenheid waarin een prijs is uitgedrukt.</documentation>
+        <property key="Equivalent VERA-klasse" value="Standaardprijs"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="TimeblocksPerWeekdayType" id="199a4d28-4318-4adf-847e-d09ea15293a1">
+        <documentation>Weekdag met of zonder start- en eindtijden.</documentation>
+      </element>
+      <element xsi:type="archimate:DataObject" name="DeliveryTimeFrameType (Onderhoudsorder)" id="1a427d74-ae14-47a0-a04a-0082b93d1c0d">
+        <documentation>Gegevens over de periode waarbinnen iets moet worden uitgevoerd.&#xD;
+&#xD;
+&lt;h4>VERA&lt;/h4>&#xD;
+Attribuut Uiterste gereeddatum in Klasse Onderhoudsorder</documentation>
+      </element>
+      <element xsi:type="archimate:DataObject" name="MaintenanceMomentResponseType" id="1f8082e0-21f6-45c9-a503-2903be387d0e">
+        <documentation>Gegevens over de datum, tijd of periode van onderhoud.&#xD;
+&#xD;
+BUSINESS RULES&#xD;
+Gebruik 1 uitvoeringsmoment per planningsoptie. Als u helemaal niet aan de gevraagde planning kunt voldoen laat u dit gegeven leeg en stuur dit bericht retour.</documentation>
+      </element>
+      <element xsi:type="archimate:DataObject" name="PartyGLNOnlyContactType" id="2b4894dd-0e8e-456f-b2dd-25363a0f2ba3">
+        <documentation>Partij die de opdracht geeft.&#xD;
+</documentation>
+        <property key="Equivalent VERA-klasse" value="Relatie"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="MaintenanceMomentType" id="3105ff75-d23d-4313-b80e-52510ad0668a">
+        <documentation>Gegevens over de datum, tijd of periode van onderhoud.&#xD;
+&#xD;
+BUSINESS RULES&#xD;
+Als Bloktijd en Bloktijd onder weekdag beide zijn ingevuld dan is de Bloktijd onder weekdag leidend.</documentation>
+      </element>
+      <element xsi:type="archimate:DataObject" name="AttachmentType (Informatieobject)" id="350d3a24-557e-4a33-bca1-3256b75f287b">
+        <documentation>Gegevens over de bijlage en/of de deeplink bij een bericht.&#xD;
+&#xD;
+BUSINESS RULES&#xD;
+Het is verplicht om de 'URL' of 'Bijlage' te gebruiken in de onderhoudsberichten.</documentation>
+        <property key="Equivalent VERA-klasse" value="Informatieobject"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Onderhoudsorder" id="3b980c8b-6711-4548-b324-37dc156c36e7"/>
+      <element xsi:type="archimate:DataObject" name="MaintenanceStatusType (SALES:Statusbericht)" id="46b2cdba-5bd1-4fe8-8727-9cf590ab252a"/>
+      <element xsi:type="archimate:DataObject" name="TimeblockType" id="51e8ce92-1432-4726-a982-f8d3e6207311"/>
+      <element xsi:type="archimate:DataObject" name="MaintenanceLocationWithContactInformationType (Eenheid/Cluster/CollectiefObject/BouwkundigElement)" id="553d7630-0cfd-418a-8f1a-0d479b9e3d5d">
+        <documentation>Gegevens over de te onderhouden locatie. &#xD;
+&#xD;
+BUSINESS RULES&#xD;
+Gebruik minimaal een van de drie identificatie velden (complexnummer, pandnummer, VGE nummer).</documentation>
+        <property key="Equivalent VERA-klasse" value="Eenheid"/>
+        <property key="Equivalent VERA-klasse" value="Cluster"/>
+        <property key="Equivalent VERA-klasse" value="CollectiefObject"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="DeliveryDateTimeInformationType (Afspraak)" id="55c1df51-4c66-4b3d-bd12-e338e2c89136">
+        <documentation>Gegevens over de datum, tijd of periode van uitvoering.&#xD;
+&#xD;
+BUSINESS RULES&#xD;
+Het is verplicht de gewenste datum/tijd van uitvoering of het uitvoeringstijdvak te gebruiken.</documentation>
+        <property key="Equivalent VERA-klasse" value="Afspraak"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="GeographicalCoordinatesType (Punt)" id="65ac9b8a-13ad-4966-9873-ddf440b56bdb">
+        <documentation>De geografische locatie volgens WGS84 in latitude en longitude. &#xD;
+&#xD;
+BUSINESS RULES&#xD;
+Als de adresgegevens en geografische gegevens worden gebruikt dan zijn de geografische gegevens leidend. Mocht u de coördinaten niet meegeven dan dient uit de adresgegevens duidelijk te worden waar de onderhoudslocatie zich bevindt.</documentation>
+        <property key="Equivalent VERA-klasse" value="Punt (Geometrie)"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="InstructionLineType (Onderhoudstaak)" id="674bcce9-3ee4-4524-8291-001eed9f55a2">
+        <documentation>Niveau in het bericht waar de onderhoudsdetails worden gespecificeerd.</documentation>
+        <property key="Equivalent VERA-klasse" value="Onderhoudstaak"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="CompetenceType (Onderhoudstaak)" id="7b58a44b-fd66-4e7a-a810-f80f8317dc40">
+        <documentation>&lt;h4>VERA&lt;/h4>&#xD;
+Competentie (Specialisme) is binnen VERA een attribuut van Onderhoudstaak met Referentiedata</documentation>
+      </element>
+      <element xsi:type="archimate:DataObject" name="PlanningRequestType (SALES:Planningsverzoek)" id="80a49fe1-41c4-427e-842e-7185f22ebbdd"/>
+      <element xsi:type="archimate:DataObject" name="AttachmentCharacteristicsType (InformatieobjectKenmerk)" id="89e4e2d6-4941-4f94-a9b8-840176aca178">
+        <documentation>Metagegevens over een bijlage. Voor het gebruik van Attribuutnaam en Attribuutwaarde zie http://www.ketenstandaard.nl/informatie/downloads/sales/ bijlagekarakteristieken.</documentation>
+        <property key="Equivalent VERA-klasse" value="InformatieobjectKenmerk"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="VATInformationAndBaseAmountType" id="93f05580-501a-447d-a970-f280b6cc8556">
+        <documentation>Gegevens over een van toepassing zijnde BTW-heffing.</documentation>
+        <property key="Equivalent VERA-klasse"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="LEDOInformationType (Defect)" id="a4548f63-5135-47ea-bbde-0f08df77c101">
+        <documentation>Gegevens over locatie, element, defect en oorzaak van het te onderhouden object.</documentation>
+        <property key="Equivalent VERA-klasse" value="Defect"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="ContactInformationType (Contactgegeven)" id="a9a9ca11-4a75-445f-bd5b-c321758fe1ec">
+        <documentation>Contactinformatie: &#xD;
+- contactpersoonnaam&#xD;
+- telefoonnummer&#xD;
+- e-mail adres</documentation>
+        <property key="Equivalent VERA-klasse" value="Contactgegeven"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="InstructionDataType (Onderhoudsorder)" id="b2257c1f-b711-49e3-a7d2-0f4806f20531">
+        <documentation>Niveau in het bericht waar de opdrachten worden gespecificeerd.&#xD;
+&#xD;
+zelfde niveau als onderhoudsopdracht?</documentation>
+        <property key="Equivalent VERA-klasse" value="Onderhoudsorder"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Partywithcontacttype (Relatie)" id="b38876e8-7c3d-4524-8270-f58097fb1618">
+        <documentation>Relatiegegevens</documentation>
+        <property key="Equivalent VERA-klasse" value="Relatie"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="PriceInformationType" id="c7f82bb4-0d21-484c-a5a6-63cb41f7abbc">
+        <documentation>Gegevens over de prijs van werk.</documentation>
+        <property key="Equivalent VERA-klasse" value="OnderhoudstaakVoorcalculatie"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="InstructionInformationType (Onderhoudsovereenkomst/Onderhoudsorder)" id="d256f5b4-a197-4e0f-b981-1ee09e0db931">
+        <documentation>Gegevens over de opdracht met betrekking tot soort, afspraakwijze en typering.&#xD;
+- Code waarmee de opdracht nader wordt gespecificeerd (INS, MUT, REP).&#xD;
+- Code waarmee de opdracht afspraakwijze nader wordt gespecificeerd. (AFK, ANS, EHP, REG)&#xD;
+- Code waarmee de opdrachttypering wordt gespecificeerd. (GAR, MAO, ORG)&#xD;
+&#xD;
+BUSINESS RULES&#xD;
+Minimaal 1 van de 3 velden moet worden gebruikt.&#xD;
+&#xD;
+&lt;h4>VERA&lt;/h4>&#xD;
+- InstructionType - Typering van de onderhoudsorder zit binnen VERA onder attribuut onderhoudSoort met referentiedata&#xD;
+- InstructionAgreementMethod - Afrekenwijze is binnen VERA onderdeel van de onderhoudsovereenkomst&#xD;
+- InstructionTypeSpecification - </documentation>
+      </element>
+      <element xsi:type="archimate:DataObject" name="ContractReferenceType (Onderhoudsovereenkomst)" id="d75a0b4a-60ad-44c7-9110-9f72d2036f4a">
+        <property key="Equivalent VERA-klasse" value="Onderhoudsovereenkomst (Overeenkomst)"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="MaintenanceInstructionType (SALES:Opdrachtbericht)" id="f763ecbb-b4af-4354-b50e-c361242d960d">
+        <documentation>Hoofdniveau van het opdracht-bericht</documentation>
+        <property key="Equivalent VERA-klasse" value="Onderhoudsorder"/>
+      </element>
+    </folder>
+    <folder name="Berichten" id="id-73b4978632114b578ea2dc95a071b35b">
+      <folder name="Reparatieverzoeken" id="id-2eeb3c71e64245f8957b9e5b43d2a5ce">
+        <element xsi:type="archimate:DataObject" name="Nieuw onderhoudsverzoek voor reparatie" id="id-5887c390d6d94eca9558894002aa24f3">
+          <documentation>===Definitie===&#xD;
+Reparatieverzoek waarin één of meerdere defecten worden gemeld door de melder (vaak de huurder/bewoner van het object) zonder het vastleggen van een afspraak voor het herstel. Binnen kunnen bijlagen (vaak foto's) meegestuurd worden ter verduidelijking van het defect / de defecten. &#xD;
+&#xD;
+===Business rules===&#xD;
+- Eén of meerdere defecten&#xD;
+- Per defect één of meerdere bijlagen (met een maximum)&#xD;
+- Eén onderhoudslocatie voor de defecten. &#xD;
+&#xD;
+===Scenario's===&#xD;
+- Enkelvoudig reparatieverzoek zonder planning&#xD;
+- Meervoudig reparatieverzoek zonder planning  </documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Nieuw onderhoudsorder voor reparatie" id="id-71fee2f8a53b4664b0dd3c159cded8f8">
+          <documentation>===Definitie===&#xD;
+Onderhoudsorder met één of meerdere onderhoudsregels die doorgezet wordt naar het bedrijfsproces Uitvoeren onderhoudsorder om te worden opgepakt. Een onderhoudsorder heeft altijd minimaal 1 onderhoudsorderregel waarin de details van de uit te voeren werkzaamheden opgenomen kan worden. Met verschillende onderhoudsregels is het mogelijk om verschillende afrekenwijzen op te nemen in de onderhoudsorder. Aan elke onderhoudsregel worden één of meerdere defecten gekoppeld die zijn verzameld door het bedrijfsproces Regisseren onderhoud. &#xD;
+&#xD;
+===Business rules===&#xD;
+- Eén of meerdere onderhoudsregels&#xD;
+- Onderhoudsorder gekoppeld aan maximaal één contactpersoon&#xD;
+- Per onderhoudsregel één of meer defecten&#xD;
+- Per defect één of meerdere bijlagen (met een maximum)&#xD;
+- Eén onderhoudslocatie voor de onderhoudsorder &#xD;
+&#xD;
+===Scenario's===&#xD;
+- Enkelvoudig onderhoudsorder reparatie zonder planning&#xD;
+- Meervoudig onderhoudsorder reparatie zonder planning  &#xD;
+</documentation>
+          <property key="Onderhoudsorder.Status" value="Geregistreerd"/>
+          <property key="Onderhoudsorder.Onderhoudsovereenkomst"/>
+          <property key="Onderhoudsorderregel.Afrekenwijze" value="Referentiedata (Vaste prijs, Nacalc, Eenheidsprijs, ..)"/>
+        </element>
+      </folder>
+      <folder name="Planning" id="id-abc3ee832a4743cb8c63d0a21f89e025">
+        <element xsi:type="archimate:DataObject" name="Opvragen afspraakopties" id="id-21f2436c724b4e8f88ab2729f738a976">
+          <documentation>===Definitie===&#xD;
+Afspraakoptie waarop de onderhoudsorder met opgegeven onderhoudslocatie kan worden uitgevoerd. De afspraakopties worden opgevraagd aan de hand van een opgegeven discipline, de verwachte duur van de werkzaamheden en de locatie van de werkzaamheden en wordt vaak als lijst van opties teruggekoppeld. De aanvrager zal op basis van de afspraakoptie (uniek id van de optie) de afspraak vastleggen bij de onderhoudsorder. &#xD;
+&#xD;
+===Business rules===&#xD;
+-  &#xD;
+&#xD;
+===Scenario's===&#xD;
+- </documentation>
+        </element>
+        <element xsi:type="archimate:DataObject" name="Vastleggen afspraak" id="id-299e6a782a0240ca82a55cbae10ba6c9">
+          <documentation>===Definitie===&#xD;
+Aan de onderhoudsorder wordt een afspraak toegevoegd (vastgelegd). Elke afspraak kan gekoppeld zijn aan een afspraakoptie maar dit hoeft niet. In sommige gevallen kan een afspraak meegegeven worden aan een onderhoudsorder zonder vooraf afspraakopties opgevraagd te hebben.&#xD;
+&#xD;
+===Business rules===&#xD;
+-  &#xD;
+&#xD;
+===Scenario's===&#xD;
+- </documentation>
+        </element>
+      </folder>
+    </folder>
+    <element xsi:type="archimate:DataObject" name="Offerte" id="74b62ea9-652e-447c-aedb-0a43e5f9e737"/>
+    <element xsi:type="archimate:DataObject" name="Offerteregel" id="e6988cfc-8c60-4a54-8767-6f82311bbd82"/>
+    <element xsi:type="archimate:DataObject" name="onderhoudDetailSoort" id="1eb1fc18-cb1c-47da-8f05-8f98ff42f971">
+      <documentation>Voorinspectie (VOO)&#xD;
+&#xD;
+Eindinspectie (EIN)&#xD;
+&#xD;
+Steekproef (STE)&#xD;
+&#xD;
+Reparatieinspectie (REP)</documentation>
+    </element>
+  </folder>
+  <folder name="Technology &amp; Physical" id="175d9ff8-9302-4868-9b7b-6390b022ccec" type="technology"/>
+  <folder name="Motivation" id="8f362805-53e1-43a1-937f-f55103ec792e" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="1198b766-c532-464e-b62f-81735ed3c484" type="implementation_migration"/>
+  <folder name="Other" id="e36d4e73-c41a-4fdb-9050-22549aaf0b97" type="other">
+    <element xsi:type="archimate:Grouping" name="Grouping" id="id-58b9e1fc97a44f5d9d2aee1e89013e4f"/>
+  </folder>
+  <folder name="Relations" id="5437e011-9ebd-4d66-a093-a41d6b80bb93" type="relations">
+    <element xsi:type="archimate:AssociationRelationship" name="defecten" id="05741891-5b4a-4eb9-a6f7-aa5dc68c76e8" source="f3c52eed-380b-45df-90f9-56f473bfa90b" target="4b5449f2-1603-4461-a444-6d6f693ccd05" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Buyer" id="064db0dd-8689-47f8-b06c-24fb1340dd1a" source="f763ecbb-b4af-4354-b50e-c361242d960d" target="b38876e8-7c3d-4524-8270-f58097fb1618" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Contactinformation" id="0de01a0f-4c4f-488e-86e4-8260ab2e8a88" source="2b4894dd-0e8e-456f-b2dd-25363a0f2ba3" target="a9a9ca11-4a75-445f-bd5b-c321758fe1ec" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="overeenkomst" id="1117bf33-3ba0-4365-854c-6bda5bb6946e" source="f3c52eed-380b-45df-90f9-56f473bfa90b" target="c93f4d88-512d-4d97-baea-544db8ee979d" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Attachment (mv)" id="118aacf2-937b-404e-831f-78cea2294077" source="f763ecbb-b4af-4354-b50e-c361242d960d" target="350d3a24-557e-4a33-bca1-3256b75f287b" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Timeblock" id="123d47c6-3cd7-4431-b1d2-0a8c082c5868" source="1f8082e0-21f6-45c9-a503-2903be387d0e" target="51e8ce92-1432-4726-a982-f8d3e6207311" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Contractor" id="12f8abd9-65f2-4719-ba82-cb3d85c22deb" source="46b2cdba-5bd1-4fe8-8727-9cf590ab252a" target="2b4894dd-0e8e-456f-b2dd-25363a0f2ba3" directed="true">
+      <documentation>	</documentation>
+    </element>
+    <element xsi:type="archimate:AssociationRelationship" name="geometrie" id="134edea0-06ab-4ff2-bd21-839ce90201cd" source="736de03a-b11d-4651-b3e1-05145dd7a954" target="b00843ba-7585-4c37-862b-37e1ed7a73cb" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="contactpersonen" id="209f3f80-c250-4086-a6a4-8345c5689954" source="a871da7d-9104-49e3-a8d1-af4179978ffa" target="a871da7d-9104-49e3-a8d1-af4179978ffa" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="VATInformation" id="20d6d44f-aeff-4ca0-ab18-8dd713c34055" source="674bcce9-3ee4-4524-8291-001eed9f55a2" target="93f05580-501a-447d-a970-f280b6cc8556" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="informatieobjecten" id="2a19ef2c-5f37-4df1-8492-950babde276e" source="45cf3497-f768-4021-a8c5-4dc9d4ea0527" target="7a65e2b9-f974-4768-a07b-edd59b71f6fb" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Competence" id="2aeef63b-ed14-4394-b4c6-ae700a35253c" source="80a49fe1-41c4-427e-842e-7185f22ebbdd" target="7b58a44b-fd66-4e7a-a810-f80f8317dc40" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="bijlagen" id="31c40c9c-d8aa-4aa0-b222-37fe8e70697a" source="f3c52eed-380b-45df-90f9-56f473bfa90b" target="7a65e2b9-f974-4768-a07b-edd59b71f6fb" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="onderhoudstaakVoorcalculaties" id="33c65086-7462-455c-81b1-6749e89f2d0a" source="ea7235cc-9f38-48c2-913e-136ffa88259d" target="758fefdd-c153-4803-a0a1-b32d494c919b" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="PriceBase" id="3aa33cac-82a8-4c2f-8107-e7f676935f32" source="c7f82bb4-0d21-484c-a5a6-63cb41f7abbc" target="170bef91-1d73-478b-a702-7234a2a27671" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="voorcalculaties" id="3be9a1e4-a070-45e7-b216-34ffc9db49b1" source="44fe8098-28ac-44fe-9552-2f84a118342c" target="758fefdd-c153-4803-a0a1-b32d494c919b" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="adressen" id="3c31ea2b-654b-4e1c-8030-682bc6ba91fa" source="a871da7d-9104-49e3-a8d1-af4179978ffa" target="736de03a-b11d-4651-b3e1-05145dd7a954" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Timeblock" id="3db0a873-ac2f-4790-b235-55613c9a53ca" source="3105ff75-d23d-4313-b80e-52510ad0668a" target="51e8ce92-1432-4726-a982-f8d3e6207311" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="geconsateerdeDefecten" id="46ef9214-1c99-4479-b05e-ede3691d4d07" source="45cf3497-f768-4021-a8c5-4dc9d4ea0527" target="4b5449f2-1603-4461-a444-6d6f693ccd05" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="onderhoudstaken" id="47cfef2d-b8e2-465d-9b5d-cc9328b1939b" source="758fefdd-c153-4803-a0a1-b32d494c919b" target="44fe8098-28ac-44fe-9552-2f84a118342c" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="contactgegevens" id="491a68ae-987c-4220-abe4-82b5e05c1b23" source="a871da7d-9104-49e3-a8d1-af4179978ffa" target="531cc22c-3fef-410a-a68b-bb09950181db" directed="true">
+      <documentation>eng: contactinformation (pl)</documentation>
+    </element>
+    <element xsi:type="archimate:AssociationRelationship" name="onderhoudstaak" id="52076de3-92d4-40b7-b9a2-f708be8726be" source="52ae7e46-b9d3-42e3-9386-31396d6247be" target="44fe8098-28ac-44fe-9552-2f84a118342c" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="LEDOInformation" id="572fc08a-400e-4c3d-9a08-5299f225d3ab" source="674bcce9-3ee4-4524-8291-001eed9f55a2" target="a4548f63-5135-47ea-bbde-0f08df77c101" directed="true">
+      <documentation>&lt;h4>VERA&lt;/h4>&#xD;
+LEDO (Defect) is een aparte klasse en heeft een associatie met Onderhoudsorder (en Inspectierapport)</documentation>
+    </element>
+    <element xsi:type="archimate:AssociationRelationship" name="bouwkundigElement" id="57979024-aa00-4061-ae0d-87b276eea8b0" source="4b5449f2-1603-4461-a444-6d6f693ccd05" target="da74d4e7-5bc5-4216-855d-94beef1b5453" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="MaintenanceLocation" id="58682c34-7882-441e-850a-fa1b15865525" source="b2257c1f-b711-49e3-a7d2-0f4806f20531" target="553d7630-0cfd-418a-8f1a-0d479b9e3d5d" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="GeographicalCoordinates" id="5e6c0a5d-d3b5-40e7-8c05-bd5a0e1f2262" source="553d7630-0cfd-418a-8f1a-0d479b9e3d5d" target="65ac9b8a-13ad-4966-9873-ddf440b56bdb" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Buyer" id="61da41a2-a825-4346-b2dc-24c2e51f2db3" source="80a49fe1-41c4-427e-842e-7185f22ebbdd" target="b38876e8-7c3d-4524-8270-f58097fb1618" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="collectiefObject" id="62e57e22-d6ce-48c1-be45-9d4adc5f00ca" source="4b5449f2-1603-4461-a444-6d6f693ccd05" target="cb3e53ef-e1a6-44e3-b508-cc57860fade5" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="eenheid" id="64370001-0940-4d91-9120-964df6021073" source="4b5449f2-1603-4461-a444-6d6f693ccd05" target="93833387-8e86-4935-91d5-3897b8cf24d1" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Buyer" id="649fc0d5-c6b9-4a6a-a265-6a78c1371c1b" source="13ba271d-f654-4de2-89f8-d3879164b698" target="b38876e8-7c3d-4524-8270-f58097fb1618" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Affiliate" id="668756b8-b727-42af-8198-fe4db32422b1" source="f763ecbb-b4af-4354-b50e-c361242d960d" target="b38876e8-7c3d-4524-8270-f58097fb1618" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="geometrie" id="6748171d-583b-45e4-8349-415f89b6e53d" source="ea29e25d-16d9-4ae6-b365-eda170cd2541" target="b00843ba-7585-4c37-862b-37e1ed7a73cb" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="relatie" id="6de8daf3-da44-4420-ae50-4c94e1ac9057" source="048d8091-471d-4ee8-bec0-cfe6143df3a3" target="a871da7d-9104-49e3-a8d1-af4179978ffa" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="InstructionLine" id="6e187e43-eb6c-4c17-8a9b-63e15511c75f" source="b2257c1f-b711-49e3-a7d2-0f4806f20531" target="674bcce9-3ee4-4524-8291-001eed9f55a2" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="inspectieorder" id="711ee2be-3b09-45e6-845e-7b76c43edc1d" source="45cf3497-f768-4021-a8c5-4dc9d4ea0527" target="f3c52eed-380b-45df-90f9-56f473bfa90b" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="ContactInformation " id="744073cf-43d3-4ba8-be3d-cbdef234b8c5" source="b38876e8-7c3d-4524-8270-f58097fb1618" target="a9a9ca11-4a75-445f-bd5b-c321758fe1ec" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="adres" id="75340a6e-856a-4474-82b0-260e81a3cb5d" source="93833387-8e86-4935-91d5-3897b8cf24d1" target="736de03a-b11d-4651-b3e1-05145dd7a954" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Contractor" id="7c6bc2de-442d-45d6-b56e-1d09ce825beb" source="f763ecbb-b4af-4354-b50e-c361242d960d" target="b38876e8-7c3d-4524-8270-f58097fb1618" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Attachement (mv)" id="8cee4766-302a-41dd-b11c-4ea70496fefa" source="46b2cdba-5bd1-4fe8-8727-9cf590ab252a" target="350d3a24-557e-4a33-bca1-3256b75f287b" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="kenmerken" id="8d49c46b-94eb-4d93-b957-0800b07aad72" source="7a65e2b9-f974-4768-a07b-edd59b71f6fb" target="631268b6-186b-4a8d-a256-19e22104d8aa" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="regels" id="91e1926d-6639-4158-8570-556c5ab94ea3" profiles="id-e40bd314041c4be1a7370fdc2c1747b1" source="f3c52eed-380b-45df-90f9-56f473bfa90b" target="44fe8098-28ac-44fe-9552-2f84a118342c" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="AppointmentDateTimeInformation" id="973d163c-516b-4585-b552-9fca6a5681d8" source="b2257c1f-b711-49e3-a7d2-0f4806f20531" target="55c1df51-4c66-4b3d-bd12-e338e2c89136" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Attachment (mv)" id="9ad85141-04a1-4622-94fe-3a88e0b67889" source="674bcce9-3ee4-4524-8291-001eed9f55a2" target="350d3a24-557e-4a33-bca1-3256b75f287b" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Contractor" id="a757f94b-3224-4a28-ab40-ecbc880183c3" source="13ba271d-f654-4de2-89f8-d3879164b698" target="b38876e8-7c3d-4524-8270-f58097fb1618" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="MaintenanceLocation" id="a7b50992-1b73-48f1-a32e-1f4b747fe4c1" source="80a49fe1-41c4-427e-842e-7185f22ebbdd" target="553d7630-0cfd-418a-8f1a-0d479b9e3d5d" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="InstructionInformation" id="b3468ba4-fbb2-47b2-a422-bb16403145f3" source="b2257c1f-b711-49e3-a7d2-0f4806f20531" target="d256f5b4-a197-4e0f-b981-1ee09e0db931" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="melder" id="b391076c-dd41-425f-845a-18048f980869" source="4b5449f2-1603-4461-a444-6d6f693ccd05" target="a871da7d-9104-49e3-a8d1-af4179978ffa" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="informatieobjecten" id="b56f0c68-54dd-48a3-8366-0e565b2c774a" source="44fe8098-28ac-44fe-9552-2f84a118342c" target="7a65e2b9-f974-4768-a07b-edd59b71f6fb" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="defecten" id="b5b00b14-1ef6-42a2-806e-88fa1572e022" profiles="id-e40bd314041c4be1a7370fdc2c1747b1" source="44fe8098-28ac-44fe-9552-2f84a118342c" target="4b5449f2-1603-4461-a444-6d6f693ccd05" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="cluster" id="baca2450-4d1f-4354-965e-f12cf92176be" source="4b5449f2-1603-4461-a444-6d6f693ccd05" target="ea29e25d-16d9-4ae6-b365-eda170cd2541" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="informatieobjecten" id="bad6c411-4b0c-467f-9e17-d4b9faf26dfa" source="c93f4d88-512d-4d97-baea-544db8ee979d" target="7a65e2b9-f974-4768-a07b-edd59b71f6fb" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="MaintenanceMoment" id="c0ee922c-f21f-4c71-85b2-42ff915fd5d2" source="80a49fe1-41c4-427e-842e-7185f22ebbdd" target="3105ff75-d23d-4313-b80e-52510ad0668a" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="TimeblocksPerWeekday" id="c7a08a88-2d37-4e0d-abe2-8f3967d31cc1" source="3105ff75-d23d-4313-b80e-52510ad0668a" target="199a4d28-4318-4adf-847e-d09ea15293a1" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="ContractReference" id="c804afde-9ecd-4b52-abdb-1f31ca57c856" source="b2257c1f-b711-49e3-a7d2-0f4806f20531" target="d75a0b4a-60ad-44c7-9110-9f72d2036f4a" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="voorkeursAfspraken" id="cbfb5bfd-a05b-49a8-887f-173452ec4a04" source="a74f5265-4ff9-456a-9d58-4e6e81afc5e3" target="23624335-bf1b-46b7-b723-8492c2d16839" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="onderhoudsbestedingen" id="da776496-d511-4852-b47e-039a21491526" source="44fe8098-28ac-44fe-9552-2f84a118342c" target="52ae7e46-b9d3-42e3-9386-31396d6247be" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Contractor" id="dd8a3005-8fcc-478a-b620-bfd9ec2f681d" source="80a49fe1-41c4-427e-842e-7185f22ebbdd" target="b38876e8-7c3d-4524-8270-f58097fb1618" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="afspraken" id="ddb4b620-b853-40fe-9a5d-d10f381f2e4d" source="44fe8098-28ac-44fe-9552-2f84a118342c" target="23624335-bf1b-46b7-b723-8492c2d16839" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="adres" id="de9044e2-e11f-43f9-9654-8fe90960acc1" source="cb3e53ef-e1a6-44e3-b508-cc57860fade5" target="736de03a-b11d-4651-b3e1-05145dd7a954" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="afspraken" id="dfcb2206-b687-478b-92ef-4b1fef4efa56" source="f3c52eed-380b-45df-90f9-56f473bfa90b" target="23624335-bf1b-46b7-b723-8492c2d16839" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="InstructionData" id="e073e944-9180-48dd-ae29-856cf3d51b3a" source="f763ecbb-b4af-4354-b50e-c361242d960d" target="b2257c1f-b711-49e3-a7d2-0f4806f20531" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="contractanten" id="e4043e07-822f-41e0-be73-014b3a3b6470" source="c93f4d88-512d-4d97-baea-544db8ee979d" target="048d8091-471d-4ee8-bec0-cfe6143df3a3" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="onderhoudsorders" id="e53e07b7-57be-4c5d-b0ec-f6ebff73322b" source="a74f5265-4ff9-456a-9d58-4e6e81afc5e3" target="f3c52eed-380b-45df-90f9-56f473bfa90b" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="DeliveryTimeFrame" id="e78f67fa-bd50-4fb4-9c63-d1edb759f5a2" source="55c1df51-4c66-4b3d-bd12-e338e2c89136" target="1a427d74-ae14-47a0-a04a-0082b93d1c0d" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="inspectierapport" id="edee7a82-b4d2-446b-9406-0242d867ef0a" source="4b5449f2-1603-4461-a444-6d6f693ccd05" target="45cf3497-f768-4021-a8c5-4dc9d4ea0527" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="AttachmentCharacteristics (mv)" id="efb42bdc-3cc7-42f1-8a74-a1dfbc15870f" source="350d3a24-557e-4a33-bca1-3256b75f287b" target="89e4e2d6-4941-4f94-a9b8-840176aca178" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="PriceInformation" id="f8a7132d-86cf-4f4c-8a03-2636577ca365" source="674bcce9-3ee4-4524-8291-001eed9f55a2" target="c7f82bb4-0d21-484c-a5a6-63cb41f7abbc" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="InstructionData" id="fbbf26e9-9980-41b6-bde6-f059128bb710" source="46b2cdba-5bd1-4fe8-8727-9cf590ab252a" target="b2257c1f-b711-49e3-a7d2-0f4806f20531" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Standaardprijs" id="fcdd2551-fe39-4959-8e76-1f1fc4da2723" source="758fefdd-c153-4803-a0a1-b32d494c919b" target="ea7235cc-9f38-48c2-913e-136ffa88259d" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Buyer" id="fe8c7687-bf70-4641-bf2b-69239e99efff" source="46b2cdba-5bd1-4fe8-8727-9cf590ab252a" target="2b4894dd-0e8e-456f-b2dd-25363a0f2ba3" directed="true"/>
+    <element xsi:type="archimate:CompositionRelationship" id="06c1fbc6-1bee-4c17-bcc8-7210aa853142" source="44fe8098-28ac-44fe-9552-2f84a118342c" target="fcebdb67-bfba-4723-8ab7-09141132c203"/>
+    <element xsi:type="archimate:CompositionRelationship" id="2975f23d-86d8-4daa-b1ef-ecf44db548e8" source="758fefdd-c153-4803-a0a1-b32d494c919b" target="ee28d52a-7c0d-47f6-b573-044d3f4f0b12"/>
+    <element xsi:type="archimate:CompositionRelationship" id="29915c26-158d-4ff2-b5b9-03393ef27039" source="f3c52eed-380b-45df-90f9-56f473bfa90b" target="de54f333-68d1-426f-8194-74b9a9a6a30b"/>
+    <element xsi:type="archimate:CompositionRelationship" id="2e29128b-fd72-4731-963e-d8b38123fe8d" source="a74f5265-4ff9-456a-9d58-4e6e81afc5e3" target="688d1d32-eecd-4a6a-9faa-4d0b89c314e3"/>
+    <element xsi:type="archimate:CompositionRelationship" id="378fd04b-82e4-4b48-9a23-0ec51344659d" source="f3c52eed-380b-45df-90f9-56f473bfa90b" target="b759c41f-8998-49c8-900c-ffacab24903b"/>
+    <element xsi:type="archimate:CompositionRelationship" id="463f9e75-30f7-4eba-8ac7-f9a88bf15fe6" source="44fe8098-28ac-44fe-9552-2f84a118342c" target="31aebbd3-c597-4b98-9ec3-40ac36a776f5"/>
+    <element xsi:type="archimate:CompositionRelationship" id="4cd453a7-2ac5-4aff-b67b-17cb9c4b546a" source="531cc22c-3fef-410a-a68b-bb09950181db" target="95358244-5ebd-49df-8d37-f41f668457b6"/>
+    <element xsi:type="archimate:CompositionRelationship" id="5e2af6f9-fe4f-47e5-9171-696c358b71fa" source="44fe8098-28ac-44fe-9552-2f84a118342c" target="1d43f3da-8d69-4661-bfd5-c5bbcbbff72d"/>
+    <element xsi:type="archimate:CompositionRelationship" id="73e2ae01-6094-44ee-b8ae-7047655f5103" source="f3c52eed-380b-45df-90f9-56f473bfa90b" target="afe24e83-c1a7-4f93-a5bf-70a4007691f7"/>
+    <element xsi:type="archimate:CompositionRelationship" id="9133082b-eed3-4d54-8112-1d19aef9a83d" source="4b5449f2-1603-4461-a444-6d6f693ccd05" target="aef845ba-6e3d-40c9-8365-5fd1bc8bf517"/>
+    <element xsi:type="archimate:CompositionRelationship" id="976fd6fb-f82a-4654-96f7-8540e2a8ee20" source="7a65e2b9-f974-4768-a07b-edd59b71f6fb" target="9c7e2246-38ce-4eda-a2f3-5c1e06ae8d70"/>
+    <element xsi:type="archimate:CompositionRelationship" id="9fec31e7-df3f-40a4-8fac-1406a82cb0d0" source="4b5449f2-1603-4461-a444-6d6f693ccd05" target="a3bd2fe5-1ad2-4ad8-8406-099ddf19c97f"/>
+    <element xsi:type="archimate:CompositionRelationship" id="b5493ca7-d265-4759-b5c3-9137ab7cbb73" source="7a65e2b9-f974-4768-a07b-edd59b71f6fb" target="d349f694-c09d-43a7-b8de-37ff6d0aa4cb"/>
+    <element xsi:type="archimate:CompositionRelationship" id="e38cec10-81b5-419c-be83-af583c17bfc6" source="531cc22c-3fef-410a-a68b-bb09950181db" target="0cb1a96f-cad6-4659-8189-2f7200e41b11"/>
+    <element xsi:type="archimate:CompositionRelationship" id="f3a5e80e-587e-4b88-b00c-19acc3a499d2" source="7a65e2b9-f974-4768-a07b-edd59b71f6fb" target="3ff84259-50e6-4301-999b-777ab12e6ea8"/>
+    <element xsi:type="archimate:CompositionRelationship" id="fb5cb09b-35e7-45a2-a0d1-0cf33a8174ef" source="4b5449f2-1603-4461-a444-6d6f693ccd05" target="122bde83-01b9-4721-acc2-0d651f037302"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="0fada000-9ae3-45e3-a5c9-00815b8a49ac" source="b4814e35-6889-413a-a292-e1cc63bbbe76" target="a871da7d-9104-49e3-a8d1-af4179978ffa"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="a4e2870d-9191-441d-a534-0c36b71cb0fb" source="3780fe32-bfaa-4ce2-86e6-a8a49129b6e5" target="a871da7d-9104-49e3-a8d1-af4179978ffa"/>
+    <element xsi:type="archimate:AssociationRelationship" name="offertes" id="27b66f11-f816-4841-b34e-7e14337cf29d" source="f3c52eed-380b-45df-90f9-56f473bfa90b" target="74b62ea9-652e-447c-aedb-0a43e5f9e737" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="offerteregels" id="229e39c8-078c-4920-87da-291f5303efbb" source="74b62ea9-652e-447c-aedb-0a43e5f9e737" target="758fefdd-c153-4803-a0a1-b32d494c919b" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="offerte" id="fb26752b-81c6-4794-b7a3-dd73dc1833c3" source="e6988cfc-8c60-4a54-8767-6f82311bbd82" target="74b62ea9-652e-447c-aedb-0a43e5f9e737" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="defecten" id="34e45b78-f494-4817-bc7a-ad6687ffade4" profiles="id-e40bd314041c4be1a7370fdc2c1747b1" source="a74f5265-4ff9-456a-9d58-4e6e81afc5e3" target="4b5449f2-1603-4461-a444-6d6f693ccd05" directed="true"/>
+    <element xsi:type="archimate:AssociationRelationship" name="onderhoudsorder" id="85b0efd7-149e-42ec-9209-42065a94138e" source="74b62ea9-652e-447c-aedb-0a43e5f9e737" target="f3c52eed-380b-45df-90f9-56f473bfa90b" directed="true"/>
+    <element xsi:type="archimate:CompositionRelationship" id="47780117-721a-44b1-9177-369b4aa43e44" source="f3c52eed-380b-45df-90f9-56f473bfa90b" target="1eb1fc18-cb1c-47da-8f05-8f98ff42f971"/>
+    <element xsi:type="archimate:CompositionRelationship" id="5b23623c-ba27-4baf-92d5-76065b52b30b" source="23624335-bf1b-46b7-b723-8492c2d16839" target="fcebdb67-bfba-4723-8ab7-09141132c203"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-bf339a8e488b4cbfb6bfde65a0d39701" source="id-ef91ec24ce19492e971bdcea61f3be34" target="id-70dea22f88e740f5945bdb45565cc5b9"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-dba56a03ff30469798221f69ddeb43f6" source="id-94bc1f8f8f844166acdcacb448a28ae8" target="id-ef91ec24ce19492e971bdcea61f3be34"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-475969c07cf945b5877b2ee191bf2439" source="id-5887c390d6d94eca9558894002aa24f3" target="a74f5265-4ff9-456a-9d58-4e6e81afc5e3"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-5380699110bc4797bd7733bba599a554" source="id-5887c390d6d94eca9558894002aa24f3" target="id-63eff3c23def48d0ae90d8ad620560c5"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-e28bd71bb7244abb835eecdd3e624046" source="id-5887c390d6d94eca9558894002aa24f3" target="4b5449f2-1603-4461-a444-6d6f693ccd05"/>
+    <element xsi:type="archimate:AssociationRelationship" name="locatie" id="id-66ea72e0e8b8436e8b20bd221631602c" profiles="id-ce6360520eaf4e419db5a4f0249cd775" source="a74f5265-4ff9-456a-9d58-4e6e81afc5e3" target="id-63eff3c23def48d0ae90d8ad620560c5" directed="true"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-fb9e0763444f402ba1e7773d8e423f16" source="id-5887c390d6d94eca9558894002aa24f3" target="7a65e2b9-f974-4768-a07b-edd59b71f6fb"/>
+    <element xsi:type="archimate:AssociationRelationship" name="bijlagen" id="id-30bdca39042a4d719890275f45b08cd7" profiles="id-fe41383b84844664867ca83018bad46f" source="4b5449f2-1603-4461-a444-6d6f693ccd05" target="7a65e2b9-f974-4768-a07b-edd59b71f6fb" directed="true"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-7e7ac9085cbb4955a2f96b3b9f6eb87c" source="id-5887c390d6d94eca9558894002aa24f3" target="a871da7d-9104-49e3-a8d1-af4179978ffa"/>
+    <element xsi:type="archimate:AssociationRelationship" name="melder" id="id-eeb04c4f2ebf4246b0e5a79361454329" profiles="id-770b8ad39f89457ba4ecff5775e99dc3" source="a74f5265-4ff9-456a-9d58-4e6e81afc5e3" target="a871da7d-9104-49e3-a8d1-af4179978ffa" directed="true"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-3ec8df626195492e90fd4a2f55ed510f" source="id-71fee2f8a53b4664b0dd3c159cded8f8" target="f3c52eed-380b-45df-90f9-56f473bfa90b"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-9822fd1dd3154ca49740aa97a8e43904" source="id-71fee2f8a53b4664b0dd3c159cded8f8" target="id-63eff3c23def48d0ae90d8ad620560c5"/>
+    <element xsi:type="archimate:AssociationRelationship" name="onderhoudslocatie" id="id-af87c2a005a54a3aa41bda599b799328" profiles="id-ce6360520eaf4e419db5a4f0249cd775" source="f3c52eed-380b-45df-90f9-56f473bfa90b" target="id-63eff3c23def48d0ae90d8ad620560c5" directed="true"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ae7bedfeb3c1441da2eec234750b57bb" source="id-71fee2f8a53b4664b0dd3c159cded8f8" target="44fe8098-28ac-44fe-9552-2f84a118342c"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-b0f7223732944077ae4b29bbcf079937" source="id-71fee2f8a53b4664b0dd3c159cded8f8" target="4b5449f2-1603-4461-a444-6d6f693ccd05"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-8f35f00def9d4130bc610e6ed8e820ce" source="id-71fee2f8a53b4664b0dd3c159cded8f8" target="7a65e2b9-f974-4768-a07b-edd59b71f6fb"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-35ccc98d5ff742ec9debf4b8ba2e37b6" source="id-71fee2f8a53b4664b0dd3c159cded8f8" target="ea7235cc-9f38-48c2-913e-136ffa88259d"/>
+    <element xsi:type="archimate:AssociationRelationship" name="prijs" id="id-d9dfb9123c76485599499d894441759b" profiles="id-770b8ad39f89457ba4ecff5775e99dc3" source="44fe8098-28ac-44fe-9552-2f84a118342c" target="ea7235cc-9f38-48c2-913e-136ffa88259d" directed="true"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-41972b1d761a4bc384fee128336a5d83" source="id-71fee2f8a53b4664b0dd3c159cded8f8" target="a871da7d-9104-49e3-a8d1-af4179978ffa"/>
+    <element xsi:type="archimate:AssociationRelationship" name="debiteur" id="id-c74a444fdf1a4ba98780428ef8289e99" profiles="id-770b8ad39f89457ba4ecff5775e99dc3" source="f3c52eed-380b-45df-90f9-56f473bfa90b" target="a871da7d-9104-49e3-a8d1-af4179978ffa" directed="true">
+      <documentation>De relatie waar de factuur naartoe moet</documentation>
+    </element>
+    <element xsi:type="archimate:AssociationRelationship" name="contactpersoon" id="id-bb2431c419e942f6b7b2770bdf358329" profiles="id-770b8ad39f89457ba4ecff5775e99dc3" source="f3c52eed-380b-45df-90f9-56f473bfa90b" target="a871da7d-9104-49e3-a8d1-af4179978ffa" directed="true">
+      <documentation>De relatie waarmee contact opgenomen kan worden voor de planning en afhandeling van de onderhoudsorder. Vaak is dit de bewoner van het object die ook de melding heeft gedaan.</documentation>
+    </element>
+    <element xsi:type="archimate:CompositionRelationship" id="id-fa43a01f98fe42dc85850248f295ff61" source="id-21f2436c724b4e8f88ab2729f738a976" target="id-60dcba9b76be4db089c80a06745d7e20"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-46a7813e618d401dabd5ed4e3dd45440" source="id-21f2436c724b4e8f88ab2729f738a976" target="f3c52eed-380b-45df-90f9-56f473bfa90b"/>
+    <element xsi:type="archimate:AssociationRelationship" name="onderhoudsorder" id="id-0a7e4b9d0b514216ae68ee2d03e9a454" profiles="id-ce6360520eaf4e419db5a4f0249cd775" source="id-60dcba9b76be4db089c80a06745d7e20" target="f3c52eed-380b-45df-90f9-56f473bfa90b" directed="true"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-a62ba747770e48c180d5f3db4768e627" source="id-21f2436c724b4e8f88ab2729f738a976" target="id-63eff3c23def48d0ae90d8ad620560c5"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-99ffb0f5a9f644e18651712c57a30c95" source="id-299e6a782a0240ca82a55cbae10ba6c9" target="f3c52eed-380b-45df-90f9-56f473bfa90b"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-83939a4d5d8f4bc890ee339383c40939" source="id-299e6a782a0240ca82a55cbae10ba6c9" target="id-aac3ee88325e40cc8f9a1c8767e97b53"/>
+    <element xsi:type="archimate:AssociationRelationship" name="afspraken" id="id-877cd388b8054bf48692bc63873fa8df" profiles="id-fe41383b84844664867ca83018bad46f" source="f3c52eed-380b-45df-90f9-56f473bfa90b" target="id-aac3ee88325e40cc8f9a1c8767e97b53" directed="true"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-9a5e52aad27a403b99375819318de496" source="id-299e6a782a0240ca82a55cbae10ba6c9" target="id-60dcba9b76be4db089c80a06745d7e20"/>
+    <element xsi:type="archimate:AssociationRelationship" name="optie" id="id-907a2ee22f4f4706ba25a1c8cff904e3" profiles="id-770b8ad39f89457ba4ecff5775e99dc3" source="id-aac3ee88325e40cc8f9a1c8767e97b53" target="id-60dcba9b76be4db089c80a06745d7e20" directed="true"/>
+  </folder>
+  <folder name="Views" id="0e5a0d5a-cda8-4cd0-bf0b-713c8d485f5c" type="diagrams">
+    <folder name="Berichten" id="id-9b2dc29cbfd6477d8b4cf9c894d81fd3">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Aanmaken onderhoudsverzoek reparatie zonder planning" id="id-354a7fb974ca4d7eb58fa5ae6fd5c8f2">
+        <child xsi:type="archimate:DiagramObject" id="id-8829dcd5d118458bbf62e0730098314b" fillColor="#ffffff" archimateElement="id-5887c390d6d94eca9558894002aa24f3" type="1">
+          <bounds x="12" y="24" width="505" height="385"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ddc435db69de429caf33d2fcac0d459b" source="id-8829dcd5d118458bbf62e0730098314b" target="id-83aa9ba58be14b7faaf52390018e2459" archimateRelationship="id-475969c07cf945b5877b2ee191bf2439"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-fce36673f8cd43f6b2043c844e27d034" source="id-8829dcd5d118458bbf62e0730098314b" target="id-55a9739c347048faab3b674047178aaa" archimateRelationship="id-5380699110bc4797bd7733bba599a554"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-707dba33ac0d4dd58b867789c53b719c" source="id-8829dcd5d118458bbf62e0730098314b" target="id-26c8bfa61eae4d7ca51b64b256882f39" archimateRelationship="id-e28bd71bb7244abb835eecdd3e624046"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e79016225e144bebbc65c2a27f60eec9" source="id-8829dcd5d118458bbf62e0730098314b" target="id-154958add6764969a11e42bf67ff48e5" archimateRelationship="id-fb9e0763444f402ba1e7773d8e423f16"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a9b9b20084064178a061a50dd6058f1a" source="id-8829dcd5d118458bbf62e0730098314b" target="id-5a6f73e4a44847ca8df7114375f82ae3" archimateRelationship="id-7e7ac9085cbb4955a2f96b3b9f6eb87c"/>
+          <child xsi:type="archimate:DiagramObject" id="id-83aa9ba58be14b7faaf52390018e2459" targetConnections="id-ddc435db69de429caf33d2fcac0d459b" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" textPosition="1" archimateElement="a74f5265-4ff9-456a-9d58-4e6e81afc5e3" type="1">
+            <bounds x="36" y="168" width="133" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-1c2f754101794ffdb22be4f0f93de866" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="id-83aa9ba58be14b7faaf52390018e2459" target="id-26c8bfa61eae4d7ca51b64b256882f39" archimateRelationship="34e45b78-f494-4817-bc7a-ad6687ffade4"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-229c3423b41241cc98bdebca038905ed" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="id-83aa9ba58be14b7faaf52390018e2459" target="id-55a9739c347048faab3b674047178aaa" archimateRelationship="id-66ea72e0e8b8436e8b20bd221631602c">
+              <bendpoint startY="-111" endX="-180" endY="-3"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="id-bdac2f2ab2034f5eacb65edf071ffd63" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="id-83aa9ba58be14b7faaf52390018e2459" target="id-5a6f73e4a44847ca8df7114375f82ae3" archimateRelationship="id-eeb04c4f2ebf4246b0e5a79361454329"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-55a9739c347048faab3b674047178aaa" targetConnections="id-fce36673f8cd43f6b2043c844e27d034 id-229c3423b41241cc98bdebca038905ed" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#b5ffff" textPosition="1" archimateElement="id-63eff3c23def48d0ae90d8ad620560c5" type="1">
+            <bounds x="216" y="60" width="133" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-26c8bfa61eae4d7ca51b64b256882f39" targetConnections="id-1c2f754101794ffdb22be4f0f93de866 id-707dba33ac0d4dd58b867789c53b719c" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#b5ffff" textPosition="1" archimateElement="4b5449f2-1603-4461-a444-6d6f693ccd05" type="1">
+            <bounds x="335" y="168" width="133" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-9c8a0f93f91a40229a18ebf4c7d4db23" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="id-26c8bfa61eae4d7ca51b64b256882f39" target="id-154958add6764969a11e42bf67ff48e5" archimateRelationship="id-30bdca39042a4d719890275f45b08cd7"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-154958add6764969a11e42bf67ff48e5" targetConnections="id-e79016225e144bebbc65c2a27f60eec9 id-9c8a0f93f91a40229a18ebf4c7d4db23" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#b5ffff" textPosition="1" archimateElement="7a65e2b9-f974-4768-a07b-edd59b71f6fb" type="1">
+            <bounds x="335" y="300" width="133" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-5a6f73e4a44847ca8df7114375f82ae3" targetConnections="id-a9b9b20084064178a061a50dd6058f1a id-bdac2f2ab2034f5eacb65edf071ffd63" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#b5ffff" textPosition="1" archimateElement="a871da7d-9104-49e3-a8d1-af4179978ffa" type="1">
+            <bounds x="36" y="300" width="133" height="55"/>
+          </child>
+        </child>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Aanmaken onderhoudsorder reparatie zonder planning" id="id-a2a0adae447b4683b4b426c00e9a3975">
+        <child xsi:type="archimate:DiagramObject" id="id-50bf4c68651a41568ae0143f6ceace5d" fillColor="#ffffff" archimateElement="id-71fee2f8a53b4664b0dd3c159cded8f8" type="1">
+          <bounds width="685" height="361"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d242c42b04c647baababf61d7221c17d" source="id-50bf4c68651a41568ae0143f6ceace5d" target="id-b83d555352984a20af4bf410b84cc1c6" archimateRelationship="id-3ec8df626195492e90fd4a2f55ed510f"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-720c229c298d462582295cceeca980f7" source="id-50bf4c68651a41568ae0143f6ceace5d" target="id-35bf1ad94ac7434eb986c5082b8aea61" archimateRelationship="id-9822fd1dd3154ca49740aa97a8e43904"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b98d76a640d54ac896a9a4d5cd0803f3" source="id-50bf4c68651a41568ae0143f6ceace5d" target="id-a74c0cefc00f48899a7fb49c82ce59cb" archimateRelationship="id-ae7bedfeb3c1441da2eec234750b57bb"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-4078312629e246cfb26f4d0dc139e6f0" source="id-50bf4c68651a41568ae0143f6ceace5d" target="id-8be7eedebdcd466e9ff78127c2822608" archimateRelationship="id-b0f7223732944077ae4b29bbcf079937"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-345f25a2c7e54ef6bba2aac41db70835" source="id-50bf4c68651a41568ae0143f6ceace5d" target="id-1288de69ca374357928bf78df16d94a1" archimateRelationship="id-8f35f00def9d4130bc610e6ed8e820ce"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b8d8d0be417f4c53a3c007904b78a8a3" source="id-50bf4c68651a41568ae0143f6ceace5d" target="id-8805b7d15864410b8f223e546b5fcd03" archimateRelationship="id-35ccc98d5ff742ec9debf4b8ba2e37b6"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-dc67d9df60094e96b5b9446b0ed9347d" source="id-50bf4c68651a41568ae0143f6ceace5d" target="id-20c8da5a47424a6abc69a95b2b05ae53" archimateRelationship="id-41972b1d761a4bc384fee128336a5d83"/>
+          <child xsi:type="archimate:DiagramObject" id="id-b83d555352984a20af4bf410b84cc1c6" targetConnections="id-d242c42b04c647baababf61d7221c17d" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" textPosition="1" archimateElement="f3c52eed-380b-45df-90f9-56f473bfa90b" type="1">
+            <bounds x="36" y="168" width="145" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-82e1161cb41e40deb97331f11137825a" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="id-b83d555352984a20af4bf410b84cc1c6" target="id-35bf1ad94ac7434eb986c5082b8aea61" archimateRelationship="id-af87c2a005a54a3aa41bda599b799328">
+              <bendpoint startX="18" startY="-111" endX="-210" endY="-3"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="id-ba86ba6f1c9a46bab258c3cd934875ad" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="id-b83d555352984a20af4bf410b84cc1c6" target="id-a74c0cefc00f48899a7fb49c82ce59cb" archimateRelationship="91e1926d-6639-4158-8570-556c5ab94ea3"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-964ac2775ac1473aac16137c67cb2ff9" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="id-b83d555352984a20af4bf410b84cc1c6" target="id-20c8da5a47424a6abc69a95b2b05ae53" archimateRelationship="id-c74a444fdf1a4ba98780428ef8289e99">
+              <bendpoint startX="36" startY="57" endX="36" endY="-63"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="id-8d2728673d454822beca24fd4088d912" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="id-b83d555352984a20af4bf410b84cc1c6" target="id-20c8da5a47424a6abc69a95b2b05ae53" archimateRelationship="id-bb2431c419e942f6b7b2770bdf358329">
+              <bendpoint startX="-48" startY="69" endX="-48" endY="-51"/>
+            </sourceConnection>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-35bf1ad94ac7434eb986c5082b8aea61" targetConnections="id-720c229c298d462582295cceeca980f7 id-82e1161cb41e40deb97331f11137825a" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#b5ffff" textPosition="1" archimateElement="id-63eff3c23def48d0ae90d8ad620560c5" type="1">
+            <bounds x="264" y="60" width="145" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-a74c0cefc00f48899a7fb49c82ce59cb" targetConnections="id-ba86ba6f1c9a46bab258c3cd934875ad id-b98d76a640d54ac896a9a4d5cd0803f3" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#b5ffff" textPosition="1" archimateElement="44fe8098-28ac-44fe-9552-2f84a118342c" type="1">
+            <bounds x="264" y="168" width="145" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-393cebf5841b455bac1161a22c37e993" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="id-a74c0cefc00f48899a7fb49c82ce59cb" target="id-8805b7d15864410b8f223e546b5fcd03" archimateRelationship="id-d9dfb9123c76485599499d894441759b"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-5205071a58564e6d87d41948640656f5" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="id-a74c0cefc00f48899a7fb49c82ce59cb" target="id-8be7eedebdcd466e9ff78127c2822608" archimateRelationship="b5b00b14-1ef6-42a2-806e-88fa1572e022"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-8be7eedebdcd466e9ff78127c2822608" targetConnections="id-4078312629e246cfb26f4d0dc139e6f0 id-5205071a58564e6d87d41948640656f5" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#b5ffff" textPosition="1" archimateElement="4b5449f2-1603-4461-a444-6d6f693ccd05" type="1">
+            <bounds x="516" y="168" width="145" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-08c7e885150b48798814f5c99ada0e74" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="id-8be7eedebdcd466e9ff78127c2822608" target="id-1288de69ca374357928bf78df16d94a1" archimateRelationship="id-30bdca39042a4d719890275f45b08cd7"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-1288de69ca374357928bf78df16d94a1" targetConnections="id-08c7e885150b48798814f5c99ada0e74 id-345f25a2c7e54ef6bba2aac41db70835" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#b5ffff" textPosition="1" archimateElement="7a65e2b9-f974-4768-a07b-edd59b71f6fb" type="1">
+            <bounds x="516" y="288" width="145" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-8805b7d15864410b8f223e546b5fcd03" targetConnections="id-b8d8d0be417f4c53a3c007904b78a8a3 id-393cebf5841b455bac1161a22c37e993" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#b5ffff" textPosition="1" archimateElement="ea7235cc-9f38-48c2-913e-136ffa88259d" type="1">
+            <bounds x="264" y="288" width="145" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-20c8da5a47424a6abc69a95b2b05ae53" targetConnections="id-dc67d9df60094e96b5b9446b0ed9347d id-964ac2775ac1473aac16137c67cb2ff9 id-8d2728673d454822beca24fd4088d912" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#b5ffff" textPosition="1" archimateElement="a871da7d-9104-49e3-a8d1-af4179978ffa" type="1">
+            <bounds x="36" y="288" width="145" height="55"/>
+          </child>
+        </child>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Opvragen afspraakopties" id="id-a5522ec26ba64821b887ad3499bc20da">
+        <child xsi:type="archimate:DiagramObject" id="id-034a723f9f0744a8acbf179329433ddd" fillColor="#ffffff" archimateElement="id-21f2436c724b4e8f88ab2729f738a976" type="1">
+          <bounds width="457" height="253"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d7e098d58a934decb266d06585f27960" source="id-034a723f9f0744a8acbf179329433ddd" target="id-541d1db3332b41a7aceaa13ec0854afb" archimateRelationship="id-fa43a01f98fe42dc85850248f295ff61"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-2ca636907623432ca93190077d6ca954" source="id-034a723f9f0744a8acbf179329433ddd" target="id-ed383933d94445f9a53cf6854f05291c" archimateRelationship="id-46a7813e618d401dabd5ed4e3dd45440"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8cc99925066447cf806dc692a8ea7b2b" source="id-034a723f9f0744a8acbf179329433ddd" target="id-f9e630867ab14ee1a89d0f2be48afb4f" archimateRelationship="id-a62ba747770e48c180d5f3db4768e627"/>
+          <child xsi:type="archimate:DiagramObject" id="id-541d1db3332b41a7aceaa13ec0854afb" targetConnections="id-d7e098d58a934decb266d06585f27960" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" textPosition="1" archimateElement="id-60dcba9b76be4db089c80a06745d7e20" type="1">
+            <bounds x="36" y="60" width="145" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-5bb4952e500f427b94f53c645abfb9a0" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="id-541d1db3332b41a7aceaa13ec0854afb" target="id-ed383933d94445f9a53cf6854f05291c" archimateRelationship="id-0a7e4b9d0b514216ae68ee2d03e9a454"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-ed383933d94445f9a53cf6854f05291c" targetConnections="id-2ca636907623432ca93190077d6ca954 id-5bb4952e500f427b94f53c645abfb9a0" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" textPosition="1" archimateElement="f3c52eed-380b-45df-90f9-56f473bfa90b" type="1">
+            <bounds x="36" y="180" width="145" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-4c665b79694e47ec876421bdb5b4f8bf" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="id-ed383933d94445f9a53cf6854f05291c" target="id-f9e630867ab14ee1a89d0f2be48afb4f" archimateRelationship="id-af87c2a005a54a3aa41bda599b799328"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-f9e630867ab14ee1a89d0f2be48afb4f" targetConnections="id-4c665b79694e47ec876421bdb5b4f8bf id-8cc99925066447cf806dc692a8ea7b2b" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" textPosition="1" archimateElement="id-63eff3c23def48d0ae90d8ad620560c5" type="1">
+            <bounds x="312" y="180" width="120" height="55"/>
+          </child>
+        </child>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Vastleggen afspraak" id="id-9164210f7a654576b1605409f8605664">
+        <child xsi:type="archimate:DiagramObject" id="id-c868679b35744a29b544df62f52b0106" fillColor="#ffffff" archimateElement="id-299e6a782a0240ca82a55cbae10ba6c9" type="1">
+          <bounds x="12" y="12" width="301" height="385"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-73be6281be0a452aac06e0a061ed7bd9" source="id-c868679b35744a29b544df62f52b0106" target="id-3e9b1939105249e6860410ffaecf030b" archimateRelationship="id-99ffb0f5a9f644e18651712c57a30c95"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-88110a0c17f842a7bd68a71e24bcfa73" source="id-c868679b35744a29b544df62f52b0106" target="id-90171e15879340e589e937fed77b9662" archimateRelationship="id-83939a4d5d8f4bc890ee339383c40939"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b6c09f1c2adb4c09ae60357bd1fc654a" source="id-c868679b35744a29b544df62f52b0106" target="id-b2db448df1ce4f29b983f4d70b2b5fe2" archimateRelationship="id-9a5e52aad27a403b99375819318de496"/>
+          <child xsi:type="archimate:DiagramObject" id="id-3e9b1939105249e6860410ffaecf030b" targetConnections="id-73be6281be0a452aac06e0a061ed7bd9" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" textPosition="1" archimateElement="f3c52eed-380b-45df-90f9-56f473bfa90b" type="1">
+            <bounds x="60" y="72" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-f922511dcdbe4b6eb09359ad7a2560e7" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="id-3e9b1939105249e6860410ffaecf030b" target="id-90171e15879340e589e937fed77b9662" archimateRelationship="id-877cd388b8054bf48692bc63873fa8df"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-90171e15879340e589e937fed77b9662" targetConnections="id-88110a0c17f842a7bd68a71e24bcfa73 id-f922511dcdbe4b6eb09359ad7a2560e7" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" textPosition="1" archimateElement="id-aac3ee88325e40cc8f9a1c8767e97b53" type="1">
+            <bounds x="60" y="192" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-0cae84bc61dd4ed8b6a0971276b51cfb" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="id-90171e15879340e589e937fed77b9662" target="id-b2db448df1ce4f29b983f4d70b2b5fe2" archimateRelationship="id-907a2ee22f4f4706ba25a1c8cff904e3"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-b2db448df1ce4f29b983f4d70b2b5fe2" targetConnections="id-b6c09f1c2adb4c09ae60357bd1fc654a id-0cae84bc61dd4ed8b6a0971276b51cfb" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" textPosition="1" archimateElement="id-60dcba9b76be4db089c80a06745d7e20" type="1">
+            <bounds x="60" y="312" width="120" height="55"/>
+          </child>
+        </child>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Foto aanleveren door corporatie" id="id-33790031b39142619d776add144468ab">
+        <child xsi:type="archimate:DiagramObject" id="id-2fb3f0e351a341098cd9423c745657e6" archimateElement="f3c52eed-380b-45df-90f9-56f473bfa90b">
+          <bounds x="348" y="192" width="145" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7052b706bea64e2c81300b914cd008db" source="id-2fb3f0e351a341098cd9423c745657e6" target="id-70fa9ea0b0ce4a81897269e761abea77" archimateRelationship="31c40c9c-d8aa-4aa0-b222-37fe8e70697a">
+            <bendpoint startY="93" endX="-144" endY="-3"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-70fa9ea0b0ce4a81897269e761abea77" targetConnections="id-7052b706bea64e2c81300b914cd008db" archimateElement="7a65e2b9-f974-4768-a07b-edd59b71f6fb">
+          <bounds x="504" y="288" width="120" height="55"/>
+        </child>
+      </element>
+    </folder>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Referentiedata" id="2226316f-0278-4552-9fc5-9309c2b1e16a">
+      <child xsi:type="archimate:DiagramObject" id="dc058783-768b-42b6-9ece-ea14006f7e96" fontColor="#ffffff" fillColor="#6c9200" archimateElement="f3c52eed-380b-45df-90f9-56f473bfa90b" type="1">
+        <bounds x="312" y="94" width="488" height="59"/>
+        <sourceConnection xsi:type="archimate:Connection" id="04a2573b-200b-4090-9248-f87b1cc58922" source="dc058783-768b-42b6-9ece-ea14006f7e96" target="96c6633b-cec3-45fa-b02c-91cce0911931" archimateRelationship="73e2ae01-6094-44ee-b8ae-7047655f5103"/>
+        <sourceConnection xsi:type="archimate:Connection" id="2a8ff45b-d9e1-4ce0-8bb0-2c197d50d2d6" source="dc058783-768b-42b6-9ece-ea14006f7e96" target="bf9acb01-b6b9-47b1-9995-a0e95ce6ab59" archimateRelationship="378fd04b-82e4-4b48-9a23-0ec51344659d"/>
+        <sourceConnection xsi:type="archimate:Connection" id="b56c06cb-7f4a-4e24-be9d-1570b31b7fe2" source="dc058783-768b-42b6-9ece-ea14006f7e96" target="5fe811b7-0d06-48e9-b7bb-1975bb6a3893" archimateRelationship="29915c26-158d-4ff2-b5b9-03393ef27039"/>
+        <sourceConnection xsi:type="archimate:Connection" id="efd70c77-a4fe-4f6e-b2ff-08bfdc59073c" source="dc058783-768b-42b6-9ece-ea14006f7e96" target="28054eba-f75c-4da2-8d69-fd7aad57299b" archimateRelationship="47780117-721a-44b1-9177-369b4aa43e44"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="96c6633b-cec3-45fa-b02c-91cce0911931" targetConnections="04a2573b-200b-4090-9248-f87b1cc58922" archimateElement="afe24e83-c1a7-4f93-a5bf-70a4007691f7" type="1">
+        <bounds x="264" y="276" width="133" height="57"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="c6cae104-076d-4f73-b538-2e43d924f89a" targetConnections="e302fadb-91ff-4696-b22b-e37af528bccc" archimateElement="d349f694-c09d-43a7-b8de-37ff6d0aa4cb" type="1">
+        <bounds x="798" y="685" width="217" height="60"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="94eb817b-9083-4588-8d43-0f2581d78313" targetConnections="0cbe4ea7-54ff-42d7-9281-ae48cd3bdb45" archimateElement="3ff84259-50e6-4301-999b-777ab12e6ea8" type="1">
+        <bounds x="1026" y="686" width="193" height="58"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="e30204b4-3455-4f15-a3b4-06d5743c042d" targetConnections="68886a98-0de1-4698-b04a-cee9ce337fb8" archimateElement="9c7e2246-38ce-4eda-a2f3-5c1e06ae8d70" type="1">
+        <bounds x="1242" y="687" width="193" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="a1ddc651-87ab-49cf-91ea-d59b2d29ced0" fontColor="#ffffff" fillColor="#b9b973" archimateElement="7a65e2b9-f974-4768-a07b-edd59b71f6fb" type="1">
+        <bounds x="948" y="516" width="349" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="e302fadb-91ff-4696-b22b-e37af528bccc" source="a1ddc651-87ab-49cf-91ea-d59b2d29ced0" target="c6cae104-076d-4f73-b538-2e43d924f89a" archimateRelationship="b5493ca7-d265-4759-b5c3-9137ab7cbb73"/>
+        <sourceConnection xsi:type="archimate:Connection" id="68886a98-0de1-4698-b04a-cee9ce337fb8" source="a1ddc651-87ab-49cf-91ea-d59b2d29ced0" target="e30204b4-3455-4f15-a3b4-06d5743c042d" archimateRelationship="976fd6fb-f82a-4654-96f7-8540e2a8ee20"/>
+        <sourceConnection xsi:type="archimate:Connection" id="0cbe4ea7-54ff-42d7-9281-ae48cd3bdb45" source="a1ddc651-87ab-49cf-91ea-d59b2d29ced0" target="94eb817b-9083-4588-8d43-0f2581d78313" archimateRelationship="f3a5e80e-587e-4b88-b00c-19acc3a499d2"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="bf9acb01-b6b9-47b1-9995-a0e95ce6ab59" targetConnections="2a8ff45b-d9e1-4ce0-8bb0-2c197d50d2d6" archimateElement="b759c41f-8998-49c8-900c-ffacab24903b" type="1">
+        <bounds x="570" y="276" width="229" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="d453ec4e-d8b8-4246-b2de-8438ff8e6f47" fontColor="#ffffff" fillColor="#0099cc" archimateElement="531cc22c-3fef-410a-a68b-bb09950181db" type="1">
+        <bounds x="240" y="528" width="384" height="64"/>
+        <sourceConnection xsi:type="archimate:Connection" id="a87eacd9-9dfe-4064-b26a-4226efa10358" source="d453ec4e-d8b8-4246-b2de-8438ff8e6f47" target="0b2b3fc9-4288-4a63-a67d-1551cfb57097" archimateRelationship="e38cec10-81b5-419c-be83-af583c17bfc6"/>
+        <sourceConnection xsi:type="archimate:Connection" id="b8be49c1-4512-4d79-9100-a0ca99152c28" source="d453ec4e-d8b8-4246-b2de-8438ff8e6f47" target="153495ea-1cd0-48c0-abd7-eb5a1a16b0c7" archimateRelationship="4cd453a7-2ac5-4aff-b67b-17cb9c4b546a"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="0b2b3fc9-4288-4a63-a67d-1551cfb57097" targetConnections="a87eacd9-9dfe-4064-b26a-4226efa10358" archimateElement="0cb1a96f-cad6-4659-8189-2f7200e41b11" type="1">
+        <bounds x="180" y="672" width="184" height="61"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="153495ea-1cd0-48c0-abd7-eb5a1a16b0c7" targetConnections="b8be49c1-4512-4d79-9100-a0ca99152c28" archimateElement="95358244-5ebd-49df-8d37-f41f668457b6" type="1">
+        <bounds x="444" y="672" width="201" height="61"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="945f8163-9bb4-4fcd-b49f-aea50373281e" fontColor="#ffffff" fillColor="#6c9200" archimateElement="4b5449f2-1603-4461-a444-6d6f693ccd05" type="1">
+        <bounds x="828" y="96" width="350" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="62691701-76af-45a5-b274-7a0212b30028" source="945f8163-9bb4-4fcd-b49f-aea50373281e" target="11a02e99-78f6-49ef-ac8f-a419e084fe5b" archimateRelationship="fb5cb09b-35e7-45a2-a0d1-0cf33a8174ef"/>
+        <sourceConnection xsi:type="archimate:Connection" id="17981712-8399-42e3-8d74-0aa45b627839" source="945f8163-9bb4-4fcd-b49f-aea50373281e" target="65379f94-d03b-43d4-9f47-22088263c43c" archimateRelationship="9fec31e7-df3f-40a4-8fac-1406a82cb0d0"/>
+        <sourceConnection xsi:type="archimate:Connection" id="fee53883-6d3a-498b-ab20-2809c0fc8993" source="945f8163-9bb4-4fcd-b49f-aea50373281e" target="ea25fe1e-ab4e-402f-b996-2a79b1c17e57" archimateRelationship="9133082b-eed3-4d54-8112-1d19aef9a83d"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="11a02e99-78f6-49ef-ac8f-a419e084fe5b" targetConnections="62691701-76af-45a5-b274-7a0212b30028" archimateElement="122bde83-01b9-4721-acc2-0d651f037302" type="1">
+        <bounds x="829" y="276" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="65379f94-d03b-43d4-9f47-22088263c43c" targetConnections="17981712-8399-42e3-8d74-0aa45b627839" archimateElement="a3bd2fe5-1ad2-4ad8-8406-099ddf19c97f" type="1">
+        <bounds x="960" y="276" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="ea25fe1e-ab4e-402f-b996-2a79b1c17e57" targetConnections="fee53883-6d3a-498b-ab20-2809c0fc8993" archimateElement="aef845ba-6e3d-40c9-8365-5fd1bc8bf517" type="1">
+        <bounds x="1092" y="276" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="9eb7163e-7ebb-47b6-9ca2-1827ebbb5f8f" fontColor="#ffffff" fillColor="#6c9200" archimateElement="758fefdd-c153-4803-a0a1-b32d494c919b" type="1">
+        <bounds x="1188" y="96" width="229" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="86078a89-cdcf-49d9-a878-ccbf134dff6f" source="9eb7163e-7ebb-47b6-9ca2-1827ebbb5f8f" target="dd112b3b-4092-4d8e-b7b3-c979f34aefa7" archimateRelationship="2975f23d-86d8-4daa-b1ef-ecf44db548e8"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="dd112b3b-4092-4d8e-b7b3-c979f34aefa7" targetConnections="86078a89-cdcf-49d9-a878-ccbf134dff6f" archimateElement="ee28d52a-7c0d-47f6-b573-044d3f4f0b12" type="1">
+        <bounds x="1260" y="276" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="5fe811b7-0d06-48e9-b7bb-1975bb6a3893" targetConnections="b56c06cb-7f4a-4e24-be9d-1570b31b7fe2" archimateElement="de54f333-68d1-426f-8194-74b9a9a6a30b" type="1">
+        <bounds x="432" y="276" width="133" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="b2aa6f2d-5647-4c5a-9c7a-bd7553987e81" fontColor="#ffffff" fillColor="#6c9200" archimateElement="44fe8098-28ac-44fe-9552-2f84a118342c" type="1">
+        <bounds x="644" y="348" width="401" height="61"/>
+        <sourceConnection xsi:type="archimate:Connection" id="e189d2b4-b398-4d13-8e23-9b4fc8a21584" source="b2aa6f2d-5647-4c5a-9c7a-bd7553987e81" target="8df7947c-21a8-4cd1-909f-9168572b565e" archimateRelationship="5e2af6f9-fe4f-47e5-9171-696c358b71fa"/>
+        <sourceConnection xsi:type="archimate:Connection" id="730d2700-140f-4c3e-9bab-2f141c36a710" source="b2aa6f2d-5647-4c5a-9c7a-bd7553987e81" target="d305b74c-f88c-4f36-bdc0-c241b78d9257" archimateRelationship="463f9e75-30f7-4eba-8ac7-f9a88bf15fe6"/>
+        <sourceConnection xsi:type="archimate:Connection" id="0fa3fd5f-5749-45f3-bc1c-2fc29251e1d8" source="b2aa6f2d-5647-4c5a-9c7a-bd7553987e81" target="39bdd6f5-b459-4898-985c-f8ab533f5043" archimateRelationship="06c1fbc6-1bee-4c17-bcc8-7210aa853142"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="8df7947c-21a8-4cd1-909f-9168572b565e" targetConnections="e189d2b4-b398-4d13-8e23-9b4fc8a21584" archimateElement="1d43f3da-8d69-4661-bfd5-c5bbcbbff72d" type="1">
+        <bounds x="480" y="444" width="229" height="49"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="d305b74c-f88c-4f36-bdc0-c241b78d9257" targetConnections="730d2700-140f-4c3e-9bab-2f141c36a710" archimateElement="31aebbd3-c597-4b98-9ec3-40ac36a776f5" type="1">
+        <bounds x="721" y="444" width="228" height="49"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="4565cf6b-5f41-41b3-9767-f960495d56cf" fontColor="#ffffff" fillColor="#6c9200" archimateElement="a74f5265-4ff9-456a-9d58-4e6e81afc5e3" type="1">
+        <bounds x="48" y="96" width="206" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="729c1585-ea0a-45ca-bad5-1731e60cb88a" source="4565cf6b-5f41-41b3-9767-f960495d56cf" target="eb20ce89-42cf-4ad8-852d-fbc7e24172b7" archimateRelationship="2e29128b-fd72-4731-963e-d8b38123fe8d"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="eb20ce89-42cf-4ad8-852d-fbc7e24172b7" targetConnections="729c1585-ea0a-45ca-bad5-1731e60cb88a" archimateElement="688d1d32-eecd-4a6a-9faa-4d0b89c314e3" type="1">
+        <bounds x="48" y="276" width="193" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="28054eba-f75c-4da2-8d69-fd7aad57299b" targetConnections="efd70c77-a4fe-4f6e-b2ff-08bfdc59073c" archimateElement="1eb1fc18-cb1c-47da-8f05-8f98ff42f971" type="1">
+        <bounds x="324" y="354" width="181" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="1b7ee51a-382d-4a0e-b650-0512584c61d9" fontColor="#ffffff" fillColor="#0099cc" archimateElement="23624335-bf1b-46b7-b723-8492c2d16839" type="1">
+        <bounds x="1092" y="351" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="dd461435-8a6e-40a1-bafa-3f32a79d2405" source="1b7ee51a-382d-4a0e-b650-0512584c61d9" target="39bdd6f5-b459-4898-985c-f8ab533f5043" archimateRelationship="5b23623c-ba27-4baf-92d5-76065b52b30b"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="39bdd6f5-b459-4898-985c-f8ab533f5043" targetConnections="0fa3fd5f-5749-45f3-bc1c-2fc29251e1d8 dd461435-8a6e-40a1-bafa-3f32a79d2405" archimateElement="fcebdb67-bfba-4723-8ab7-09141132c203" type="1">
+        <bounds x="988" y="444" width="211" height="49"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Logisch datamodel" id="a532dc69-2704-4939-b64c-35f2e6297fa6">
+      <child xsi:type="archimate:DiagramObject" id="1b3a8c60-781c-4e8f-9bcb-eed155d3cdb1" targetConnections="6def734b-1fb3-4a8a-84cd-df6d62fc7423 07771320-87ef-47f5-b6e3-517865f5fd0e ef33148e-d28a-4147-af21-e23e3ca1331d" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="f3c52eed-380b-45df-90f9-56f473bfa90b" type="1">
+        <bounds x="456" y="456" width="227" height="85"/>
+        <sourceConnection xsi:type="archimate:Connection" id="a5320d66-5769-4463-a449-2d664749c0e3" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="1b3a8c60-781c-4e8f-9bcb-eed155d3cdb1" target="3764a8e3-a2f8-4734-b551-bb71fbdf7d06" archimateRelationship="1117bf33-3ba0-4365-854c-6bda5bb6946e"/>
+        <sourceConnection xsi:type="archimate:Connection" id="9321e485-9767-493d-929a-dcedfab1559a" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="1b3a8c60-781c-4e8f-9bcb-eed155d3cdb1" target="6ca6ff26-e290-4ce3-a2cb-e868fd9e6313" archimateRelationship="05741891-5b4a-4eb9-a6f7-aa5dc68c76e8"/>
+        <sourceConnection xsi:type="archimate:Connection" id="38e597c7-2c4c-4fd1-8926-247e67d96bfe" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="1b3a8c60-781c-4e8f-9bcb-eed155d3cdb1" target="c7c05361-4571-46bb-9c5a-ffe77aca729a" archimateRelationship="91e1926d-6639-4158-8570-556c5ab94ea3"/>
+        <sourceConnection xsi:type="archimate:Connection" id="a4e84945-754b-4a5e-9481-a04b7ac42bd7" source="1b3a8c60-781c-4e8f-9bcb-eed155d3cdb1" target="cc460a80-5ea4-4477-bab0-b229154a8b56" archimateRelationship="dfcb2206-b687-478b-92ef-4b1fef4efa56"/>
+        <sourceConnection xsi:type="archimate:Connection" id="dd96d478-3b6d-43f5-8aba-7c665eea766c" source="1b3a8c60-781c-4e8f-9bcb-eed155d3cdb1" target="fba08e9c-4962-4e7a-92b6-d42adb0426be" archimateRelationship="31c40c9c-d8aa-4aa0-b222-37fe8e70697a">
+          <bendpoint startX="-341" startY="-30" endX="55" endY="258"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="95407048-4a7d-44e7-a164-0e4087902d7d" source="1b3a8c60-781c-4e8f-9bcb-eed155d3cdb1" target="fce55018-18cd-41f4-9656-a18997da07c5" archimateRelationship="27b66f11-f816-4841-b34e-7e14337cf29d">
+          <bendpoint startX="187" startY="30" endX="-69" endY="-413"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="e2ac20bc-cf70-4848-8c45-4cb9891d8a94" targetConnections="e5fdf34e-41e5-4e19-9f1b-7f7fab46b129 7d1e9598-14d6-40a8-8447-6feeb63f9545 c05d21c7-7caa-441c-a35f-3f909ecde9dc 58ab84b7-e7e8-49bf-80c8-0bd00b7622ef 27d6c75f-f57b-407d-94b1-7db04c5d40fd" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#0099cc" textPosition="1" archimateElement="a871da7d-9104-49e3-a8d1-af4179978ffa" type="1">
+        <bounds x="804" y="168" width="227" height="85"/>
+        <sourceConnection xsi:type="archimate:Connection" id="5c06ddf5-970d-4282-a0f9-534a3abda5fc" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="e2ac20bc-cf70-4848-8c45-4cb9891d8a94" target="5b246ae5-71e8-46af-bee9-0ab38faf1ea0" archimateRelationship="491a68ae-987c-4220-abe4-82b5e05c1b23"/>
+        <sourceConnection xsi:type="archimate:Connection" id="f188d0ab-2ee2-4ca6-8352-910bf76e9320" source="e2ac20bc-cf70-4848-8c45-4cb9891d8a94" target="7bee3ab2-7690-44b4-8f12-94f5a7e014df" archimateRelationship="3c31ea2b-654b-4e1c-8030-682bc6ba91fa">
+          <bendpoint startX="415" startY="-30" endX="-264" endY="-410"/>
+          <bendpoint startX="728" startY="-29" endX="48" endY="-409"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="7d1e9598-14d6-40a8-8447-6feeb63f9545" source="e2ac20bc-cf70-4848-8c45-4cb9891d8a94" target="e2ac20bc-cf70-4848-8c45-4cb9891d8a94" archimateRelationship="209f3f80-c250-4086-a6a4-8345c5689954">
+          <bendpoint startX="-77" startY="78" endX="-77" endY="78"/>
+          <bendpoint startX="80" startY="79" endX="80" endY="79"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="5b246ae5-71e8-46af-bee9-0ab38faf1ea0" targetConnections="5c06ddf5-970d-4282-a0f9-534a3abda5fc" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#0099cc" textPosition="1" archimateElement="531cc22c-3fef-410a-a68b-bb09950181db" type="1">
+        <bounds x="1188" y="192" width="227" height="85"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="3764a8e3-a2f8-4734-b551-bb71fbdf7d06" targetConnections="a5320d66-5769-4463-a449-2d664749c0e3" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#9b3c8c" textPosition="1" archimateElement="c93f4d88-512d-4d97-baea-544db8ee979d" type="1">
+        <bounds x="456" y="168" width="227" height="85"/>
+        <sourceConnection xsi:type="archimate:Connection" id="87bfafc1-4b9f-471b-b890-0e153d5de316" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="3764a8e3-a2f8-4734-b551-bb71fbdf7d06" target="164dfbd5-8632-4b6b-996a-3039b6a6bb23" archimateRelationship="e4043e07-822f-41e0-be73-014b3a3b6470"/>
+        <sourceConnection xsi:type="archimate:Connection" id="1777ba45-e843-4229-aefb-5393cc8b7d2d" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="3764a8e3-a2f8-4734-b551-bb71fbdf7d06" target="fba08e9c-4962-4e7a-92b6-d42adb0426be" archimateRelationship="bad6c411-4b0c-467f-9e17-d4b9faf26dfa"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="164dfbd5-8632-4b6b-996a-3039b6a6bb23" targetConnections="87bfafc1-4b9f-471b-b890-0e153d5de316" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#9b3c8c" textPosition="1" archimateElement="048d8091-471d-4ee8-bec0-cfe6143df3a3" type="1">
+        <bounds x="456" y="24" width="227" height="85"/>
+        <sourceConnection xsi:type="archimate:Connection" id="e5fdf34e-41e5-4e19-9f1b-7f7fab46b129" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="164dfbd5-8632-4b6b-996a-3039b6a6bb23" target="e2ac20bc-cf70-4848-8c45-4cb9891d8a94" archimateRelationship="6de8daf3-da44-4420-ae50-4c94e1ac9057">
+          <bendpoint startX="91" startY="78" endX="-257" endY="-66"/>
+          <bendpoint startX="259" startY="78" endX="-89" endY="-66"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="fba08e9c-4962-4e7a-92b6-d42adb0426be" targetConnections="1777ba45-e843-4229-aefb-5393cc8b7d2d d930f71a-26ba-4de8-8807-697b5751e407 dd96d478-3b6d-43f5-8aba-7c665eea766c ffa4332c-21ae-4328-9040-8dc10fe98f5f" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#b5a845" textPosition="1" archimateElement="7a65e2b9-f974-4768-a07b-edd59b71f6fb" type="1">
+        <bounds x="60" y="168" width="227" height="85"/>
+        <sourceConnection xsi:type="archimate:Connection" id="b3edbb17-d7ea-4b23-894b-c919ae5aec12" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="fba08e9c-4962-4e7a-92b6-d42adb0426be" target="54252bdd-6a82-4181-8e2d-bc55eb51a1c6" archimateRelationship="8d49c46b-94eb-4d93-b957-0800b07aad72"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="54252bdd-6a82-4181-8e2d-bc55eb51a1c6" targetConnections="b3edbb17-d7ea-4b23-894b-c919ae5aec12" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#b5a845" textPosition="1" archimateElement="631268b6-186b-4a8d-a256-19e22104d8aa" type="1">
+        <bounds x="60" y="24" width="227" height="85"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="6ca6ff26-e290-4ce3-a2cb-e868fd9e6313" targetConnections="9321e485-9767-493d-929a-dcedfab1559a 262e2ebb-28ea-4050-aa44-0e795d182ba2 654705eb-189c-44f8-8c83-3ce67dbc4f62 3732a8ae-4693-40d0-8e9e-67eeec9ab40c" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="4b5449f2-1603-4461-a444-6d6f693ccd05" type="1">
+        <bounds x="804" y="456" width="227" height="85"/>
+        <sourceConnection xsi:type="archimate:Connection" id="76a4b020-15f3-4dc8-be3e-9780856839b0" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="6ca6ff26-e290-4ce3-a2cb-e868fd9e6313" target="3c616180-8b8e-449c-8e46-eeef418c9346" archimateRelationship="64370001-0940-4d91-9120-964df6021073">
+          <bendpoint startX="68" startY="103" endX="-336" endY="-13"/>
+          <bendpoint startX="188" startY="103" endX="-216" endY="-13"/>
+          <bendpoint startX="140" startY="103" endX="-264" endY="-13"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="1edc826f-8466-4d73-a1b2-2f204713bd93" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="6ca6ff26-e290-4ce3-a2cb-e868fd9e6313" target="a3e409ab-906b-4c47-955c-d301468b36a2" archimateRelationship="baca2450-4d1f-4354-965e-f12cf92176be"/>
+        <sourceConnection xsi:type="archimate:Connection" id="c42b7c67-43a8-47d9-8fb2-edff7a21cecc" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="6ca6ff26-e290-4ce3-a2cb-e868fd9e6313" target="5931799c-5722-42db-97c8-ad4d7338dbda" archimateRelationship="62e57e22-d6ce-48c1-be45-9d4adc5f00ca">
+          <bendpoint startX="176" startY="31" endX="-228" endY="10"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="27d6c75f-f57b-407d-94b1-7db04c5d40fd" source="6ca6ff26-e290-4ce3-a2cb-e868fd9e6313" target="e2ac20bc-cf70-4848-8c45-4cb9891d8a94" archimateRelationship="b391076c-dd41-425f-845a-18048f980869">
+          <bendpoint startX="-160" startY="-29" endX="-160" endY="259"/>
+          <bendpoint startX="-161" startY="-258" endX="-161" endY="30"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="5091dcb3-1ef2-41e7-a711-65dd7abb49a4" source="6ca6ff26-e290-4ce3-a2cb-e868fd9e6313" target="1f822bf3-02b0-4be1-9551-8e61bbf727e6" archimateRelationship="57979024-aa00-4061-ae0d-87b276eea8b0"/>
+        <sourceConnection xsi:type="archimate:Connection" id="79e3076e-5ba4-472b-b1dc-0bc76d3dc02c" source="6ca6ff26-e290-4ce3-a2cb-e868fd9e6313" target="d5051cce-0ea3-4150-9820-d1941fb7fbec" archimateRelationship="edee7a82-b4d2-446b-9406-0242d867ef0a">
+          <bendpoint startX="67" startY="-54" endX="66" endY="78"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="a3e409ab-906b-4c47-955c-d301468b36a2" targetConnections="1edc826f-8466-4d73-a1b2-2f204713bd93" font="1|Segoe UI|11.25|1|WINDOWS|1|-15|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#f18e00" textPosition="1" archimateElement="ea29e25d-16d9-4ae6-b365-eda170cd2541" type="1">
+        <bounds x="1224" y="396" width="193" height="79"/>
+        <sourceConnection xsi:type="archimate:Connection" id="b0049279-5089-4e66-8c3a-092c959b2b9e" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="a3e409ab-906b-4c47-955c-d301468b36a2" target="c3782cdd-2794-4478-a3bb-f873a9792499" archimateRelationship="6748171d-583b-45e4-8349-415f89b6e53d">
+          <bendpoint startX="24" startY="-110" endX="-360" endY="11"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="5931799c-5722-42db-97c8-ad4d7338dbda" targetConnections="c42b7c67-43a8-47d9-8fb2-edff7a21cecc" font="1|Segoe UI|11.25|1|WINDOWS|1|-15|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#f18e00" textPosition="1" archimateElement="cb3e53ef-e1a6-44e3-b508-cc57860fade5" type="1">
+        <bounds x="1224" y="480" width="193" height="79"/>
+        <sourceConnection xsi:type="archimate:Connection" id="b2a2ad06-f2ac-4335-ba2a-871cca52a368" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="5931799c-5722-42db-97c8-ad4d7338dbda" target="7bee3ab2-7690-44b4-8f12-94f5a7e014df" archimateRelationship="de9044e2-e11f-43f9-9654-8fe90960acc1">
+          <bendpoint startX="108" startY="-2" endX="-168" endY="-73"/>
+          <bendpoint startX="204" startY="-2" endX="-72" endY="-73"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="3c616180-8b8e-449c-8e46-eeef418c9346" targetConnections="76a4b020-15f3-4dc8-be3e-9780856839b0" font="1|Segoe UI|11.25|1|WINDOWS|1|-15|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#f18e00" textPosition="1" archimateElement="93833387-8e86-4935-91d5-3897b8cf24d1" type="1">
+        <bounds x="1224" y="576" width="193" height="77"/>
+        <sourceConnection xsi:type="archimate:Connection" id="44b3ddaf-9c89-49e7-a675-d7118160ea8f" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="3c616180-8b8e-449c-8e46-eeef418c9346" target="7bee3ab2-7690-44b4-8f12-94f5a7e014df" archimateRelationship="75340a6e-856a-4474-82b0-260e81a3cb5d"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="7bee3ab2-7690-44b4-8f12-94f5a7e014df" targetConnections="44b3ddaf-9c89-49e7-a675-d7118160ea8f b2a2ad06-f2ac-4335-ba2a-871cca52a368 f188d0ab-2ee2-4ca6-8352-910bf76e9320" font="1|Segoe UI|11.25|1|WINDOWS|1|-15|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#f18e00" textPosition="1" archimateElement="736de03a-b11d-4651-b3e1-05145dd7a954" type="1">
+        <bounds x="1500" y="552" width="193" height="77"/>
+        <sourceConnection xsi:type="archimate:Connection" id="6f77b115-ac47-4a37-a74a-2add2aef849d" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="7bee3ab2-7690-44b4-8f12-94f5a7e014df" target="c3782cdd-2794-4478-a3bb-f873a9792499" archimateRelationship="134edea0-06ab-4ff2-bd21-839ce90201cd"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="c3782cdd-2794-4478-a3bb-f873a9792499" targetConnections="6f77b115-ac47-4a37-a74a-2add2aef849d b0049279-5089-4e66-8c3a-092c959b2b9e" font="1|Segoe UI|11.25|1|WINDOWS|1|-15|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#f18e00" textPosition="1" archimateElement="b00843ba-7585-4c37-862b-37e1ed7a73cb" type="1">
+        <bounds x="1428" y="276" width="193" height="77"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="c7c05361-4571-46bb-9c5a-ffe77aca729a" targetConnections="efde8708-e1c6-434a-adef-8c12aff14631 08bd68b9-614d-4dee-a7bf-5cf15743aec2 38e597c7-2c4c-4fd1-8926-247e67d96bfe" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="44fe8098-28ac-44fe-9552-2f84a118342c" type="1">
+        <bounds x="473" y="672" width="227" height="84"/>
+        <sourceConnection xsi:type="archimate:Connection" id="02e2a5c9-6aa3-47ee-969f-1aa8b6dc2752" source="c7c05361-4571-46bb-9c5a-ffe77aca729a" target="393dc6d3-cccd-4400-8b1f-fd65e9542313" archimateRelationship="da776496-d511-4852-b47e-039a21491526">
+          <bendpoint startX="68" startY="127" endX="59" endY="-96"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="873b3038-25bf-4b73-bc4a-f393f8a2c3c5" source="c7c05361-4571-46bb-9c5a-ffe77aca729a" target="921c2de1-3f34-42ee-b72d-7150723575ba" archimateRelationship="3be9a1e4-a070-45e7-b216-34ffc9db49b1"/>
+        <sourceConnection xsi:type="archimate:Connection" id="d930f71a-26ba-4de8-8807-697b5751e407" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" lineColor="#000000" source="c7c05361-4571-46bb-9c5a-ffe77aca729a" target="fba08e9c-4962-4e7a-92b6-d42adb0426be" archimateRelationship="b56f0c68-54dd-48a3-8366-0e565b2c774a">
+          <bendpoint startX="-105" startY="-101" endX="308" endY="403"/>
+          <bendpoint startX="-454" startY="-102" endX="-41" endY="402"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="3732a8ae-4693-40d0-8e9e-67eeec9ab40c" lineColor="#000000" source="c7c05361-4571-46bb-9c5a-ffe77aca729a" target="6ca6ff26-e290-4ce3-a2cb-e868fd9e6313" archimateRelationship="b5b00b14-1ef6-42a2-806e-88fa1572e022">
+          <bendpoint startX="266" startY="-6" endX="-65" endY="210"/>
+          <bendpoint startX="266" startY="-138" endX="-65" endY="78"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="393dc6d3-cccd-4400-8b1f-fd65e9542313" targetConnections="02e2a5c9-6aa3-47ee-969f-1aa8b6dc2752" font="1|Segoe UI|11.25|1|WINDOWS|1|-15|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="52ae7e46-b9d3-42e3-9386-31396d6247be" type="1">
+        <bounds x="473" y="888" width="210" height="96"/>
+        <sourceConnection xsi:type="archimate:Connection" id="efde8708-e1c6-434a-adef-8c12aff14631" source="393dc6d3-cccd-4400-8b1f-fd65e9542313" target="c7c05361-4571-46bb-9c5a-ffe77aca729a" archimateRelationship="52076de3-92d4-40b7-b9a2-f708be8726be">
+          <bendpoint startX="-73" startY="-120" endX="-64" endY="103"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="921c2de1-3f34-42ee-b72d-7150723575ba" targetConnections="873b3038-25bf-4b73-bc4a-f393f8a2c3c5 0adc664e-af4e-4560-b535-1dcd3c9aec19 fe936f7b-184b-4160-ae97-7fee11cbbba5" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="758fefdd-c153-4803-a0a1-b32d494c919b" type="1">
+        <bounds x="60" y="672" width="227" height="84"/>
+        <sourceConnection xsi:type="archimate:Connection" id="08bd68b9-614d-4dee-a7bf-5cf15743aec2" source="921c2de1-3f34-42ee-b72d-7150723575ba" target="c7c05361-4571-46bb-9c5a-ffe77aca729a" archimateRelationship="47cfef2d-b8e2-465d-9b5d-cc9328b1939b">
+          <bendpoint startX="-136" startY="16" endX="200" endY="27"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="faa164b4-f244-4f60-8f29-db0fc92abe36" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="921c2de1-3f34-42ee-b72d-7150723575ba" target="462b07c7-28d9-48db-bf53-f9998174886d" archimateRelationship="fcdd2551-fe39-4959-8e76-1f1fc4da2723">
+          <bendpoint startX="-48" startY="56" endX="-48" endY="-88"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="462b07c7-28d9-48db-bf53-f9998174886d" targetConnections="faa164b4-f244-4f60-8f29-db0fc92abe36" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="ea7235cc-9f38-48c2-913e-136ffa88259d" type="1">
+        <bounds x="60" y="888" width="227" height="84"/>
+        <sourceConnection xsi:type="archimate:Connection" id="0adc664e-af4e-4560-b535-1dcd3c9aec19" font="1|Segoe UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" source="462b07c7-28d9-48db-bf53-f9998174886d" target="921c2de1-3f34-42ee-b72d-7150723575ba" archimateRelationship="33c65086-7462-455c-81b1-6749e89f2d0a">
+          <bendpoint startX="72" startY="-64" endX="72" endY="80"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="cc460a80-5ea4-4477-bab0-b229154a8b56" targetConnections="a4e84945-754b-4a5e-9481-a04b7ac42bd7 75e5f8a6-2175-4ba3-b2f2-f53983609566" font="1|Segoe UI|11.25|1|WINDOWS|1|-15|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#2a8ec9" textPosition="1" archimateElement="23624335-bf1b-46b7-b723-8492c2d16839" type="1">
+        <bounds x="168" y="504" width="193" height="84"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="b81f4b16-e42a-4af1-9704-6129dbdb81e5" font="1|Segoe UI|11.25|1|WINDOWS|1|-15|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#2a8ec9" textPosition="1" archimateElement="b4814e35-6889-413a-a292-e1cc63bbbe76" type="1">
+        <bounds x="720" y="24" width="192" height="84"/>
+        <sourceConnection xsi:type="archimate:Connection" id="c05d21c7-7caa-441c-a35f-3f909ecde9dc" source="b81f4b16-e42a-4af1-9704-6129dbdb81e5" target="e2ac20bc-cf70-4848-8c45-4cb9891d8a94" archimateRelationship="0fada000-9ae3-45e3-a5c9-00815b8a49ac"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="07109bce-c908-4d21-b32d-e62ea799b1d0" font="1|Segoe UI|11.25|1|WINDOWS|1|-15|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#2a8ec9" textPosition="1" archimateElement="3780fe32-bfaa-4ce2-86e6-a8a49129b6e5" type="1">
+        <bounds x="936" y="24" width="192" height="84"/>
+        <sourceConnection xsi:type="archimate:Connection" id="58ab84b7-e7e8-49bf-80c8-0bd00b7622ef" source="07109bce-c908-4d21-b32d-e62ea799b1d0" target="e2ac20bc-cf70-4848-8c45-4cb9891d8a94" archimateRelationship="a4e2870d-9191-441d-a534-0c36b71cb0fb"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="1f822bf3-02b0-4be1-9551-8e61bbf727e6" targetConnections="5091dcb3-1ef2-41e7-a711-65dd7abb49a4" font="1|Segoe UI|11.25|1|WINDOWS|1|-15|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#f18e00" textPosition="1" archimateElement="da74d4e7-5bc5-4216-855d-94beef1b5453" type="1">
+        <bounds x="911" y="765" width="193" height="84"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="d8849d3f-0603-4ce0-9f01-b1c391194c6a" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="a74f5265-4ff9-456a-9d58-4e6e81afc5e3" type="1">
+        <bounds x="291" y="312" width="202" height="73"/>
+        <sourceConnection xsi:type="archimate:Connection" id="6def734b-1fb3-4a8a-84cd-df6d62fc7423" source="d8849d3f-0603-4ce0-9f01-b1c391194c6a" target="1b3a8c60-781c-4e8f-9bcb-eed155d3cdb1" archimateRelationship="e53e07b7-57be-4c5d-b0ec-f6ebff73322b"/>
+        <sourceConnection xsi:type="archimate:Connection" id="75e5f8a6-2175-4ba3-b2f2-f53983609566" source="d8849d3f-0603-4ce0-9f01-b1c391194c6a" target="cc460a80-5ea4-4477-bab0-b229154a8b56" archimateRelationship="cbfb5bfd-a05b-49a8-887f-173452ec4a04"/>
+        <sourceConnection xsi:type="archimate:Connection" id="654705eb-189c-44f8-8c83-3ce67dbc4f62" source="d8849d3f-0603-4ce0-9f01-b1c391194c6a" target="6ca6ff26-e290-4ce3-a2cb-e868fd9e6313" archimateRelationship="34e45b78-f494-4817-bc7a-ad6687ffade4">
+          <bendpoint startX="316" startY="24" endX="-208" endY="-125"/>
+          <bendpoint startX="316" startY="132" endX="-208" endY="-17"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="d5051cce-0ea3-4150-9820-d1941fb7fbec" targetConnections="79e3076e-5ba4-472b-b1dc-0bc76d3dc02c" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="45cf3497-f768-4021-a8c5-4dc9d4ea0527" type="1">
+        <bounds x="804" y="324" width="227" height="85"/>
+        <sourceConnection xsi:type="archimate:Connection" id="262e2ebb-28ea-4050-aa44-0e795d182ba2" source="d5051cce-0ea3-4150-9820-d1941fb7fbec" target="6ca6ff26-e290-4ce3-a2cb-e868fd9e6313" archimateRelationship="46ef9214-1c99-4479-b05e-ede3691d4d07">
+          <bendpoint startX="-54" startY="54" endX="-53" endY="-78"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="07771320-87ef-47f5-b6e3-517865f5fd0e" source="d5051cce-0ea3-4150-9820-d1941fb7fbec" target="1b3a8c60-781c-4e8f-9bcb-eed155d3cdb1" archimateRelationship="711ee2be-3b09-45e6-845e-7b76c43edc1d">
+          <bendpoint startX="-282" startY="30" endX="67" endY="-102"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="ffa4332c-21ae-4328-9040-8dc10fe98f5f" source="d5051cce-0ea3-4150-9820-d1941fb7fbec" target="fba08e9c-4962-4e7a-92b6-d42adb0426be" archimateRelationship="2a19ef2c-5f37-4df1-8492-950babde276e">
+          <bendpoint startX="-90" startY="-78" endX="655" endY="78"/>
+          <bendpoint startX="-462" startY="-78" endX="283" endY="78"/>
+          <bendpoint startX="-654" startY="-78" endX="91" endY="78"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="fce55018-18cd-41f4-9656-a18997da07c5" targetConnections="95407048-4a7d-44e7-a164-0e4087902d7d d898732b-c63b-4b4b-9472-84c08f4b5dfc" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#fffe66" textPosition="1" archimateElement="74b62ea9-652e-447c-aedb-0a43e5f9e737" type="1">
+        <bounds x="727" y="888" width="210" height="96"/>
+        <sourceConnection xsi:type="archimate:Connection" id="fe936f7b-184b-4160-ae97-7fee11cbbba5" source="fce55018-18cd-41f4-9656-a18997da07c5" target="921c2de1-3f34-42ee-b72d-7150723575ba" archimateRelationship="229e39c8-078c-4920-87da-291f5303efbb">
+          <bendpoint startX="4" startY="96" endX="776" endY="331"/>
+          <bendpoint startX="-508" startY="96" endX="152" endY="319"/>
+          <bendpoint startX="-520" startY="-192" endX="140" endY="31"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="ef33148e-d28a-4147-af21-e23e3ca1331d" source="fce55018-18cd-41f4-9656-a18997da07c5" target="1b3a8c60-781c-4e8f-9bcb-eed155d3cdb1" archimateRelationship="85b0efd7-149e-42ec-9209-42065a94138e">
+          <bendpoint startX="-52" startY="-420" endX="212" endY="19"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="d0f2b4f0-f70c-47ed-b1c5-95a48d45b748" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fillColor="#fffe66" textPosition="1" archimateElement="e6988cfc-8c60-4a54-8767-6f82311bbd82" type="1">
+        <bounds x="1188" y="888" width="210" height="96"/>
+        <sourceConnection xsi:type="archimate:Connection" id="d898732b-c63b-4b4b-9472-84c08f4b5dfc" source="d0f2b4f0-f70c-47ed-b1c5-95a48d45b748" target="fce55018-18cd-41f4-9656-a18997da07c5" archimateRelationship="fb26752b-81c6-4794-b7a3-dd73dc1833c3">
+          <bendpoint startX="-177" startY="-12" endX="183" endY="-17"/>
+        </sourceConnection>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Datamodel op hoofdlijnen" id="232b9c4a-a2f2-4542-ae79-bfd1f355168c">
+      <child xsi:type="archimate:DiagramObject" id="6fb7211f-949a-426f-a286-b8a16b4d07d2" font="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="a74f5265-4ff9-456a-9d58-4e6e81afc5e3" type="1">
+        <bounds x="168" y="60" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="944e0142-48cd-41c6-a63f-9301c9a44321" source="6fb7211f-949a-426f-a286-b8a16b4d07d2" target="b574d937-c1d4-4fb6-952c-a8a053125c0e" archimateRelationship="e53e07b7-57be-4c5d-b0ec-f6ebff73322b">
+          <bendpoint startX="24" startY="118" endX="-144" endY="-2"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="1353cc07-7341-4fa7-be38-cb52d14d38b1" source="6fb7211f-949a-426f-a286-b8a16b4d07d2" target="39a718d0-c6d8-4531-a329-0031eada7387" archimateRelationship="cbfb5bfd-a05b-49a8-887f-173452ec4a04">
+          <bendpoint startX="-48" startY="190" endY="-116"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="53ec0d04-dc6b-40bd-8cfc-e171358cd07c" source="6fb7211f-949a-426f-a286-b8a16b4d07d2" target="5e19acfb-d1f4-4014-8f92-4acd2a44c32b" archimateRelationship="34e45b78-f494-4817-bc7a-ad6687ffade4">
+          <bendpoint startX="384" startY="-2" endY="-122"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="b574d937-c1d4-4fb6-952c-a8a053125c0e" targetConnections="944e0142-48cd-41c6-a63f-9301c9a44321" font="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="f3c52eed-380b-45df-90f9-56f473bfa90b" type="1">
+        <bounds x="336" y="180" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="ec42fd8a-8d70-44fc-b641-eb19df045443" source="b574d937-c1d4-4fb6-952c-a8a053125c0e" target="df4d4792-b076-4341-8b5d-b1e1ec46885d" archimateRelationship="91e1926d-6639-4158-8570-556c5ab94ea3">
+          <bendpoint startX="12" startY="117" endX="-132" endY="-15"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="2645451b-e608-476a-b563-80a484627f53" source="b574d937-c1d4-4fb6-952c-a8a053125c0e" target="39a718d0-c6d8-4531-a329-0031eada7387" archimateRelationship="dfcb2206-b687-478b-92ef-4b1fef4efa56">
+          <bendpoint startX="-48" startY="141" endX="132" endY="-15"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="f4b93212-5d2a-4f92-b87b-da67d3394048" source="b574d937-c1d4-4fb6-952c-a8a053125c0e" target="5e19acfb-d1f4-4014-8f92-4acd2a44c32b" archimateRelationship="05741891-5b4a-4eb9-a6f7-aa5dc68c76e8"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="df4d4792-b076-4341-8b5d-b1e1ec46885d" targetConnections="ec42fd8a-8d70-44fc-b641-eb19df045443" font="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="44fe8098-28ac-44fe-9552-2f84a118342c" type="1">
+        <bounds x="516" y="288" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="2abff523-59c4-4fc6-985e-674006213b49" source="df4d4792-b076-4341-8b5d-b1e1ec46885d" target="39a718d0-c6d8-4531-a329-0031eada7387" archimateRelationship="ddb4b620-b853-40fe-9a5d-d10f381f2e4d">
+          <bendpoint startX="-48" startY="58" endX="312" endY="10"/>
+          <bendpoint startX="-228" startY="58" endX="132" endY="10"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="73a7b7ae-ae2d-4c5a-9593-291c1bdb34e7" source="df4d4792-b076-4341-8b5d-b1e1ec46885d" target="b865da17-174d-4bc6-b335-d0ca50d6fa34" archimateRelationship="da776496-d511-4852-b47e-039a21491526">
+          <bendpoint startY="117" endX="-212" endY="-3"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="39a718d0-c6d8-4531-a329-0031eada7387" targetConnections="1353cc07-7341-4fa7-be38-cb52d14d38b1 2abff523-59c4-4fc6-985e-674006213b49 2645451b-e608-476a-b563-80a484627f53" font="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#0099cc" textPosition="1" archimateElement="23624335-bf1b-46b7-b723-8492c2d16839" type="1">
+        <bounds x="168" y="336" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="b865da17-174d-4bc6-b335-d0ca50d6fa34" targetConnections="73a7b7ae-ae2d-4c5a-9593-291c1bdb34e7" font="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="52ae7e46-b9d3-42e3-9386-31396d6247be" type="1">
+        <bounds x="672" y="420" width="133" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="5e19acfb-d1f4-4014-8f92-4acd2a44c32b" targetConnections="f4b93212-5d2a-4f92-b87b-da67d3394048 53ec0d04-dc6b-40bd-8cfc-e171358cd07c" font="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="4b5449f2-1603-4461-a444-6d6f693ccd05" type="1">
+        <bounds x="552" y="180" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="7bd6f61a-109b-4cac-b097-505cbeade4c1" source="5e19acfb-d1f4-4014-8f92-4acd2a44c32b" target="55fb6299-bd19-4d04-bddc-54235e09d025" archimateRelationship="64370001-0940-4d91-9120-964df6021073">
+          <bendpoint startX="132" startY="9" endX="6" endY="-99"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="08e4d11d-ebbf-4a6f-a158-e2f88eeac4c4" source="5e19acfb-d1f4-4014-8f92-4acd2a44c32b" target="3b8fe62a-51e3-4348-85ad-4ef3335c7635" archimateRelationship="baca2450-4d1f-4354-965e-f12cf92176be">
+          <bendpoint startX="132" startY="-15" endX="2" endY="81"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="55fb6299-bd19-4d04-bddc-54235e09d025" targetConnections="7bd6f61a-109b-4cac-b097-505cbeade4c1" font="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="93833387-8e86-4935-91d5-3897b8cf24d1" type="1">
+        <bounds x="672" y="288" width="133" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="3b8fe62a-51e3-4348-85ad-4ef3335c7635" targetConnections="08e4d11d-ebbf-4a6f-a158-e2f88eeac4c4" font="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="ea29e25d-16d9-4ae6-b365-eda170cd2541" type="1">
+        <bounds x="679" y="84" width="126" height="55"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Intake onderhoudsorder" id="id-dde40758c8af44b89a26a88c30e5bfa4">
+      <child xsi:type="archimate:DiagramObject" id="id-0cced68ab9a1494bac08c0cbabb20cdf" fillColor="#ffffff" archimateElement="id-b00d1116ab0a4b0d8fb4112682ec33ff">
+        <bounds x="24" y="24" width="842" height="250"/>
+        <child xsi:type="archimate:DiagramObject" id="id-a89413c1aea949ffa175464299d41cfa" targetConnections="id-5b1aeb43b9954921bb52dce3b6e9bd7e" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="id-ef91ec24ce19492e971bdcea61f3be34">
+          <bounds x="288" y="96" width="132" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c8c8d2012c4243178347ac16e3833ca2" source="id-a89413c1aea949ffa175464299d41cfa" target="id-7e1ad63ba1ed4b2592117b3ccb82c3c3" archimateRelationship="id-bf339a8e488b4cbfb6bfde65a0d39701"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-7e1ad63ba1ed4b2592117b3ccb82c3c3" targetConnections="id-c8c8d2012c4243178347ac16e3833ca2" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="id-70dea22f88e740f5945bdb45565cc5b9">
+          <bounds x="492" y="96" width="132" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-1620b3426c464a03849a2bad9df9e77f" font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#6c9200" textPosition="1" archimateElement="id-94bc1f8f8f844166acdcacb448a28ae8">
+          <bounds x="72" y="93" width="145" height="61"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5b1aeb43b9954921bb52dce3b6e9bd7e" source="id-1620b3426c464a03849a2bad9df9e77f" target="id-a89413c1aea949ffa175464299d41cfa" archimateRelationship="id-dba56a03ff30469798221f69ddeb43f6"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-a21279bdda644d6e84899d3233560d43" fillColor="#ffffff" archimateElement="id-8ce4af2094e7428f80d5795d57fd0600">
+        <bounds x="24" y="288" width="842" height="193"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-8718d3a346a84775ab13b0087e488a36" fillColor="#ffffff" archimateElement="id-cddfc477dcea47d4b8eac58d326f7c8b">
+        <bounds x="24" y="492" width="842" height="205"/>
+      </child>
+    </element>
+  </folder>
+  <profile name="1 op 0 of n" id="id-fe41383b84844664867ca83018bad46f" conceptType="AssociationRelationship"/>
+  <profile name="0 of 1" id="id-7436f500bada46348f844a68e734e4b1" conceptType="AssociationRelationship"/>
+  <profile name="1 op 1" id="id-ce6360520eaf4e419db5a4f0249cd775" conceptType="AssociationRelationship"/>
+  <profile name="1 op 0 of 1" id="id-770b8ad39f89457ba4ecff5775e99dc3" conceptType="AssociationRelationship"/>
+  <profile name="1 op n" id="id-e40bd314041c4be1a7370fdc2c1747b1" conceptType="AssociationRelationship"/>
+</archimate:model>
