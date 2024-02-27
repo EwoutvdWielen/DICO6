@@ -1,0 +1,8 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="ContractReferenceType (Onderhoudsovereenkomst)"
+    id="d75a0b4a-60ad-44c7-9110-9f72d2036f4a">
+  <properties
+      key="Equivalent VERA-klasse"
+      value="Onderhoudsovereenkomst (Overeenkomst)"/>
+</archimate:DataObject>

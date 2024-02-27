@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="afspraken"
+    id="ddb4b620-b853-40fe-9a5d-d10f381f2e4d"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_44fe8098-28ac-44fe-9552-2f84a118342c.xml#44fe8098-28ac-44fe-9552-2f84a118342c"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_23624335-bf1b-46b7-b723-8492c2d16839.xml#23624335-bf1b-46b7-b723-8492c2d16839"/>
+</archimate:AssociationRelationship>

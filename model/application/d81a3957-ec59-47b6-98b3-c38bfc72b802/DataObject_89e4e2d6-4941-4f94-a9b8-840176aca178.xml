@@ -1,0 +1,9 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="AttachmentCharacteristicsType (InformatieobjectKenmerk)"
+    id="89e4e2d6-4941-4f94-a9b8-840176aca178"
+    documentation="Metagegevens over een bijlage. Voor het gebruik van Attribuutnaam en Attribuutwaarde zie http://www.ketenstandaard.nl/informatie/downloads/sales/ bijlagekarakteristieken.">
+  <properties
+      key="Equivalent VERA-klasse"
+      value="InformatieobjectKenmerk"/>
+</archimate:DataObject>

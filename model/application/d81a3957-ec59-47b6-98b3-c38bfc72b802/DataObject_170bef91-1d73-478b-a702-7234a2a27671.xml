@@ -1,0 +1,9 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="PriceBaseType"
+    id="170bef91-1d73-478b-a702-7234a2a27671"
+    documentation="Gegevens over de basiseenheid waarin een prijs is uitgedrukt.">
+  <properties
+      key="Equivalent VERA-klasse"
+      value="Standaardprijs"/>
+</archimate:DataObject>

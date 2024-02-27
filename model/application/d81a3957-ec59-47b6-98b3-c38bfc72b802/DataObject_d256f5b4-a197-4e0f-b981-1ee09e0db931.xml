@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="InstructionInformationType (Onderhoudsovereenkomst/Onderhoudsorder)"
+    id="d256f5b4-a197-4e0f-b981-1ee09e0db931"
+    documentation="Gegevens over de opdracht met betrekking tot soort, afspraakwijze en typering.&#xD;&#xA;- Code waarmee de opdracht nader wordt gespecificeerd (INS, MUT, REP).&#xD;&#xA;- Code waarmee de opdracht afspraakwijze nader wordt gespecificeerd. (AFK, ANS, EHP, REG)&#xD;&#xA;- Code waarmee de opdrachttypering wordt gespecificeerd. (GAR, MAO, ORG)&#xD;&#xA;&#xD;&#xA;BUSINESS RULES&#xD;&#xA;Minimaal 1 van de 3 velden moet worden gebruikt.&#xD;&#xA;&#xD;&#xA;&lt;h4>VERA&lt;/h4>&#xD;&#xA;- InstructionType - Typering van de onderhoudsorder zit binnen VERA onder attribuut onderhoudSoort met referentiedata&#xD;&#xA;- InstructionAgreementMethod - Afrekenwijze is binnen VERA onderdeel van de onderhoudsovereenkomst&#xD;&#xA;- InstructionTypeSpecification - "/>

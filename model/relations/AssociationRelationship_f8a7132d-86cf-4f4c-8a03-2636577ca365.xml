@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="PriceInformation"
+    id="f8a7132d-86cf-4f4c-8a03-2636577ca365"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_674bcce9-3ee4-4524-8291-001eed9f55a2.xml#674bcce9-3ee4-4524-8291-001eed9f55a2"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_c7f82bb4-0d21-484c-a5a6-63cb41f7abbc.xml#c7f82bb4-0d21-484c-a5a6-63cb41f7abbc"/>
+</archimate:AssociationRelationship>

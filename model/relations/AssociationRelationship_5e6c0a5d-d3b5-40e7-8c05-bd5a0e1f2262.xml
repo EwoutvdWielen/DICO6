@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="GeographicalCoordinates"
+    id="5e6c0a5d-d3b5-40e7-8c05-bd5a0e1f2262"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_553d7630-0cfd-418a-8f1a-0d479b9e3d5d.xml#553d7630-0cfd-418a-8f1a-0d479b9e3d5d"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_65ac9b8a-13ad-4966-9873-ddf440b56bdb.xml#65ac9b8a-13ad-4966-9873-ddf440b56bdb"/>
+</archimate:AssociationRelationship>

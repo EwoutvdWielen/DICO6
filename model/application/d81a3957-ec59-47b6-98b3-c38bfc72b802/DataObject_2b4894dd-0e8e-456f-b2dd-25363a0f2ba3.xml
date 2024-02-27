@@ -1,0 +1,9 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="PartyGLNOnlyContactType"
+    id="2b4894dd-0e8e-456f-b2dd-25363a0f2ba3"
+    documentation="Partij die de opdracht geeft.&#xD;&#xA;">
+  <properties
+      key="Equivalent VERA-klasse"
+      value="Relatie"/>
+</archimate:DataObject>

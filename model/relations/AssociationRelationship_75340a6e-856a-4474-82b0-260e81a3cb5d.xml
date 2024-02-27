@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="adres"
+    id="75340a6e-856a-4474-82b0-260e81a3cb5d"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_93833387-8e86-4935-91d5-3897b8cf24d1.xml#93833387-8e86-4935-91d5-3897b8cf24d1"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_736de03a-b11d-4651-b3e1-05145dd7a954.xml#736de03a-b11d-4651-b3e1-05145dd7a954"/>
+</archimate:AssociationRelationship>

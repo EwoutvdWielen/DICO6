@@ -1,0 +1,8 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="VATInformationAndBaseAmountType"
+    id="93f05580-501a-447d-a970-f280b6cc8556"
+    documentation="Gegevens over een van toepassing zijnde BTW-heffing.">
+  <properties
+      key="Equivalent VERA-klasse"/>
+</archimate:DataObject>

@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="InformatieobjectFormaat"
+    id="3ff84259-50e6-4301-999b-777ab12e6ea8"
+    documentation="DOC&#x9;(Document)&#xD;&#xA;GIF&#x9;&#x9;(Gif)&#xD;&#xA;HTM&#x9;(HTML)&#xD;&#xA;JPG&#x9;&#x9;(JPEG)&#xD;&#xA;MP4&#x9;(MP4)&#xD;&#xA;MPE&#x9;(MPEG&#xD;&#xA;PDF&#x9;&#x9;(PDF)&#xD;&#xA;PIN&#x9;&#x9;(Ping)&#xD;&#xA;TXT&#x9;&#x9;(Text)&#xD;&#xA;TIF&#x9;&#x9;(Tiff)&#xD;&#xA;Zie verder&#x9;http://www.iana.org/assignments/media-types/media-types.xhtml&#xD;&#xA;"/>

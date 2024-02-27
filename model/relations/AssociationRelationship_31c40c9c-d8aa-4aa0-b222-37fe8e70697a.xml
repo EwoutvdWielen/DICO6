@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="bijlagen"
+    id="31c40c9c-d8aa-4aa0-b222-37fe8e70697a"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_f3c52eed-380b-45df-90f9-56f473bfa90b.xml#f3c52eed-380b-45df-90f9-56f473bfa90b"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_7a65e2b9-f974-4768-a07b-edd59b71f6fb.xml#7a65e2b9-f974-4768-a07b-edd59b71f6fb"/>
+</archimate:AssociationRelationship>

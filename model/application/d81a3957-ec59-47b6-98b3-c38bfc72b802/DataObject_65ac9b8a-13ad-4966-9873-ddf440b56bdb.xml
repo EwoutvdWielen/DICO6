@@ -1,0 +1,9 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="GeographicalCoordinatesType (Punt)"
+    id="65ac9b8a-13ad-4966-9873-ddf440b56bdb"
+    documentation="De geografische locatie volgens WGS84 in latitude en longitude. &#xD;&#xA;&#xD;&#xA;BUSINESS RULES&#xD;&#xA;Als de adresgegevens en geografische gegevens worden gebruikt dan zijn de geografische gegevens leidend. Mocht u de coördinaten niet meegeven dan dient uit de adresgegevens duidelijk te worden waar de onderhoudslocatie zich bevindt.">
+  <properties
+      key="Equivalent VERA-klasse"
+      value="Punt (Geometrie)"/>
+</archimate:DataObject>

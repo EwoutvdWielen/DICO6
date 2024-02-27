@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="voorcalculaties"
+    id="3be9a1e4-a070-45e7-b216-34ffc9db49b1"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_44fe8098-28ac-44fe-9552-2f84a118342c.xml#44fe8098-28ac-44fe-9552-2f84a118342c"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_758fefdd-c153-4803-a0a1-b32d494c919b.xml#758fefdd-c153-4803-a0a1-b32d494c919b"/>
+</archimate:AssociationRelationship>

@@ -1,0 +1,14 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Nieuw onderhoudsorder voor reparatie"
+    id="id-71fee2f8a53b4664b0dd3c159cded8f8"
+    documentation="===Definitie===&#xD;&#xA;Onderhoudsorder met één of meerdere onderhoudsregels die doorgezet wordt naar het bedrijfsproces Uitvoeren onderhoudsorder om te worden opgepakt. Een onderhoudsorder heeft altijd minimaal 1 onderhoudsorderregel waarin de details van de uit te voeren werkzaamheden opgenomen kan worden. Met verschillende onderhoudsregels is het mogelijk om verschillende afrekenwijzen op te nemen in de onderhoudsorder. Aan elke onderhoudsregel worden één of meerdere defecten gekoppeld die zijn verzameld door het bedrijfsproces Regisseren onderhoud. &#xD;&#xA;&#xD;&#xA;===Business rules===&#xD;&#xA;- Eén of meerdere onderhoudsregels&#xD;&#xA;- Onderhoudsorder gekoppeld aan maximaal één contactpersoon&#xD;&#xA;- Per onderhoudsregel één of meer defecten&#xD;&#xA;- Per defect één of meerdere bijlagen (met een maximum)&#xD;&#xA;- Eén onderhoudslocatie voor de onderhoudsorder &#xD;&#xA;&#xD;&#xA;===Scenario's===&#xD;&#xA;- Enkelvoudig onderhoudsorder reparatie zonder planning&#xD;&#xA;- Meervoudig onderhoudsorder reparatie zonder planning  &#xD;&#xA;">
+  <properties
+      key="Onderhoudsorder.Status"
+      value="Geregistreerd"/>
+  <properties
+      key="Onderhoudsorder.Onderhoudsovereenkomst"/>
+  <properties
+      key="Onderhoudsorderregel.Afrekenwijze"
+      value="Referentiedata (Vaste prijs, Nacalc, Eenheidsprijs, ..)"/>
+</archimate:DataObject>

@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="AppointmentDateTimeInformation"
+    id="973d163c-516b-4585-b552-9fca6a5681d8"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_b2257c1f-b711-49e3-a7d2-0f4806f20531.xml#b2257c1f-b711-49e3-a7d2-0f4806f20531"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_55c1df51-4c66-4b3d-bd12-e338e2c89136.xml#55c1df51-4c66-4b3d-bd12-e338e2c89136"/>
+</archimate:AssociationRelationship>

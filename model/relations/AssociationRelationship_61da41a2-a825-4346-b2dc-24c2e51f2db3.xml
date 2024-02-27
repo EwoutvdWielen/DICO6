@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Buyer"
+    id="61da41a2-a825-4346-b2dc-24c2e51f2db3"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_80a49fe1-41c4-427e-842e-7185f22ebbdd.xml#80a49fe1-41c4-427e-842e-7185f22ebbdd"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_b38876e8-7c3d-4524-8270-f58097fb1618.xml#b38876e8-7c3d-4524-8270-f58097fb1618"/>
+</archimate:AssociationRelationship>

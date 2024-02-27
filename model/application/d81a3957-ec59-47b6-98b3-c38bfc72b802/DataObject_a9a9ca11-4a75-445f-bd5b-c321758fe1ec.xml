@@ -1,0 +1,9 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="ContactInformationType (Contactgegeven)"
+    id="a9a9ca11-4a75-445f-bd5b-c321758fe1ec"
+    documentation="Contactinformatie: &#xD;&#xA;- contactpersoonnaam&#xD;&#xA;- telefoonnummer&#xD;&#xA;- e-mail adres">
+  <properties
+      key="Equivalent VERA-klasse"
+      value="Contactgegeven"/>
+</archimate:DataObject>

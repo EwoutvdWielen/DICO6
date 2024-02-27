@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="VATInformation"
+    id="20d6d44f-aeff-4ca0-ab18-8dd713c34055"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_674bcce9-3ee4-4524-8291-001eed9f55a2.xml#674bcce9-3ee4-4524-8291-001eed9f55a2"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_93f05580-501a-447d-a970-f280b6cc8556.xml#93f05580-501a-447d-a970-f280b6cc8556"/>
+</archimate:AssociationRelationship>

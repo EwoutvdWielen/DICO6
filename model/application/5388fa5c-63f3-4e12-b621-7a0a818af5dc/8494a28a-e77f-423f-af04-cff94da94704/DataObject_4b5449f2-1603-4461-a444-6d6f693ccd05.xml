@@ -1,0 +1,20 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Defect"
+    id="4b5449f2-1603-4461-a444-6d6f693ccd05">
+  <properties
+      key="melder"
+      value="De relatie die het defect heeft gemeld. Blijft leeg indien het element of object zelf een storing heeft gemeld."/>
+  <properties
+      key="locatie"
+      value="De locatie waar het onderhoud moet plaatsvinden. Bijvoorbeeld huiskamer of toilet. (Referentiedata)"/>
+  <properties
+      key="defectSoort"
+      value="Typering van het soort defect. Bijvoorbeeld lekt, klemt, gebroken etc. (Referentiedata)"/>
+  <properties
+      key="defectOorzaak"
+      value="De oorzaak van het defect zoals initieel bij het melden van het defect is vastgelegd. Dit is vaak de oorzaak die de huurder aangeeft bij de melding. (Referentiedata)"/>
+  <properties
+      key="aangetroffenOorzaak"
+      value="De oorzaak van het defect zoals initieel bij het melden van het defect is vastgelegd. Dit is vaak de oorzaak die de huurder aangeeft bij de melding. (Referentiedata defectOorzaak)"/>
+</archimate:DataObject>

@@ -1,0 +1,15 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="MaintenanceLocationWithContactInformationType (Eenheid/Cluster/CollectiefObject/BouwkundigElement)"
+    id="553d7630-0cfd-418a-8f1a-0d479b9e3d5d"
+    documentation="Gegevens over de te onderhouden locatie. &#xD;&#xA;&#xD;&#xA;BUSINESS RULES&#xD;&#xA;Gebruik minimaal een van de drie identificatie velden (complexnummer, pandnummer, VGE nummer).">
+  <properties
+      key="Equivalent VERA-klasse"
+      value="Eenheid"/>
+  <properties
+      key="Equivalent VERA-klasse"
+      value="Cluster"/>
+  <properties
+      key="Equivalent VERA-klasse"
+      value="CollectiefObject"/>
+</archimate:DataObject>

@@ -1,0 +1,15 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="onderhoudsorder"
+    id="id-0a7e4b9d0b514216ae68ee2d03e9a454"
+    directed="true">
+  <profiles
+      href="folder.xml#id-ce6360520eaf4e419db5a4f0249cd775"/>
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-60dcba9b76be4db089c80a06745d7e20.xml#id-60dcba9b76be4db089c80a06745d7e20"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_f3c52eed-380b-45df-90f9-56f473bfa90b.xml#f3c52eed-380b-45df-90f9-56f473bfa90b"/>
+</archimate:AssociationRelationship>

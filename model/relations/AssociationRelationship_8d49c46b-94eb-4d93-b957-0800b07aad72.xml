@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="kenmerken"
+    id="8d49c46b-94eb-4d93-b957-0800b07aad72"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_7a65e2b9-f974-4768-a07b-edd59b71f6fb.xml#7a65e2b9-f974-4768-a07b-edd59b71f6fb"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_631268b6-186b-4a8d-a256-19e22104d8aa.xml#631268b6-186b-4a8d-a256-19e22104d8aa"/>
+</archimate:AssociationRelationship>

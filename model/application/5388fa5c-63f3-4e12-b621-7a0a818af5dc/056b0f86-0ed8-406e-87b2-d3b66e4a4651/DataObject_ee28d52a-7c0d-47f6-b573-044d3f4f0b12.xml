@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Meeteenheid"
+    id="ee28d52a-7c0d-47f6-b573-044d3f4f0b12"
+    documentation="CM&#x9;&#x9;(Centimeter)&#xD;&#xA;Aantal uitgedrukt in centimeters&#xD;&#xA;&#xD;&#xA;GRM &#x9;(Gram)&#xD;&#xA;Aantal uitgedrukt in gram&#xD;&#xA;&#xD;&#xA;KGR &#x9;(Kilogram)&#xD;&#xA;M3&#x9;&#x9;(Kubieke meter, m3)&#xD;&#xA;LTR&#x9;&#x9;(Liter)&#x9;&#xD;&#xA;MTR&#x9;(Meter&#x9;)&#xD;&#xA;MIN&#x9;&#x9;(Minuten)&#xD;&#xA;Aantal uitgedrukt in minuten, bijvoorbeeld 15 minuten reistijd&#xD;&#xA;&#xD;&#xA;FTE&#x9;&#x9;(Omvang personeelsbestand)&#xD;&#xA;STU&#x9;&#x9;(Stuks)&#xD;&#xA;Aantal uitgedrukt per stuk, bijvoorbeeld 2 stuks deurklink, 10 stuks schroeven, etc.&#xD;&#xA;&#xD;&#xA;UUR&#x9;&#x9;(Uren)&#xD;&#xA;Aantal uitgedrukt in uren, bijvoorbeeld 2,5 uur werktijd. 15 minuten kan uitgedrukt worden in 0,25 uur&#xD;&#xA;&#xD;&#xA;M2&#x9;&#x9;(Vierkante meter, m2)"/>

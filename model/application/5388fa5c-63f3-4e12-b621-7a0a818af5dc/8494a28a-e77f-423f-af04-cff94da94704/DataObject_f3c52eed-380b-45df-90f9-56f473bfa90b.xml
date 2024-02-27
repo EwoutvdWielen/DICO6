@@ -1,0 +1,33 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Onderhoudsorder"
+    id="f3c52eed-380b-45df-90f9-56f473bfa90b"
+    documentation="Definitie&#xD;&#xA;Een onderhoudsorder is een opdracht tot het uitvoeren van reparatie- of onderhoudswerkzaamheden, of een opdracht tot het uitvoeren van een inspectie aan het bezit van een woningcorporatie of andere vastgoedbeheerder, waarmee een onderhoudsovereenkomst is afgesloten. &#xD;&#xA;&#xD;&#xA;Toelichting&#xD;&#xA;De opdrachtgever van de onderhoudsorder is de afdeling binnen de woningcorporatie die verantwoordelijk is voor het (laten) uitvoeren van onderhoudswerkzaamheden. Het is ook mogelijk dat deze verantwoordelijkheid is uitbesteed aan een externe partij (outsourcing). De opdrachtnemer is een externe uitvoerende (aannemer of service-/onderhoudsbedrijf) of een interne vakgroep. &lt;br /> &#xD;&#xA;Een onderhoudsorder kan resulteren in één of meerdere afspraken met een relatie (meestal de huurder/bewoner).  &lt;br />&#xD;&#xA;Een onderhoudsorder bestaat uit één of meer onderhoudstaken, die de uit te voeren werkzaamheden in detail kunnen beschrijven. Het is ook mogelijk dat een onderhoudsorder bestaat uit slechts 1 onderhoudstaak waarin de werkzaamheden globaal wordt beschreven. In dat geval wordt de detaillering van de uit te voeren werkzaamheden overgelaten aan de (externe) uitvoerende partij. &lt;br />&#xD;&#xA;Een onderhoudsorder is gekoppeld aan een onderhoudsverzoek wanneer het reparatie- of mutatieonderhoud betreft. Bij de uitvoering van planmatig onderhoud is er geen relatie met een onderhoudsverzoek. &lt;br />&#xD;&#xA;Zowel in het geval van reparatie-/klachtenonderhoud als bij mutatieonderhoud kan er sprake zijn van een 1-op-1 relatie tussen onderhoudsorder en onderhoudsverzoek, maar kunnen er ook meerdere orders aan het onderhoudsverzoek zijn gekoppeld. &#xD;&#xA;De onderhoudsorder bevat het Defect of de Defecten, die meestal word(t)(en) overgenomen van het bovenliggende Onderhoudsverzoek. De informatie van het Defect ondersteunt bij het bepalen wie de opdracht tot uitvoering krijgt. Daarnaast bepaalt het defect ook of mogelijk sprake is van garanties of andere specifieke contractvoorwaarden.  &#xD;&#xA;&#xD;&#xA;Voorbeelden&#xD;&#xA;Voorbeeld 1: Naar aanleiding van een onderhoudsverzoek van huurder Jansen voor het repareren van een lekkende waterleiding in de badkamer wordt een onderhoudsorder aangemaakt. Omdat de corporatie eigen vakmannen in dienst heeft die deze reparatie kunnen uitvoeren wordt de onderhoudsorder toegewezen aan de interne vakgroep Loodgieters. &lt;br />&#xD;&#xA;Voorbeeld 2: Naar aanleiding van een huuropzegging van huurder Jansen wordt door de verhuurmakelaar een onderhoudsverzoek aangemaakt om de woning geschikt te maken voor wederverhuur. Voor het bepalen van de benodigde (herstel)werkzaamheden wordt een order gemaakt voor het inspecteren van de woning. De order (van het soort &quot;Inspectie)  wordt toegewezen aan de inspecteur die zijn bevindingen vastlegt in een inspectierapport. &lt;br />&#xD;&#xA;Voorbeeld 3: Op basis van het mutatieproces rondom de woning van huurder Jansen is een inspectie uitgevoerd en vastgesteld dat het mutatiepakket BKT (badkamer-keuken-toilet) moet worden uitgevoerd. Omdat deze werkzaamheden niet uitgevoerd worden door de interne vakgroep wordt een onderhoudsorder aangemaakt voor de aannemer Pietersen voor het uitvoeren van de werkzaamheden.  &lt;br />&#xD;&#xA;Voorbeeld 4: In de vastgestelde onderhoudsbegroting voor het huidige jaar is opgenomen dat de boeiboorden van de woningen in cluster X worden vervangen. Op basis daarvan wordt een onderhoudsorder toegewezen aan aannemer Pietersen. &#xD;&#xA;&#xD;&#xA;INS (Inspectie): Opdracht tot het uitvoeren van inspectie-/inventarisatie-werkzaamheden om vast te stellen óf en zo ja welke onderhoudswerkzaamheden moeten worden uitgevoerd. Dit kan een inspectie zijn naar aanleiding van een onduidelijk reparatieverzoek of naar aanleiding van een verhuurmutatie.&#xD;&#xA;--MUT&#x9;&#x9;Mutatie&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Opdracht tot het uitvoeren van onderhoudswerkzaamheden naar aanleiding van een verhuurmutatie.&#xD;&#xA;--PLN&#x9;&#x9;Planmatig&#x9;&#x9;&#x9;&#x9;&#x9;Opdracht tot het uitvoeren van onderhoudswerkzaamheden naar aanleiding van een goedgekeurd MJO-budget&#xD;&#xA;--WOV&#x9;Woningverbetering&#x9;Bij aanpassing op verzoek van de huurder voor verbetering van het woongenot. Voorbeeld is het voortijdig vervangen van de wc-pot door een luxe uiitvoering&#xD;&#xA;--WMO&#x9;WMO Aanpassing&#x9;&#x9;Bij benodigde aanpassing van de woning bij de zittende huurder (door ouderdom, invaliditeit aanbrengen van WMO-aanpassing)&#xD;&#xA;--PRJ&#x9;Projectmatig&#x9;&#x9;&#x9;&#x9;&#x9;Opdracht tot het uitvoeren van onderhoudswerkzaamheden naar aanleiding van een investeringsproject zoals verduurzaming, renovatie, etc.&#xD;&#xA;--REP&#x9;Reparatie&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Opdracht tot het uitvoeren van reparatiewerkzaamheden naar aanleiding van een geconstateerd defect&#xD;&#xA;">
+  <properties
+      key="businessKey"
+      value="De sleutel van de onderhoudsorder zoals bekend in het bronsysteem (Businesskey of External id)."/>
+  <properties
+      key="code"
+      value="De unieke code (Bijvoorbeeld om te tonen of te zoeken)"/>
+  <properties
+      key="opdrachtdatum"
+      value="Datum (en tijdstip) waarop de opdracht is verstrekt aan het (extern) onderhoudsbedrijf of de interne vakgroep voor de uitvoering van de werkzaamheden."/>
+  <properties
+      key="onderhoudSoort"
+      value="Typering van de onderhoudsorder zoals bijvoorbeeld inspectie, mutatiewerkzaamheden, reparatiewerkzaamheden, etc. (Referentiedata)"/>
+  <properties
+      key="onderhoudsorderAfrekenwijze"
+      value="De wijze waarop de onderhoudsorder wordt afgerekend (of niet). Bijvoorbeeld: Nacalculatie regie, Nacalculatie eenheidsprijzen, Vaste prijs, Afkoop, Garantie. (Referentiedata)"/>
+  <properties
+      key="omschrijving"
+      value="De korte omschrijving van de onderhoudsorder. Bijvoorbeeld: Herstel de lekkende kraan in de keuken."/>
+  <properties
+      key="uitersteGereeddatum"
+      value="Uiterste datum waarop de onderhoudsorder technisch gereed moet zijn. Dit wordt vaak bepaald aan de hand van de LEDO."/>
+  <properties
+      key="OnderhoudsorderStatus"
+      value="De status van de order. Bijvoorbeeld: Order zit in de steekproef of de order is technisch gereed. (Referentiedata)"/>
+  <properties
+      key="technischGereeddatum"
+      value="De datum waarop de order technisch beëindigd is."/>
+</archimate:DataObject>

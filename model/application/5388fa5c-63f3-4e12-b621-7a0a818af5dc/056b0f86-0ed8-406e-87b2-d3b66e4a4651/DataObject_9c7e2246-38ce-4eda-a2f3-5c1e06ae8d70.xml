@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="InformatieobjectSoort"
+    id="9c7e2246-38ce-4eda-a2f3-5c1e06ae8d70"
+    documentation="BRO&#x9;&#x9;(Brochure)&#xD;&#xA;DOC&#x9;(Document)&#xD;&#xA;FOT&#x9;&#x9;(Foto)&#xD;&#xA;KOP&#x9;&#x9;(Kopie)&#xD;&#xA;OVE&#x9;&#x9;(Overeenkomst)&#xD;&#xA;PLN&#x9;&#x9;(Plan)&#xD;&#xA;PLA&#x9;&#x9;(Plattegrond)&#xD;&#xA;RAP&#x9;&#x9;(Rapport)&#xD;&#xA;VER&#x9;&#x9;(Verslag)&#xD;&#xA;VID&#x9;&#x9;(Video)"/>

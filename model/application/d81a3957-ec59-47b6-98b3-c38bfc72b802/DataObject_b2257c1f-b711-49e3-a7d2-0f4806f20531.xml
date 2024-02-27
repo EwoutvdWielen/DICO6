@@ -1,0 +1,9 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="InstructionDataType (Onderhoudsorder)"
+    id="b2257c1f-b711-49e3-a7d2-0f4806f20531"
+    documentation="Niveau in het bericht waar de opdrachten worden gespecificeerd.&#xD;&#xA;&#xD;&#xA;zelfde niveau als onderhoudsopdracht?">
+  <properties
+      key="Equivalent VERA-klasse"
+      value="Onderhoudsorder"/>
+</archimate:DataObject>

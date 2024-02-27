@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="DeliveryTimeFrameType (Onderhoudsorder)"
+    id="1a427d74-ae14-47a0-a04a-0082b93d1c0d"
+    documentation="Gegevens over de periode waarbinnen iets moet worden uitgevoerd.&#xD;&#xA;&#xD;&#xA;&lt;h4>VERA&lt;/h4>&#xD;&#xA;Attribuut Uiterste gereeddatum in Klasse Onderhoudsorder"/>

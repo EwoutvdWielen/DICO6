@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="OnderhoudsorderAfrekenwijze"
+    id="b759c41f-8998-49c8-900c-ffacab24903b"
+    documentation="AFK&#x9;(Afkoop)&#xD;&#xA;De onderhoudsorder wordt niet afgerekend omdat dit type onderhoud is afgekocht op totaalniveau&#xD;&#xA;SALES: AFK&#xD;&#xA;&#xD;&#xA;GAR (Garantie)&#xD;&#xA;De onderhoudsorder wordt niet afgerekend omdat de werkzaamheden onder garantie vallen&#xD;&#xA;SALES: niet aanwezig&#xD;&#xA;&#xD;&#xA;NCE (Nacalculatie eenheidsprijzen)&#xD;&#xA;De onderhoudsorder wordt afgerekend op basis van aantal eenheden x eenheidsrpijs&#xD;&#xA;SALES: EHP&#xD;&#xA;&#xD;&#xA;NCR (Nacalculatie regie)&#xD;&#xA;De onderhoudsorder wordt afgerekend op basis van de werkelijke bestedingen (arbeidstijd, reistijd, materiaal)&#xD;&#xA;SALES: REG&#xD;&#xA;&#xD;&#xA;VPR (Vaste prijs)&#xD;&#xA;De onderhoudsorder wordt afgerekend op basis van een vaste (totaal-)prijs&#xD;&#xA;SALES: ANS"/>

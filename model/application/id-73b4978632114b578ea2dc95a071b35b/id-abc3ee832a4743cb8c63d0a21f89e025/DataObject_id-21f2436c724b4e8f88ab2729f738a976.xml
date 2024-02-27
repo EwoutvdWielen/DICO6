@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Opvragen afspraakopties"
+    id="id-21f2436c724b4e8f88ab2729f738a976"
+    documentation="===Definitie===&#xD;&#xA;Afspraakoptie waarop de onderhoudsorder met opgegeven onderhoudslocatie kan worden uitgevoerd. De afspraakopties worden opgevraagd aan de hand van een opgegeven discipline, de verwachte duur van de werkzaamheden en de locatie van de werkzaamheden en wordt vaak als lijst van opties teruggekoppeld. De aanvrager zal op basis van de afspraakoptie (uniek id van de optie) de afspraak vastleggen bij de onderhoudsorder. &#xD;&#xA;&#xD;&#xA;===Business rules===&#xD;&#xA;-  &#xD;&#xA;&#xD;&#xA;===Scenario's===&#xD;&#xA;- "/>

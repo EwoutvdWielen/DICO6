@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="InformatieobjectDetailSoort"
+    id="d349f694-c09d-43a7-b8de-37ff6d0aa4cb"
+    documentation="ADV&#x9;&#x9;(Advies)&#xD;&#xA;AGE&#x9;&#x9;(Agenda)&#xD;&#xA;DAG&#x9;(Dag)&#xD;&#xA;EVA&#x9;&#x9;(Evaluatie)&#xD;&#xA;INS&#x9;&#x9;(Inspectie)&#xD;&#xA;JAA&#x9;&#x9;(Jaar)&#xD;&#xA;KWA&#x9;(Kwartaal)&#xD;&#xA;MAA&#x9;(Maand)&#xD;&#xA;NOT&#x9;&#x9;(Notulen)&#xD;&#xA;OND&#x9;(Onderhoud)&#xD;&#xA;PRG&#x9;&#x9;(Programma)&#xD;&#xA;PRJ&#x9;&#x9;(Project)&#xD;&#xA;WEE&#x9;&#x9;(Week)"/>

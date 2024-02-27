@@ -1,0 +1,9 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="AttachmentType (Informatieobject)"
+    id="350d3a24-557e-4a33-bca1-3256b75f287b"
+    documentation="Gegevens over de bijlage en/of de deeplink bij een bericht.&#xD;&#xA;&#xD;&#xA;BUSINESS RULES&#xD;&#xA;Het is verplicht om de 'URL' of 'Bijlage' te gebruiken in de onderhoudsberichten.">
+  <properties
+      key="Equivalent VERA-klasse"
+      value="Informatieobject"/>
+</archimate:DataObject>

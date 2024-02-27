@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="DeliveryTimeFrame"
+    id="e78f67fa-bd50-4fb4-9c63-d1edb759f5a2"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_55c1df51-4c66-4b3d-bd12-e338e2c89136.xml#55c1df51-4c66-4b3d-bd12-e338e2c89136"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_1a427d74-ae14-47a0-a04a-0082b93d1c0d.xml#1a427d74-ae14-47a0-a04a-0082b93d1c0d"/>
+</archimate:AssociationRelationship>

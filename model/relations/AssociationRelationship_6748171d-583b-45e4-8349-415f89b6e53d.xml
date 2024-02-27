@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="geometrie"
+    id="6748171d-583b-45e4-8349-415f89b6e53d"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_ea29e25d-16d9-4ae6-b365-eda170cd2541.xml#ea29e25d-16d9-4ae6-b365-eda170cd2541"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_b00843ba-7585-4c37-862b-37e1ed7a73cb.xml#b00843ba-7585-4c37-862b-37e1ed7a73cb"/>
+</archimate:AssociationRelationship>

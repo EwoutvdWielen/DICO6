@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Nieuw onderhoudsverzoek voor reparatie"
+    id="id-5887c390d6d94eca9558894002aa24f3"
+    documentation="===Definitie===&#xD;&#xA;Reparatieverzoek waarin één of meerdere defecten worden gemeld door de melder (vaak de huurder/bewoner van het object) zonder het vastleggen van een afspraak voor het herstel. Binnen kunnen bijlagen (vaak foto's) meegestuurd worden ter verduidelijking van het defect / de defecten. &#xD;&#xA;&#xD;&#xA;===Business rules===&#xD;&#xA;- Eén of meerdere defecten&#xD;&#xA;- Per defect één of meerdere bijlagen (met een maximum)&#xD;&#xA;- Eén onderhoudslocatie voor de defecten. &#xD;&#xA;&#xD;&#xA;===Scenario's===&#xD;&#xA;- Enkelvoudig reparatieverzoek zonder planning&#xD;&#xA;- Meervoudig reparatieverzoek zonder planning  "/>

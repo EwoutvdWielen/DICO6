@@ -1,0 +1,11 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="InformatieobjectKenmerk"
+    id="631268b6-186b-4a8d-a256-19e22104d8aa">
+  <properties
+      key="omschrijving"
+      value="De omschrijving van het informatieobject kenmerk"/>
+  <properties
+      key="waarde"
+      value="De waarde van het informatieobject kenmerk."/>
+</archimate:DataObject>

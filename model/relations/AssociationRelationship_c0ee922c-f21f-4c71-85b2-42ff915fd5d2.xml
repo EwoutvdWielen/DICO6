@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="MaintenanceMoment"
+    id="c0ee922c-f21f-4c71-85b2-42ff915fd5d2"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_80a49fe1-41c4-427e-842e-7185f22ebbdd.xml#80a49fe1-41c4-427e-842e-7185f22ebbdd"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_3105ff75-d23d-4313-b80e-52510ad0668a.xml#3105ff75-d23d-4313-b80e-52510ad0668a"/>
+</archimate:AssociationRelationship>

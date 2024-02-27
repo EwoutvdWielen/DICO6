@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Standaardprijs"
+    id="fcdd2551-fe39-4959-8e76-1f1fc4da2723"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_758fefdd-c153-4803-a0a1-b32d494c919b.xml#758fefdd-c153-4803-a0a1-b32d494c919b"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_ea7235cc-9f38-48c2-913e-136ffa88259d.xml#ea7235cc-9f38-48c2-913e-136ffa88259d"/>
+</archimate:AssociationRelationship>

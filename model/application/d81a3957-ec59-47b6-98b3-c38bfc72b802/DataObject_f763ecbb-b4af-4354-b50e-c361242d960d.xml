@@ -1,0 +1,9 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="MaintenanceInstructionType (SALES:Opdrachtbericht)"
+    id="f763ecbb-b4af-4354-b50e-c361242d960d"
+    documentation="Hoofdniveau van het opdracht-bericht">
+  <properties
+      key="Equivalent VERA-klasse"
+      value="Onderhoudsorder"/>
+</archimate:DataObject>

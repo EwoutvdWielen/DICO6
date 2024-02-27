@@ -1,0 +1,15 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="prijs"
+    id="id-d9dfb9123c76485599499d894441759b"
+    directed="true">
+  <profiles
+      href="folder.xml#id-770b8ad39f89457ba4ecff5775e99dc3"/>
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_44fe8098-28ac-44fe-9552-2f84a118342c.xml#44fe8098-28ac-44fe-9552-2f84a118342c"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_ea7235cc-9f38-48c2-913e-136ffa88259d.xml#ea7235cc-9f38-48c2-913e-136ffa88259d"/>
+</archimate:AssociationRelationship>

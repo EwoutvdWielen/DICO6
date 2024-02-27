@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="onderhoudsbestedingen"
+    id="da776496-d511-4852-b47e-039a21491526"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_44fe8098-28ac-44fe-9552-2f84a118342c.xml#44fe8098-28ac-44fe-9552-2f84a118342c"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_52ae7e46-b9d3-42e3-9386-31396d6247be.xml#52ae7e46-b9d3-42e3-9386-31396d6247be"/>
+</archimate:AssociationRelationship>

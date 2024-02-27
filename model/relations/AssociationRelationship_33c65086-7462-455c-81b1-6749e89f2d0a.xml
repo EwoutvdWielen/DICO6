@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="onderhoudstaakVoorcalculaties"
+    id="33c65086-7462-455c-81b1-6749e89f2d0a"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_ea7235cc-9f38-48c2-913e-136ffa88259d.xml#ea7235cc-9f38-48c2-913e-136ffa88259d"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_758fefdd-c153-4803-a0a1-b32d494c919b.xml#758fefdd-c153-4803-a0a1-b32d494c919b"/>
+</archimate:AssociationRelationship>

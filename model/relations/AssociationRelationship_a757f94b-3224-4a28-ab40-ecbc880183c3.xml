@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Contractor"
+    id="a757f94b-3224-4a28-ab40-ecbc880183c3"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_13ba271d-f654-4de2-89f8-d3879164b698.xml#13ba271d-f654-4de2-89f8-d3879164b698"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_b38876e8-7c3d-4524-8270-f58097fb1618.xml#b38876e8-7c3d-4524-8270-f58097fb1618"/>
+</archimate:AssociationRelationship>

@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="contractanten"
+    id="e4043e07-822f-41e0-be73-014b3a3b6470"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_c93f4d88-512d-4d97-baea-544db8ee979d.xml#c93f4d88-512d-4d97-baea-544db8ee979d"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_048d8091-471d-4ee8-bec0-cfe6143df3a3.xml#048d8091-471d-4ee8-bec0-cfe6143df3a3"/>
+</archimate:AssociationRelationship>

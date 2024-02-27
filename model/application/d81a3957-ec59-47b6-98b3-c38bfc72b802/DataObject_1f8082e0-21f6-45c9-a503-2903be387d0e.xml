@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="MaintenanceMomentResponseType"
+    id="1f8082e0-21f6-45c9-a503-2903be387d0e"
+    documentation="Gegevens over de datum, tijd of periode van onderhoud.&#xD;&#xA;&#xD;&#xA;BUSINESS RULES&#xD;&#xA;Gebruik 1 uitvoeringsmoment per planningsoptie. Als u helemaal niet aan de gevraagde planning kunt voldoen laat u dit gegeven leeg en stuur dit bericht retour."/>

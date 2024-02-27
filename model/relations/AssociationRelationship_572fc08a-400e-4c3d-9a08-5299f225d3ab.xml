@@ -1,0 +1,14 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="LEDOInformation"
+    id="572fc08a-400e-4c3d-9a08-5299f225d3ab"
+    documentation="&lt;h4>VERA&lt;/h4>&#xD;&#xA;LEDO (Defect) is een aparte klasse en heeft een associatie met Onderhoudsorder (en Inspectierapport)"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_674bcce9-3ee4-4524-8291-001eed9f55a2.xml#674bcce9-3ee4-4524-8291-001eed9f55a2"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_a4548f63-5135-47ea-bbde-0f08df77c101.xml#a4548f63-5135-47ea-bbde-0f08df77c101"/>
+</archimate:AssociationRelationship>

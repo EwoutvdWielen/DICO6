@@ -1,0 +1,9 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Partywithcontacttype (Relatie)"
+    id="b38876e8-7c3d-4524-8270-f58097fb1618"
+    documentation="Relatiegegevens">
+  <properties
+      key="Equivalent VERA-klasse"
+      value="Relatie"/>
+</archimate:DataObject>

@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Competence"
+    id="2aeef63b-ed14-4394-b4c6-ae700a35253c"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_80a49fe1-41c4-427e-842e-7185f22ebbdd.xml#80a49fe1-41c4-427e-842e-7185f22ebbdd"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_7b58a44b-fd66-4e7a-a810-f80f8317dc40.xml#7b58a44b-fd66-4e7a-a810-f80f8317dc40"/>
+</archimate:AssociationRelationship>

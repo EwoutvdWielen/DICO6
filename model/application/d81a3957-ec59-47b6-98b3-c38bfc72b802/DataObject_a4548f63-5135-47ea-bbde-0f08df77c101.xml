@@ -1,0 +1,9 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="LEDOInformationType (Defect)"
+    id="a4548f63-5135-47ea-bbde-0f08df77c101"
+    documentation="Gegevens over locatie, element, defect en oorzaak van het te onderhouden object.">
+  <properties
+      key="Equivalent VERA-klasse"
+      value="Defect"/>
+</archimate:DataObject>

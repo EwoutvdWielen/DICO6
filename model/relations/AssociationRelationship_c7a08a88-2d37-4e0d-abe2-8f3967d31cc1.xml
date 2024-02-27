@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="TimeblocksPerWeekday"
+    id="c7a08a88-2d37-4e0d-abe2-8f3967d31cc1"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_3105ff75-d23d-4313-b80e-52510ad0668a.xml#3105ff75-d23d-4313-b80e-52510ad0668a"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_199a4d28-4318-4adf-847e-d09ea15293a1.xml#199a4d28-4318-4adf-847e-d09ea15293a1"/>
+</archimate:AssociationRelationship>

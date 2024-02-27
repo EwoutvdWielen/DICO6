@@ -1,0 +1,12 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Onderhoudsovereenkomst"
+    id="c93f4d88-512d-4d97-baea-544db8ee979d"
+    documentation="&lt;h4>Definitie&lt;/h4>&#xD;&#xA;Een onderhoudsovereenkomst is een type overeenkomst waarin de corporatie afspraken met een leverancier heeft vastgelegd over het onderhoud aan (delen van) een eenheid.&#xD;&#xA;&#xD;&#xA;&lt;h4>Toelichting&lt;/h4>&#xD;&#xA;In de onderhoudsovereenkomst wordt vastgelegd of er voor niet-planmatig onderhoud op bijvoorbeeld de CV ketel of het glas van de ramen een raamovereenkomst met een leverancier is afgesloten.&#xD;&#xA;Wanneer er sprake is van onderhoudscontracten op elementen zal de corporatie niet zelf de storing of het defect verhelpen maar dit door de leverancier laten uitvoeren waarmee de onderhoudsovereenkomst is afgesloten. ">
+  <properties
+      key="businessKey"
+      value="De sleutel van de overeenkomst zoals bekend in het bronsysteem (Businesskey of External id)."/>
+  <properties
+      key="begindatum"
+      value="De begindatum van de overeenkomst. "/>
+</archimate:DataObject>

@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="onderhoudstaken"
+    id="47cfef2d-b8e2-465d-9b5d-cc9328b1939b"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_758fefdd-c153-4803-a0a1-b32d494c919b.xml#758fefdd-c153-4803-a0a1-b32d494c919b"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_44fe8098-28ac-44fe-9552-2f84a118342c.xml#44fe8098-28ac-44fe-9552-2f84a118342c"/>
+</archimate:AssociationRelationship>

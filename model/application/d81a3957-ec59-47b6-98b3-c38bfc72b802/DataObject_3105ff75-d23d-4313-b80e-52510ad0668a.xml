@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="MaintenanceMomentType"
+    id="3105ff75-d23d-4313-b80e-52510ad0668a"
+    documentation="Gegevens over de datum, tijd of periode van onderhoud.&#xD;&#xA;&#xD;&#xA;BUSINESS RULES&#xD;&#xA;Als Bloktijd en Bloktijd onder weekdag beide zijn ingevuld dan is de Bloktijd onder weekdag leidend."/>

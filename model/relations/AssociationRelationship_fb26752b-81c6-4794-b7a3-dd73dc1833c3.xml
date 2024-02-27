@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="offerte"
+    id="fb26752b-81c6-4794-b7a3-dd73dc1833c3"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_e6988cfc-8c60-4a54-8767-6f82311bbd82.xml#e6988cfc-8c60-4a54-8767-6f82311bbd82"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_74b62ea9-652e-447c-aedb-0a43e5f9e737.xml#74b62ea9-652e-447c-aedb-0a43e5f9e737"/>
+</archimate:AssociationRelationship>

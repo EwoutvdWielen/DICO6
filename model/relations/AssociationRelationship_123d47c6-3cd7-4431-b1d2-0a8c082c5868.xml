@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Timeblock"
+    id="123d47c6-3cd7-4431-b1d2-0a8c082c5868"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_1f8082e0-21f6-45c9-a503-2903be387d0e.xml#1f8082e0-21f6-45c9-a503-2903be387d0e"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_51e8ce92-1432-4726-a982-f8d3e6207311.xml#51e8ce92-1432-4726-a982-f8d3e6207311"/>
+</archimate:AssociationRelationship>

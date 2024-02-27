@@ -1,0 +1,9 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="PriceInformationType"
+    id="c7f82bb4-0d21-484c-a5a6-63cb41f7abbc"
+    documentation="Gegevens over de prijs van werk.">
+  <properties
+      key="Equivalent VERA-klasse"
+      value="OnderhoudstaakVoorcalculatie"/>
+</archimate:DataObject>

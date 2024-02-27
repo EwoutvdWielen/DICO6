@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="TimeblocksPerWeekdayType"
+    id="199a4d28-4318-4adf-847e-d09ea15293a1"
+    documentation="Weekdag met of zonder start- en eindtijden."/>

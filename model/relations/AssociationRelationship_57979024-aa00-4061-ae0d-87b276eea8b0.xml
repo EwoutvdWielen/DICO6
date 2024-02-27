@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="bouwkundigElement"
+    id="57979024-aa00-4061-ae0d-87b276eea8b0"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_4b5449f2-1603-4461-a444-6d6f693ccd05.xml#4b5449f2-1603-4461-a444-6d6f693ccd05"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_da74d4e7-5bc5-4216-855d-94beef1b5453.xml#da74d4e7-5bc5-4216-855d-94beef1b5453"/>
+</archimate:AssociationRelationship>

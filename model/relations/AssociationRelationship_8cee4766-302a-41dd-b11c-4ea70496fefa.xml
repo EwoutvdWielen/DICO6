@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Attachement (mv)"
+    id="8cee4766-302a-41dd-b11c-4ea70496fefa"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_46b2cdba-5bd1-4fe8-8727-9cf590ab252a.xml#46b2cdba-5bd1-4fe8-8727-9cf590ab252a"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_350d3a24-557e-4a33-bca1-3256b75f287b.xml#350d3a24-557e-4a33-bca1-3256b75f287b"/>
+</archimate:AssociationRelationship>

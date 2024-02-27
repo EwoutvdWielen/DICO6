@@ -1,0 +1,17 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Relatie"
+    id="a871da7d-9104-49e3-a8d1-af4179978ffa">
+  <properties
+      key="globaalLocatienummer"
+      value="Een wereldwijd nummer ter identificatie van een partij of locatie. Het dertiencijferige nummer (GLN) wordt uitgegeven door GS1."/>
+  <properties
+      key="naam"
+      value="Naam van de rechtspersoon"/>
+  <properties
+      key="naam2"
+      value="NIET AANWEZIG"/>
+  <properties
+      key="contactpersonen.*"
+      value="samenstelling van voor- en achternaam met tussenvoegsels uit Relatie"/>
+</archimate:DataObject>

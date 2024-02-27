@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Vastleggen afspraak"
+    id="id-299e6a782a0240ca82a55cbae10ba6c9"
+    documentation="===Definitie===&#xD;&#xA;Aan de onderhoudsorder wordt een afspraak toegevoegd (vastgelegd). Elke afspraak kan gekoppeld zijn aan een afspraakoptie maar dit hoeft niet. In sommige gevallen kan een afspraak meegegeven worden aan een onderhoudsorder zonder vooraf afspraakopties opgevraagd te hebben.&#xD;&#xA;&#xD;&#xA;===Business rules===&#xD;&#xA;-  &#xD;&#xA;&#xD;&#xA;===Scenario's===&#xD;&#xA;- "/>

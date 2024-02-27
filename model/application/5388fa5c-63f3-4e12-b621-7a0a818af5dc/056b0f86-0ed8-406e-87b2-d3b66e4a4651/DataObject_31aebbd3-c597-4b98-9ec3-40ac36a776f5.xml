@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="OnderhoudstaakDetailStatus"
+    id="31aebbd3-c597-4b98-9ec3-40ac36a776f5"
+    documentation="INS&#x9;&#x9;(Inspectie/beoordeling vereist)&#xD;&#xA;De taak is onderbroken omdat inspectie/beoordeling door inspecteur noodzakelijk is&#xD;&#xA;&#xD;&#xA;AFW&#x9;(Klant niet aanwezig)&#xD;&#xA;De taak is onderbroken omdat de klant niet aanwezig is&#xD;&#xA;&#xD;&#xA;MAT&#x9;(Materiaal bestellen)&#xD;&#xA;De taak is onderbroken omdat materiaal besteld moet worden&#xD;&#xA;&#xD;&#xA;DIS&#x9;&#x9;(Niet de juiste discipline)&#xD;&#xA;De taak is onderbroken omdat de vakman niet de juiste discipline heeft&#xD;&#xA;&#xD;&#xA;OFF&#x9;&#x9;(Offerte benodigd)&#xD;&#xA;De taak is onderbroken omdat een offerte nodig is&#xD;&#xA;&#xD;&#xA;ONV&#x9;(Onvoldoende tijd)&#xD;&#xA;De taak is onderbroken omdat er onvoldoende tijd voor de vakman is"/>

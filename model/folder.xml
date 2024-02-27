@@ -1,0 +1,26 @@
+<archimate:ArchimateModel
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="DICO6"
+    id="765d4e91-5054-45f9-a0f3-803745710996"
+    version="5.0.0">
+  <profiles
+      name="1 op 0 of n"
+      id="id-fe41383b84844664867ca83018bad46f"
+      conceptType="AssociationRelationship"/>
+  <profiles
+      name="0 of 1"
+      id="id-7436f500bada46348f844a68e734e4b1"
+      conceptType="AssociationRelationship"/>
+  <profiles
+      name="1 op 1"
+      id="id-ce6360520eaf4e419db5a4f0249cd775"
+      conceptType="AssociationRelationship"/>
+  <profiles
+      name="1 op 0 of 1"
+      id="id-770b8ad39f89457ba4ecff5775e99dc3"
+      conceptType="AssociationRelationship"/>
+  <profiles
+      name="1 op n"
+      id="id-e40bd314041c4be1a7370fdc2c1747b1"
+      conceptType="AssociationRelationship"/>
+</archimate:ArchimateModel>

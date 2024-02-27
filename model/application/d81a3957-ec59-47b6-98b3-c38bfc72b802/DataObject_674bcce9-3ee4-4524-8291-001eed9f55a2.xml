@@ -1,0 +1,9 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="InstructionLineType (Onderhoudstaak)"
+    id="674bcce9-3ee4-4524-8291-001eed9f55a2"
+    documentation="Niveau in het bericht waar de onderhoudsdetails worden gespecificeerd.">
+  <properties
+      key="Equivalent VERA-klasse"
+      value="Onderhoudstaak"/>
+</archimate:DataObject>

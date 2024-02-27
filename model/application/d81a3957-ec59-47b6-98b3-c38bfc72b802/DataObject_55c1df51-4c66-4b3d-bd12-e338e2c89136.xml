@@ -1,0 +1,9 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="DeliveryDateTimeInformationType (Afspraak)"
+    id="55c1df51-4c66-4b3d-bd12-e338e2c89136"
+    documentation="Gegevens over de datum, tijd of periode van uitvoering.&#xD;&#xA;&#xD;&#xA;BUSINESS RULES&#xD;&#xA;Het is verplicht de gewenste datum/tijd van uitvoering of het uitvoeringstijdvak te gebruiken.">
+  <properties
+      key="Equivalent VERA-klasse"
+      value="Afspraak"/>
+</archimate:DataObject>

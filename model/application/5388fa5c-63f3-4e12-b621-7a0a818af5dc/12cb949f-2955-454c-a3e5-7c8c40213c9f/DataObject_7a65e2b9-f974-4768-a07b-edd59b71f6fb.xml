@@ -1,0 +1,23 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Bijlage"
+    id="7a65e2b9-f974-4768-a07b-edd59b71f6fb">
+  <properties
+      key="bestandslocatie"
+      value="Een link (URI) naar de binaire representatie van het informatieobject."/>
+  <properties
+      key="bestand"
+      value="De binaire representatie van het informatieobject."/>
+  <properties
+      key="InformatieobjectSoort"
+      value="Specificatie van het documenttype. Bijvoorbeeld verslag, rapport etc."/>
+  <properties
+      key="InformatieobjectDetailSoort"
+      value="Detail specificatie van het documenttype. Bijvoorbeeld notulen, adviesrapport etc."/>
+  <properties
+      key="bestandsnaam"
+      value="De naam van het fysieke bestand waarin de inhoud van het informatieobject is vastgelegd."/>
+  <properties
+      key="formaat"
+      value="Het digitale formaat (IANA media type) van het informatieobject."/>
+</archimate:DataObject>

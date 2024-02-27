@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="cluster"
+    id="baca2450-4d1f-4354-965e-f12cf92176be"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_4b5449f2-1603-4461-a444-6d6f693ccd05.xml#4b5449f2-1603-4461-a444-6d6f693ccd05"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_ea29e25d-16d9-4ae6-b365-eda170cd2541.xml#ea29e25d-16d9-4ae6-b365-eda170cd2541"/>
+</archimate:AssociationRelationship>

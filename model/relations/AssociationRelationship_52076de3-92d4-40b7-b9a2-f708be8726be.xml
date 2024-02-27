@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="onderhoudstaak"
+    id="52076de3-92d4-40b7-b9a2-f708be8726be"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_52ae7e46-b9d3-42e3-9386-31396d6247be.xml#52ae7e46-b9d3-42e3-9386-31396d6247be"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_44fe8098-28ac-44fe-9552-2f84a118342c.xml#44fe8098-28ac-44fe-9552-2f84a118342c"/>
+</archimate:AssociationRelationship>
