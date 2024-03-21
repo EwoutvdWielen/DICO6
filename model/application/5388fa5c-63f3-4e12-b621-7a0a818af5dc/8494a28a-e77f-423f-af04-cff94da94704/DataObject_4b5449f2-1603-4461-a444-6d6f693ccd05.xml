@@ -1,7 +1,8 @@
 <archimate:DataObject
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Defect"
-    id="4b5449f2-1603-4461-a444-6d6f693ccd05">
+    id="4b5449f2-1603-4461-a444-6d6f693ccd05"
+    documentation="Een defect bestaat uit: &#xD;&#xA;- locatie binnen object&#xD;&#xA;- element&#xD;&#xA;- defect&#xD;&#xA;- (mogelijke) oorzaak&#xD;&#xA;- (vastgestelde) oorzaak">
   <properties
       key="melder"
       value="De relatie die het defect heeft gemeld. Blijft leeg indien het element of object zelf een storing heeft gemeld."/>
