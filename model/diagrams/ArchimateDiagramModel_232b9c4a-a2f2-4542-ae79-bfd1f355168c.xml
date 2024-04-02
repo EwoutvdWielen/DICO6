@@ -204,7 +204,7 @@
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
       id="5e19acfb-d1f4-4014-8f92-4acd2a44c32b"
-      targetConnections="f4b93212-5d2a-4f92-b87b-da67d3394048 53ec0d04-dc6b-40bd-8cfc-e171358cd07c"
+      targetConnections="53ec0d04-dc6b-40bd-8cfc-e171358cd07c f4b93212-5d2a-4f92-b87b-da67d3394048"
       font="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI"
       fontColor="#ffffff"
       fillColor="#6c9200"

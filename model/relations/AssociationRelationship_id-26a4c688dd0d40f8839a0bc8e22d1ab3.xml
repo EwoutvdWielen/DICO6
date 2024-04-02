@@ -1,0 +1,15 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="locatie"
+    id="id-26a4c688dd0d40f8839a0bc8e22d1ab3"
+    directed="true">
+  <profiles
+      href="folder.xml#id-ce6360520eaf4e419db5a4f0249cd775"/>
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-a04e84ff9e8840088280a423d7fcd3f4.xml#id-a04e84ff9e8840088280a423d7fcd3f4"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-63eff3c23def48d0ae90d8ad620560c5.xml#id-63eff3c23def48d0ae90d8ad620560c5"/>
+</archimate:AssociationRelationship>

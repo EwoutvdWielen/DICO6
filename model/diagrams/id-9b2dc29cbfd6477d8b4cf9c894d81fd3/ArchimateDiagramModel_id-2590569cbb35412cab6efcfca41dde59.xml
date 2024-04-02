@@ -67,20 +67,6 @@
         type="1">
       <sourceConnections
           xsi:type="archimate:DiagramModelArchimateConnection"
-          id="id-1488fc89933e4920b734495257936fa7"
-          font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI"
-          source="id-d4ff28b0702246419ea879af3ea00b0f"
-          target="id-a58de0f69b434e5781354ff66c478bc3">
-        <bendpoints
-            startY="-99"
-            endX="-204"
-            endY="9"/>
-        <archimateRelationship
-            xsi:type="archimate:AssociationRelationship"
-            href="AssociationRelationship_id-af87c2a005a54a3aa41bda599b799328.xml#id-af87c2a005a54a3aa41bda599b799328"/>
-      </sourceConnections>
-      <sourceConnections
-          xsi:type="archimate:DiagramModelArchimateConnection"
           id="id-c91fd2b378b24f82804ffb3c77fae3f6"
           font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI"
           source="id-d4ff28b0702246419ea879af3ea00b0f"
@@ -139,6 +125,20 @@
             xsi:type="archimate:AssociationRelationship"
             href="AssociationRelationship_31c40c9c-d8aa-4aa0-b222-37fe8e70697a.xml#31c40c9c-d8aa-4aa0-b222-37fe8e70697a"/>
       </sourceConnections>
+      <sourceConnections
+          xsi:type="archimate:DiagramModelArchimateConnection"
+          id="id-1488fc89933e4920b734495257936fa7"
+          font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI"
+          source="id-d4ff28b0702246419ea879af3ea00b0f"
+          target="id-a58de0f69b434e5781354ff66c478bc3">
+        <bendpoints
+            startY="-99"
+            endX="-204"
+            endY="9"/>
+        <archimateRelationship
+            xsi:type="archimate:AssociationRelationship"
+            href="AssociationRelationship_id-af87c2a005a54a3aa41bda599b799328.xml#id-af87c2a005a54a3aa41bda599b799328"/>
+      </sourceConnections>
       <bounds
           x="36"
           y="156"
@@ -151,7 +151,7 @@
     <children
         xsi:type="archimate:DiagramModelArchimateObject"
         id="id-a58de0f69b434e5781354ff66c478bc3"
-        targetConnections="id-1488fc89933e4920b734495257936fa7 id-1fe3b351160a4caa810d6b57194cb9dc"
+        targetConnections="id-1fe3b351160a4caa810d6b57194cb9dc id-1488fc89933e4920b734495257936fa7"
         font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI"
         fillColor="#b5ffff"
         textPosition="1"

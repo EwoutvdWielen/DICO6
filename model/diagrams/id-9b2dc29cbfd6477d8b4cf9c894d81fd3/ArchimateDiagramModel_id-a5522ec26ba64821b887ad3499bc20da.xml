@@ -2,7 +2,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Opvragen afspraakopties"
-    id="id-a5522ec26ba64821b887ad3499bc20da">
+    id="id-a5522ec26ba64821b887ad3499bc20da"
+    documentation="&#xD;&#xA;&#xD;&#xA;sc">
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
       id="id-034a723f9f0744a8acbf179329433ddd"
@@ -55,6 +56,20 @@
             xsi:type="archimate:AssociationRelationship"
             href="AssociationRelationship_id-0a7e4b9d0b514216ae68ee2d03e9a454.xml#id-0a7e4b9d0b514216ae68ee2d03e9a454"/>
       </sourceConnections>
+      <sourceConnections
+          xsi:type="archimate:DiagramModelArchimateConnection"
+          id="id-c7a373479d584728963dab78785006eb"
+          source="id-541d1db3332b41a7aceaa13ec0854afb"
+          target="id-f9e630867ab14ee1a89d0f2be48afb4f">
+        <bendpoints
+            startX="252"
+            startY="10"
+            endX="-12"
+            endY="-110"/>
+        <archimateRelationship
+            xsi:type="archimate:AssociationRelationship"
+            href="AssociationRelationship_id-1a55ee92b59a4b56bf65fe99200ed37c.xml#id-1a55ee92b59a4b56bf65fe99200ed37c"/>
+      </sourceConnections>
       <bounds
           x="36"
           y="60"
@@ -93,7 +108,7 @@
     <children
         xsi:type="archimate:DiagramModelArchimateObject"
         id="id-f9e630867ab14ee1a89d0f2be48afb4f"
-        targetConnections="id-4c665b79694e47ec876421bdb5b4f8bf id-8cc99925066447cf806dc692a8ea7b2b"
+        targetConnections="id-8cc99925066447cf806dc692a8ea7b2b id-4c665b79694e47ec876421bdb5b4f8bf id-c7a373479d584728963dab78785006eb"
         font="1|Segoe UI|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI"
         textPosition="1"
         type="1">

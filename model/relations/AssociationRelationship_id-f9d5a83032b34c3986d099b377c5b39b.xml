@@ -1,0 +1,15 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="offerteregels"
+    id="id-f9d5a83032b34c3986d099b377c5b39b"
+    directed="true">
+  <profiles
+      href="folder.xml#id-e40bd314041c4be1a7370fdc2c1747b1"/>
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-a04e84ff9e8840088280a423d7fcd3f4.xml#id-a04e84ff9e8840088280a423d7fcd3f4"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-4f444765dee042348bff31e5041ff7cb.xml#id-4f444765dee042348bff31e5041ff7cb"/>
+</archimate:AssociationRelationship>
