@@ -1,0 +1,23 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Afspraak (Planning)"
+    id="23624335-bf1b-46b7-b723-8492c2d16839"
+    documentation="&lt;h4>Definitie&lt;/h4>&#xD;&#xA;Dit zijn de afspraken die gemaakt zijn met relaties. &#xD;&#xA;&lt;h4>Toelichting&lt;/h4>&#xD;&#xA;Er wordt een afspraak gemaakt tijdens een contactmoment. &#xD;&#xA;&lt;h4>Voorbeelden&lt;/h4>&#xD;&#xA;De aannemer komt volgende week langs. ">
+  <properties
+      key="beginDatum"
+      value="De datum en tijd waarop de afspraak plaatsvindt. Als (nog) geen afspraak begindatum bekend is kan er wel een bloktijd zijn opgeven."/>
+  <properties
+      key="einddatum"
+      value="De datum en tijd tot wanneer de afspraak naar verwachting loopt."/>
+  <properties
+      key="id"
+      value="unieke nummer van de afspraak"/>
+  <properties
+      key="bloktijdBegin"
+      value="De datum en tijd die het begin van een blok markeert waarbinnen de afspraak bij voorkeur start. Pas als de afspraak daadwerkelijk ingepland is, is er ook een afspraak begindatum bekend."/>
+  <properties
+      key="bloktijdEind"
+      value="De datum en tijd die het eind van een blok markeert waarbinnen de afspraak bij voorkeur start."/>
+  <properties
+      key="ondehroudspecialisme"/>
+</archimate:DataObject>

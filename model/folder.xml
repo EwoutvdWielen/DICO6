@@ -23,4 +23,8 @@
       name="1 op n"
       id="id-e40bd314041c4be1a7370fdc2c1747b1"
       conceptType="AssociationRelationship"/>
+  <profiles
+      name="0 op n"
+      id="id-5d93cff142264866b9a214de3a00a535"
+      conceptType="AssociationRelationship"/>
 </archimate:ArchimateModel>

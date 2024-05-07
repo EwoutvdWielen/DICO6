@@ -1,13 +1,13 @@
 <archimate:AssociationRelationship
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="bijlagen"
-    id="2a19ef2c-5f37-4df1-8492-950babde276e"
+    name="contactpersonen"
+    id="id-c70f03f254c64955963435586e60850b"
     directed="true">
   <source
       xsi:type="archimate:DataObject"
-      href="DataObject_45cf3497-f768-4021-a8c5-4dc9d4ea0527.xml#45cf3497-f768-4021-a8c5-4dc9d4ea0527"/>
+      href="DataObject_a871da7d-9104-49e3-a8d1-af4179978ffa.xml#a871da7d-9104-49e3-a8d1-af4179978ffa"/>
   <target
       xsi:type="archimate:DataObject"
-      href="DataObject_7a65e2b9-f974-4768-a07b-edd59b71f6fb.xml#7a65e2b9-f974-4768-a07b-edd59b71f6fb"/>
+      href="DataObject_3780fe32-bfaa-4ce2-86e6-a8a49129b6e5.xml#3780fe32-bfaa-4ce2-86e6-a8a49129b6e5"/>
 </archimate:AssociationRelationship>

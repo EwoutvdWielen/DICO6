@@ -1,0 +1,27 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Adres (Address)"
+    id="736de03a-b11d-4651-b3e1-05145dd7a954"
+    documentation="&lt;h4>Definitie&lt;/h4>&#xD;&#xA;Combinatie van de in BAG gedefinieerde objecten Woonplaats, Nummeraanduiding en Openbare ruimte naam of door de woningcorporatie in het verlengde hiervan zelf toegevoegde adressen. &#xD;&#xA;&#xD;&#xA;&lt;h4>Toelichting&lt;/h4>&#xD;&#xA;Adressen zijn er in twee soorten, de officieel door de BAG uitgegeven adressen en extra adressen die de corporatie zelf aan eenheden toevoegt. De BAG kent bijvoorbeeld geen adressen aan onzelfstandige eenheden (studentenkamers) of garages toe. Corporaties gebruiken hiervoor wel adressen in hun systemen. &#xD;&#xA;&#xD;&#xA; &#xD;&#xA;&#xD;&#xA;">
+  <properties
+      key="straatnaam"
+      value="De straatnaam behorend bij het adres"/>
+  <properties
+      key="huisnummer"
+      value="Het huisnummer dat door of namens het gemeentebestuur ten aanzien van een adresseerbaar object toegekende nummering."/>
+  <properties
+      key="huisletter"
+      value="De huisletter door of namens het gemeentebestuur ten aanzien van een adresseerbaar object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken."/>
+  <properties
+      key="huisnummerToevoeging"
+      value="De huisnummer toevoeging van het adres"/>
+  <properties
+      key="postcode"
+      value="De postcode van het adres"/>
+  <properties
+      key="Woonplaats"
+      value="De woonplaats waarin het adres zich bevindt"/>
+  <properties
+      key="land"
+      value="Het land waarin het adres zich bevindt"/>
+</archimate:DataObject>
