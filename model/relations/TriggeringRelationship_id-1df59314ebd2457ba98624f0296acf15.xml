@@ -1,0 +1,13 @@
+<archimate:TriggeringRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Opvragen nieuw onderhoudsorder"
+    id="id-1df59314ebd2457ba98624f0296acf15"
+    documentation="GET MaintenanceOrder/{id of order}&#xD;&#xA;&#xD;&#xA;Response:&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;id&quot; :  &quot;string&quot;,&#xD;&#xA;&#x9;&quot;code&quot; : &quot;string&quot;, &#xD;&#xA;&#x9;&quot;omschrijving&quot; : &quot;string&quot;,&#xD;&#xA;&#x9;&quot;status&quot; : {&#xD;&#xA;&#x9;&#x9;&quot;code&quot; : &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&quot;naam&quot; : &quot;string&quot;&#xD;&#xA;&#x9;},&#xD;&#xA;&#x9;&quot;opdrachtdatum&quot;: &quot;&quot;,&#xD;&#xA;&#x9;&quot;regels&quot; : [&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;defecten&quot; : [&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;ledo_information&quot; : &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;locatie/element/defect/oorzaak&quot;: 'string'&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;informatieobjecten&quot; : [&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;{}&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;]&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;]&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;]&#xD;&#xA;}">
+  <source
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_id-cddfc477dcea47d4b8eac58d326f7c8b.xml#id-cddfc477dcea47d4b8eac58d326f7c8b"/>
+  <target
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_id-8ce4af2094e7428f80d5795d57fd0600.xml#id-8ce4af2094e7428f80d5795d57fd0600"/>
+</archimate:TriggeringRelationship>

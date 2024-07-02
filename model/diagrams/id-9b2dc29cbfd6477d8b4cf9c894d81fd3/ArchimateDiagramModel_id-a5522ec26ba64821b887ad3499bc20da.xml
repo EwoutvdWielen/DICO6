@@ -2,8 +2,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Opvragen afspraakopties"
-    id="id-a5522ec26ba64821b887ad3499bc20da"
-    documentation="&#xD;&#xA;&#xD;&#xA;sc">
+    id="id-a5522ec26ba64821b887ad3499bc20da">
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
       id="id-034a723f9f0744a8acbf179329433ddd"
