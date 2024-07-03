@@ -1,9 +1,9 @@
 <archimate:FlowRelationship
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Vastleggen afspraak"
-    id="id-1367bacdfcff49df8052c7914d8fac4c"
-    documentation="POST MaintenanceOrder/{id of order}/Planning&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.planning.aangemaakt&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;optie&quot; : {&#xD;&#xA;&#x9;&#x9;&quot;id&quot; : &quot;string&quot;&#xD;&#xA;&#x9;}&#xD;&#xA;}">
+    name="Definitief vastleggen onderhoudsverzoek"
+    id="id-33b852cc9d934051b8c10ba8a6a58987"
+    documentation="PATCH MaintenanceRequist&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsverzoek.vastgelegd&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;status&quot; : &quot;Actief&quot;&#xD;&#xA;}">
   <source
       xsi:type="archimate:BusinessProcess"
       href="BusinessProcess_id-b00d1116ab0a4b0d8fb4112682ec33ff.xml#id-b00d1116ab0a4b0d8fb4112682ec33ff"/>

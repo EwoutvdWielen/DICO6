@@ -3,7 +3,7 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Accepteren nieuw onderhoudsorder"
     id="id-d7d54c9e8eca47b0a74d10cee2118af8"
-    documentation="PATCH MaintenanceOrder/{id of order}&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;status&quot; : {&#xD;&#xA;&#x9;&#x9;&quot;ACC&quot;&#xD;&#xA;&#x9;}&#xD;&#xA;}">
+    documentation="PATCH MaintenanceOrder/{id of order}&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.geaccepteerd&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;status&quot; : {&#xD;&#xA;&#x9;&#x9;&quot;ACC&quot;&#xD;&#xA;&#x9;}&#xD;&#xA;}">
   <source
       xsi:type="archimate:BusinessProcess"
       href="BusinessProcess_id-cddfc477dcea47d4b8eac58d326f7c8b.xml#id-cddfc477dcea47d4b8eac58d326f7c8b"/>

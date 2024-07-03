@@ -1,0 +1,13 @@
+<archimate:FlowRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Opvragen beschikbaarheid discipline"
+    id="id-6e460ad1d14141a0bea73a4d33c2a330"
+    documentation="GET AfspraakOpties &#xD;&#xA;{&#xD;&#xA;&#x9;&quot;order&quot; : {},&#xD;&#xA;&#x9;&quot;onderhoudslocatie&quot; : {},&#xD;&#xA;&#x9;&quot;specialisme&quot; : {&quot;code&quot; : &quot;TIM&quot;},&#xD;&#xA;&#x9;&quot;bloktijden&quot; : {}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;Response&#xD;&#xA;[&#xD;&#xA;&#x9;{&#xD;&#xA;&#x9;&#x9;&quot;id&quot; : &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&quot;begindatum&quot; : &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&quot;einddatum&quot;: &quot;string&quot;&#xD;&#xA;&#x9;&#x9;&quot;onderhoudslocatie&quot; : {&#xD;&#xA;&#x9;&#x9;&#x9;&quot;cluster&quot; : {},&#xD;&#xA;&#x9;&#x9;&#x9;&quot;collectiefobject&quot;: {}&#xD;&#xA;&#x9;&#x9;&#x9;&quot;eenheid&quot;: {}&#xD;&#xA;&#x9;&#x9;&#x9;&quot;adres&quot;: {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;straat&quot; : &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;huisnummer&quot;: &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;postcode&quot;: &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;plaats&quot;:&quot;string&quot;&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;},&#xD;&#xA;&#x9;{&#xD;&#xA;&#x9;&#x9;&quot;id&quot; : &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&quot;begindatum&quot; : &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&quot;einddatum&quot;: &quot;string&quot;&#xD;&#xA;&#x9;&#x9;&quot;onderhoudslocatie&quot; : {&#xD;&#xA;&#x9;&#x9;&#x9;&quot;cluster&quot; : {},&#xD;&#xA;&#x9;&#x9;&#x9;&quot;collectiefobject&quot;: {}&#xD;&#xA;&#x9;&#x9;&#x9;&quot;eenheid&quot;: {}&#xD;&#xA;&#x9;&#x9;&#x9;&quot;adres&quot;: {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;straat&quot; : &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;huisnummer&quot;: &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;postcode&quot;: &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;plaats&quot;:&quot;string&quot;&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;}&#xD;&#xA;]">
+  <source
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_id-8ce4af2094e7428f80d5795d57fd0600.xml#id-8ce4af2094e7428f80d5795d57fd0600"/>
+  <target
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_id-cddfc477dcea47d4b8eac58d326f7c8b.xml#id-cddfc477dcea47d4b8eac58d326f7c8b"/>
+</archimate:FlowRelationship>

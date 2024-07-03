@@ -36,7 +36,7 @@
           href="CompositionRelationship_id-a62ba747770e48c180d5f3db4768e627.xml#id-a62ba747770e48c180d5f3db4768e627"/>
     </sourceConnections>
     <bounds
-        width="457"
+        width="505"
         height="253"/>
     <children
         xsi:type="archimate:DiagramModelArchimateObject"
@@ -114,7 +114,7 @@
       <bounds
           x="312"
           y="180"
-          width="120"
+          width="145"
           height="55"/>
       <archimateElement
           xsi:type="archimate:DataObject"
