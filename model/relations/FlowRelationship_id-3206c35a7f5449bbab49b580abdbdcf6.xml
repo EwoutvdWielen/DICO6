@@ -3,7 +3,7 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Vastleggen afspraak"
     id="id-3206c35a7f5449bbab49b580abdbdcf6"
-    documentation="PATCH MaintenanceOrder/{id of order}&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.planning.aangemaakt&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;planning&quot; : [&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;id&quot; : &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;begindatum&quot; : &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;einddatum&quot;: &quot;string&quot;&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;]&#xD;&#xA;}">
+    documentation="POST MaintenanceOrder/{id of order}/Planning&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.planning.aangemaakt&quot;&#xD;&#xA;Body&#xD;&#xA;[&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;begindatum&quot; : &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;einddatum&quot;: &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;discipline&quot; : &quot;string&quot;&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;]&#xD;&#xA;&#xD;&#xA;Response:&#xD;&#xA;- id van de planning">
   <source
       xsi:type="archimate:BusinessProcess"
       href="BusinessProcess_id-cddfc477dcea47d4b8eac58d326f7c8b.xml#id-cddfc477dcea47d4b8eac58d326f7c8b"/>

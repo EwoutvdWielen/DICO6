@@ -1,7 +1,7 @@
 <archimate:TriggeringRelationship
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Event: Afspraak onderhoudsorder aangemaakt"
+    name="event: Afspraak onderhoudsorder aangemaakt"
     id="id-94a36439a6cb4647908c8b42a6c35d48"
     documentation="Event: &quot;onderhoudsorder.planning.aangemaakt&quot;&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;specversion&quot;: &quot;1.0&quot;, &#xD;&#xA;&#x9;&quot;source&quot;: &quot;URL waarmee object opgehaald kan worden&quot;, &#xD;&#xA;&#x9;&quot;type&quot;: &quot;v1.ohd.onderhoudsorder.planning.aangemaakt&quot;, &#xD;&#xA;&#x9;&quot;subject&quot; : &quot;planning id&quot;,&#xD;&#xA;&#x9;&quot;eventtype&quot; : &quot;updated&quot;,&#xD;&#xA;&#x9;&quot;data&quot; : { &#xD;&#xA;&#x9;&#x9;&quot;X-Process-Event&quot; : &quot;onderhoudsorder.planning.aangemaakt&quot;&#xD;&#xA;&#x9;&#x9;&quot;id&quot; : order id&quot;&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;Toelichting&#xD;&#xA;Nieuwe afspraak aangemaakt bij de onderhoudsorder">
   <source
