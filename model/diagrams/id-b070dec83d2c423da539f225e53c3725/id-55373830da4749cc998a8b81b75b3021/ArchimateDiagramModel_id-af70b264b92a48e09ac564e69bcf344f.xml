@@ -1,0 +1,17 @@
+<archimate:ArchimateDiagramModel
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Scenario 2: Intake onderhoudsorder bij onduidelijk defect met afspraak door aannemer"
+    id="id-af70b264b92a48e09ac564e69bcf344f">
+  <children
+      xsi:type="archimate:DiagramModelNote"
+      id="id-69f8ab06acc5422eaa60233993bcaa8a"
+      textAlignment="1"
+      content="In het geval dat er een onduidelijk defect is kan een aparte opdracht verstuurd worden naar de aannemer waarin gevraagd wordt om het defect te inspecteren en op basis daarvan te besluiten wat de vervolgstappen zijn. &#xD;&#xA;Het resultaat kan zijn:&#xD;&#xA;- herstel van het defect wanneer blijkt dat deze binnen de afsprakenset met de aannemer valt. Het herstel van het defect vindt plaats binnen dezelfde onderhoudsorder&#xD;&#xA;- een offerte voor het herstel wanneer het defect niet binnen de gemaakte afspraken valt. Een offerte wordt gekoppeld aan de onderhoudsorder (zie scenario's rondom offerte)&#xD;&#xA;Om die reden kan een dergelijk inspectieopdracht gezien worden als een reguliere onderhoudsorder. Dit scenario blijft daarmee wel opportuun echter zal dit niet als een 'inspectieopdracht' worden gekenmerkt. ">
+    <bounds
+        x="144"
+        y="36"
+        width="757"
+        height="133"/>
+  </children>
+</archimate:ArchimateDiagramModel>

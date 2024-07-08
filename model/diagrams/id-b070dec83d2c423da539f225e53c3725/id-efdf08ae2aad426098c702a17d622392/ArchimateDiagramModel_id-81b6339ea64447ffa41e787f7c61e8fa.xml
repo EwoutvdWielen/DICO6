@@ -135,4 +135,15 @@
         xsi:type="archimate:BusinessProcess"
         href="BusinessProcess_id-cddfc477dcea47d4b8eac58d326f7c8b.xml#id-cddfc477dcea47d4b8eac58d326f7c8b"/>
   </children>
+  <children
+      xsi:type="archimate:DiagramModelNote"
+      id="id-e32d6a73646a48b0aa95fa302fa36d87"
+      textAlignment="1"
+      content="Enkel defect gemeld, uitvoering bij één aannemer met één bezoek. Afspraak door de aannemer">
+    <bounds
+        x="228"
+        y="360"
+        width="445"
+        height="64"/>
+  </children>
 </archimate:ArchimateDiagramModel>
