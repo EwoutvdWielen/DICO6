@@ -254,11 +254,11 @@
       xsi:type="archimate:DiagramModelNote"
       id="id-07c135d52f7545c29116a201391e70a6"
       textAlignment="1"
-      content="Bij mutatie heeft een onderhoudsverzoek bij het aanmaken nog geen defecten. Het soort onderhoudsverzoek bepaald dat er eerst inspecties plaats moeten vinden">
+      content="Bij mutatie heeft een onderhoudsverzoek bij het aanmaken nog geen defecten. Het soort onderhoudsverzoek bepaald dat er eerst inspecties plaats moeten vinden. &#xD;&#xA;&#xD;&#xA;In dit scenario: zowel voor- als eindinspectie vindt plaats in dezelfde onderhoudsorder">
     <bounds
         x="302"
         y="464"
-        width="419"
-        height="77"/>
+        width="455"
+        height="101"/>
   </children>
 </archimate:ArchimateDiagramModel>
