@@ -1,7 +1,7 @@
 <archimate:ArchimateDiagramModel
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Scenario 1.4: Annuleren door Uitvoeren Onderhoudsorder"
+    name="Scenario 1.5: Annuleren door Uitvoeren Onderhoudsorder"
     id="id-a1a65c0814504277b6d70a8e40739b3a">
   <children
       xsi:type="archimate:DiagramModelArchimateObject"

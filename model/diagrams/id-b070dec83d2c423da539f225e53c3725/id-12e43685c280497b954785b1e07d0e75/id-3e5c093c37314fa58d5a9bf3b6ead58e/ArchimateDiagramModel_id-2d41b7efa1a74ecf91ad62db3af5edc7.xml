@@ -1,12 +1,12 @@
 <archimate:ArchimateDiagramModel
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Scenario 1.4: Administratief gereedmelding door Uitvoeren Onderhoudsorder"
-    id="id-1546d136150b4960978ab963f29a0f3b">
+    name="Meerwerk - Scenario 2: Extra taken buiten mandaat - mondeling akkoord"
+    id="id-2d41b7efa1a74ecf91ad62db3af5edc7">
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
-      id="id-10b8e004db714905b6630725baec0df9"
-      targetConnections="id-9a13813afb534139b40cb030baf8c3a7">
+      id="id-55a54c6c1dd441058f7c65e69ad8da8b"
+      targetConnections="id-3ac1819a943142be884c0db6c8b169bd">
     <bounds
         x="12"
         y="12"
@@ -18,13 +18,13 @@
   </children>
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
-      id="id-b444580db0444d6994183c6f26bcb6f6"
-      targetConnections="id-83279f3e4c85418f9585975b16f8e4a5">
+      id="id-730d3ce6b8c1455282d80af6fc8c20d8"
+      targetConnections="id-a71b9677dea745e28230ab02945c5d5a">
     <sourceConnections
         xsi:type="archimate:DiagramModelArchimateConnection"
-        id="id-9a13813afb534139b40cb030baf8c3a7"
-        source="id-b444580db0444d6994183c6f26bcb6f6"
-        target="id-10b8e004db714905b6630725baec0df9">
+        id="id-3ac1819a943142be884c0db6c8b169bd"
+        source="id-730d3ce6b8c1455282d80af6fc8c20d8"
+        target="id-55a54c6c1dd441058f7c65e69ad8da8b">
       <bendpoints
           startX="-180"
           startY="-30"
@@ -33,6 +33,20 @@
       <archimateRelationship
           xsi:type="archimate:TriggeringRelationship"
           href="TriggeringRelationship_id-742a6469c6b64e51b1c2cfa7a697c7bc.xml#id-742a6469c6b64e51b1c2cfa7a697c7bc"/>
+    </sourceConnections>
+    <sourceConnections
+        xsi:type="archimate:DiagramModelArchimateConnection"
+        id="id-40abbb31ece44e61a0d4a6ff5941c9be"
+        source="id-730d3ce6b8c1455282d80af6fc8c20d8"
+        target="id-2fbe6c05622341d891ba396242299236">
+      <bendpoints
+          startX="192"
+          startY="-54"
+          endX="-204"
+          endY="-54"/>
+      <archimateRelationship
+          xsi:type="archimate:TriggeringRelationship"
+          href="TriggeringRelationship_id-adafcd49a025433b8c68f6074c2cc0d6.xml#id-adafcd49a025433b8c68f6074c2cc0d6"/>
     </sourceConnections>
     <bounds
         x="372"
@@ -45,20 +59,16 @@
   </children>
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
-      id="id-568d2365558b4084a33e5c5260a93101">
+      id="id-2fbe6c05622341d891ba396242299236"
+      targetConnections="id-40abbb31ece44e61a0d4a6ff5941c9be">
     <sourceConnections
         xsi:type="archimate:DiagramModelArchimateConnection"
-        id="id-83279f3e4c85418f9585975b16f8e4a5"
-        source="id-568d2365558b4084a33e5c5260a93101"
-        target="id-b444580db0444d6994183c6f26bcb6f6">
-      <bendpoints
-          startX="-204"
-          startY="-66"
-          endX="192"
-          endY="-66"/>
+        id="id-a71b9677dea745e28230ab02945c5d5a"
+        source="id-2fbe6c05622341d891ba396242299236"
+        target="id-730d3ce6b8c1455282d80af6fc8c20d8">
       <archimateRelationship
           xsi:type="archimate:FlowRelationship"
-          href="FlowRelationship_id-34e63efae04c4390b47fa54fe980507d.xml#id-34e63efae04c4390b47fa54fe980507d"/>
+          href="FlowRelationship_id-8333ce0eafef4f7484b98ae498dffafc.xml#id-8333ce0eafef4f7484b98ae498dffafc"/>
     </sourceConnections>
     <bounds
         x="768"
