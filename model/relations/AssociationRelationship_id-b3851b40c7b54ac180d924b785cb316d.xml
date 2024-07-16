@@ -1,0 +1,15 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="defecten"
+    id="id-b3851b40c7b54ac180d924b785cb316d"
+    directed="true">
+  <profiles
+      href="folder.xml#id-e40bd314041c4be1a7370fdc2c1747b1"/>
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-b2529d6629d04ff6bb6e69abbf7adbae.xml#id-b2529d6629d04ff6bb6e69abbf7adbae"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_4b5449f2-1603-4461-a444-6d6f693ccd05.xml#4b5449f2-1603-4461-a444-6d6f693ccd05"/>
+</archimate:AssociationRelationship>

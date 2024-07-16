@@ -1,0 +1,15 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Contactgegeven (ContactInformation)"
+    id="531cc22c-3fef-410a-a68b-bb09950181db"
+    documentation="In VERA aparte records per contactgegeven obv codelijst&#xD;&#xA;In Ketenstandaard 1 record met 3 vaste contactgegevens (Phone, Email, Website)">
+  <properties
+      key="ContactgegevenSoort"
+      value="Het soort communicatie. Bijvoorbeeld: Telefoon, E-mail, .Social media etc. (Referentiedata)"/>
+  <properties
+      key="ContactgegevenDetailSoort"
+      value="Het soort detail communicatie. Bijvoorbeeld: Mobiel, privé, werk. (Referentiedata)"/>
+  <properties
+      key="waarde"
+      value="telefoonnummer of emailadres afhankelijk van ContactgegevenSoort"/>
+</archimate:DataObject>

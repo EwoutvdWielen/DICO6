@@ -1,0 +1,15 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="bijlagen"
+    id="id-d1789c988ae34975a2fd7b0568f094db"
+    directed="true">
+  <profiles
+      href="folder.xml#id-5d93cff142264866b9a214de3a00a535"/>
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-a04e84ff9e8840088280a423d7fcd3f4.xml#id-a04e84ff9e8840088280a423d7fcd3f4"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_7a65e2b9-f974-4768-a07b-edd59b71f6fb.xml#7a65e2b9-f974-4768-a07b-edd59b71f6fb"/>
+</archimate:AssociationRelationship>

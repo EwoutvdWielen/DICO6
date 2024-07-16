@@ -1,0 +1,15 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="regels"
+    id="id-ac918231ab5f417c9922a8825f82f7ec"
+    directed="true">
+  <profiles
+      href="folder.xml#id-e40bd314041c4be1a7370fdc2c1747b1"/>
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_45cf3497-f768-4021-a8c5-4dc9d4ea0527.xml#45cf3497-f768-4021-a8c5-4dc9d4ea0527"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-b2529d6629d04ff6bb6e69abbf7adbae.xml#id-b2529d6629d04ff6bb6e69abbf7adbae"/>
+</archimate:AssociationRelationship>

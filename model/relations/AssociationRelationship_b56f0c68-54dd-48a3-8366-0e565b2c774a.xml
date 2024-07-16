@@ -1,7 +1,7 @@
 <archimate:AssociationRelationship
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="informatieobjecten"
+    name="bijlagen"
     id="b56f0c68-54dd-48a3-8366-0e565b2c774a"
     directed="true">
   <source

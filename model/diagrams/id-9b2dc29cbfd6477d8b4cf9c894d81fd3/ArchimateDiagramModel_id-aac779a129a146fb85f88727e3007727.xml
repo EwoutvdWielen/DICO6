@@ -1,0 +1,41 @@
+<archimate:ArchimateDiagramModel
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Terugkoppeling status onderhoudsorder"
+    id="id-aac779a129a146fb85f88727e3007727">
+  <children
+      xsi:type="archimate:DiagramModelArchimateObject"
+      id="id-a8c46f9208c5445ea2dce769724a4ccf"
+      fillColor="#ffffff">
+    <sourceConnections
+        xsi:type="archimate:DiagramModelArchimateConnection"
+        id="id-915aa7d9728a420190979cb699359b2c"
+        source="id-a8c46f9208c5445ea2dce769724a4ccf"
+        target="id-01a0ec9dedaa4bae998474ded75994cd">
+      <archimateRelationship
+          xsi:type="archimate:CompositionRelationship"
+          href="CompositionRelationship_id-bcf7d84eb0da4da498bc3a757d61e4b0.xml#id-bcf7d84eb0da4da498bc3a757d61e4b0"/>
+    </sourceConnections>
+    <bounds
+        width="385"
+        height="181"/>
+    <children
+        xsi:type="archimate:DiagramModelArchimateObject"
+        id="id-01a0ec9dedaa4bae998474ded75994cd"
+        targetConnections="id-915aa7d9728a420190979cb699359b2c"
+        font="1|Segoe UI|10.2|0|WINDOWS|1|-17|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI"
+        textPosition="1">
+      <bounds
+          x="108"
+          y="72"
+          width="169"
+          height="55"/>
+      <archimateElement
+          xsi:type="archimate:DataObject"
+          href="DataObject_f3c52eed-380b-45df-90f9-56f473bfa90b.xml#f3c52eed-380b-45df-90f9-56f473bfa90b"/>
+    </children>
+    <archimateElement
+        xsi:type="archimate:DataObject"
+        href="DataObject_id-0c27824a080a4cfc9e6a3c41868289dd.xml#id-0c27824a080a4cfc9e6a3c41868289dd"/>
+  </children>
+</archimate:ArchimateDiagramModel>

@@ -1,0 +1,17 @@
+<archimate:ArchimateDiagramModel
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Scenario 3: Intake inspectie met afspraak bij mutatie"
+    id="id-f16d495d5aab4c5fadfbe08f5788a591">
+  <children
+      xsi:type="archimate:DiagramModelNote"
+      id="id-a2a35a0c94e24b27b983150c9a581390"
+      textAlignment="1"
+      content="Gelijk aan scenario 1. Intake | Scenario 1: Intake bij mutatie">
+    <bounds
+        x="180"
+        y="24"
+        width="419"
+        height="49"/>
+  </children>
+</archimate:ArchimateDiagramModel>

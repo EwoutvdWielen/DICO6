@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="inspectierapportregel"
+    id="id-9009979e18bb4357b4a4d07d388b5146"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_44fe8098-28ac-44fe-9552-2f84a118342c.xml#44fe8098-28ac-44fe-9552-2f84a118342c"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-b2529d6629d04ff6bb6e69abbf7adbae.xml#id-b2529d6629d04ff6bb6e69abbf7adbae"/>
+</archimate:AssociationRelationship>
