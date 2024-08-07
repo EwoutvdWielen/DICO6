@@ -1,0 +1,13 @@
+<archimate:FlowRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Verwijder afspraak onderhoudsorder"
+    id="id-6e650b4beb1d4842af4e1f3146272e67"
+    documentation="DELETE MaintenanceOrder/{id of order}/Planning/{id of planning}&#xD;&#xA;&#xD;&#xA;DELETE MaintenanceRequest/{id of request}/Order/{id of order}/Planning/{id of planning}">
+  <source
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_id-b00d1116ab0a4b0d8fb4112682ec33ff.xml#id-b00d1116ab0a4b0d8fb4112682ec33ff"/>
+  <target
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_id-8ce4af2094e7428f80d5795d57fd0600.xml#id-8ce4af2094e7428f80d5795d57fd0600"/>
+</archimate:FlowRelationship>

@@ -1,7 +1,7 @@
 <archimate:FlowRelationship
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="administratief gereedmelden"
+    name="Administratief gereedmelden"
     id="id-34e63efae04c4390b47fa54fe980507d"
     documentation="PATCH MaintenanceOrder/{id of order}&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.administratiefgereed&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;status&quot; : &quot;ADM&quot;,&#xD;&#xA;&#x9;&quot;administratief_gereed_melding&quot;&#xD;&#xA;}">
   <source
