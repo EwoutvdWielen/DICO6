@@ -1,7 +1,7 @@
 <archimate:ArchimateDiagramModel
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Scenario 1.4: Administratief gereedmelding door Uitvoeren Onderhoudsorder"
+    name="Scenario 1.6: Administratief gereedmelding door Uitvoeren Onderhoudsorder"
     id="id-1546d136150b4960978ab963f29a0f3b">
   <children
       xsi:type="archimate:DiagramModelArchimateObject"

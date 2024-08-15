@@ -1,7 +1,7 @@
 <archimate:ArchimateDiagramModel
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Scenario 1.1: Verzoek aanvullende informatie door Uitvoeren onderhoudsorder"
+    name="Scenario 1.3: Verzoek aanvullende informatie door Uitvoeren onderhoudsorder"
     id="id-cc68623247bc4279b361c9be7937a939">
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
