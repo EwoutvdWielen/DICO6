@@ -1,4 +1,5 @@
 <archimate:DataObject
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Offerteregel"
-    id="id-4f444765dee042348bff31e5041ff7cb"/>
+    name="MaintenanceQuotationLine"
+    id="id-4f444765dee042348bff31e5041ff7cb"
+    documentation="(Offerteregel)"/>

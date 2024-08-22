@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="contactinformation[]"
+    id="id-99c2a352036e452e924adfb0543a86c1"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_b4814e35-6889-413a-a292-e1cc63bbbe76.xml#b4814e35-6889-413a-a292-e1cc63bbbe76"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_531cc22c-3fef-410a-a68b-bb09950181db.xml#531cc22c-3fef-410a-a68b-bb09950181db"/>
+</archimate:AssociationRelationship>

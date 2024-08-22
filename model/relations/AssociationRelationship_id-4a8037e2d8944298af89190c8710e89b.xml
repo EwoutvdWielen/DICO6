@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="InspectieResultLine"
+    id="id-4a8037e2d8944298af89190c8710e89b"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-dd03c504b7834d87a2b5afc4f2c23d14.xml#id-dd03c504b7834d87a2b5afc4f2c23d14"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-b4d4d7738e7c444b994eb11221f0b24b.xml#id-b4d4d7738e7c444b994eb11221f0b24b"/>
+</archimate:AssociationRelationship>

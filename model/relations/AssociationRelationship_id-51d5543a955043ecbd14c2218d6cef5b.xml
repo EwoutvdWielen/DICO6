@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="certificate[]"
+    id="id-51d5543a955043ecbd14c2218d6cef5b"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-210a13103a2647b9945702f696d0d66d.xml#id-210a13103a2647b9945702f696d0d66d"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-da912604799a4343a55d5668fc5558ca.xml#id-da912604799a4343a55d5668fc5558ca"/>
+</archimate:AssociationRelationship>

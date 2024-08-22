@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Constatering"
+    id="id-c6abe355b7274146879d2a5ff361d615"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-4f444765dee042348bff31e5041ff7cb.xml#id-4f444765dee042348bff31e5041ff7cb"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_4b5449f2-1603-4461-a444-6d6f693ccd05.xml#4b5449f2-1603-4461-a444-6d6f693ccd05"/>
+</archimate:AssociationRelationship>

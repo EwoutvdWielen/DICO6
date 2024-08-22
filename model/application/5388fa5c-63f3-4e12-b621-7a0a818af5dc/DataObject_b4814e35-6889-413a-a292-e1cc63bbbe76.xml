@@ -1,6 +1,6 @@
 <archimate:DataObject
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Rechtspersoon (Party)"
+    name="Party (Rechtspersoon)"
     id="b4814e35-6889-413a-a292-e1cc63bbbe76"
     documentation="&lt;h4>Definitie&lt;/h4>&#xD;&#xA;Een rechtspersoon is een organisatie die een juridische vorm heeft (B.V., N.V., V.O.F. etc.), die volwaardig en handelingsbekwaam in het rechtsverkeer kan optreden. &#xD;&#xA;&#xD;&#xA;&lt;h4>Toelichting&lt;/h4>&#xD;&#xA;Een rechtspersoon is een relatie met extra eigenschappen. Een rechtspersoon kan als relatie worden gekoppeld aan overige klassen. &#xD;&#xA;De rechtspersoon wordt kan door één of meer natuurlijke personen worden vertegenwoordigd. &#xD;&#xA;&#xD;&#xA;&lt;h4>Voorbeelden&lt;/h4>&#xD;&#xA;Leverancier of aannemer. ">
   <properties

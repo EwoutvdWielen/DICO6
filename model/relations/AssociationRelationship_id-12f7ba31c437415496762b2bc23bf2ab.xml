@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="appointments[]"
+    id="id-12f7ba31c437415496762b2bc23bf2ab"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_a74f5265-4ff9-456a-9d58-4e6e81afc5e3.xml#a74f5265-4ff9-456a-9d58-4e6e81afc5e3"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-64ccd22494e74ab89aeada596c84df2a.xml#id-64ccd22494e74ab89aeada596c84df2a"/>
+</archimate:AssociationRelationship>

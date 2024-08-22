@@ -1,5 +1,5 @@
 <archimate:DataObject
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Onderhoudslocatie (MaintenanceLocation)"
+    name="MaintenanceLocation (Onderhoudslocatie)"
     id="id-63eff3c23def48d0ae90d8ad620560c5"
     documentation="Attributen Onderhoudslocatie:&#xD;&#xA;- Cluster id &#xD;&#xA;- Collectiefobject id &#xD;&#xA;- Pand id &#xD;&#xA;- Vastgoed id (eenheid id)&#xD;&#xA;&#xD;&#xA;- Bouwjaar"/>

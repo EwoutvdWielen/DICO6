@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Planning[]"
+    id="id-5f406e09774d4ce3bb3b88841272992e"
+    directed="true">
+  <source
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-a04e84ff9e8840088280a423d7fcd3f4.xml#id-a04e84ff9e8840088280a423d7fcd3f4"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_id-64ccd22494e74ab89aeada596c84df2a.xml#id-64ccd22494e74ab89aeada596c84df2a"/>
+</archimate:AssociationRelationship>
