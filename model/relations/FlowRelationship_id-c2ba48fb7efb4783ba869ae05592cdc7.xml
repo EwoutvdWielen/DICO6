@@ -1,0 +1,13 @@
+<archimate:FlowRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Wijzigen afspraak"
+    id="id-c2ba48fb7efb4783ba869ae05592cdc7"
+    documentation="PATCH MaintenanceOrder/{id of order}/Planning&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.planning.gewijzigd&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;id&quot; : &quot;id van de afspraak die gewijzigd moet worden&quot;,&#xD;&#xA;&#x9;&quot;optie&quot; : {&#xD;&#xA;&#x9;&#x9;&quot;id&quot; : &quot;id van de gekozen AfspraakOptie&quot;&#xD;&#xA;&#x9;}&#xD;&#xA;}">
+  <source
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_id-8ce4af2094e7428f80d5795d57fd0600.xml#id-8ce4af2094e7428f80d5795d57fd0600"/>
+  <target
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_id-cddfc477dcea47d4b8eac58d326f7c8b.xml#id-cddfc477dcea47d4b8eac58d326f7c8b"/>
+</archimate:FlowRelationship>

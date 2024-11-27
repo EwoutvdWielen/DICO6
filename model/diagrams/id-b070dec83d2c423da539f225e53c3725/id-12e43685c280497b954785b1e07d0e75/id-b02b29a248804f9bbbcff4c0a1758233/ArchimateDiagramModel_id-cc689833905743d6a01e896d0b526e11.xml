@@ -59,8 +59,8 @@
           endX="-192"
           endY="-42"/>
       <archimateRelationship
-          xsi:type="archimate:TriggeringRelationship"
-          href="TriggeringRelationship_id-5e601d8387f54784b7f84e7d04420417.xml#id-5e601d8387f54784b7f84e7d04420417"/>
+          xsi:type="archimate:FlowRelationship"
+          href="FlowRelationship_id-25b78d3b6ca143a3ba95bc9d4222d50b.xml#id-25b78d3b6ca143a3ba95bc9d4222d50b"/>
     </sourceConnections>
     <bounds
         x="372"
