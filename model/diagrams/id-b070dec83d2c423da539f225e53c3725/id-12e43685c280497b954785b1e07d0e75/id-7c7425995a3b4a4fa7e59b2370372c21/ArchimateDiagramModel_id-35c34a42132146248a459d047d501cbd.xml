@@ -6,21 +6,8 @@
     documentation="PATCH MaintenanceOrder/{id of order}&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.reactievereist&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;status&quot; : &quot;REA&quot;,&#xD;&#xA;&#x9;&quot;aanvullende_info_gevraagd&quot;&#xD;&#xA;}">
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
-      id="id-6d561749a7ff456f985fc58c82916af4">
-    <sourceConnections
-        xsi:type="archimate:DiagramModelArchimateConnection"
-        id="id-f0a2e0e2c4374ccaa7419029c539848c"
-        source="id-6d561749a7ff456f985fc58c82916af4"
-        target="id-f11a8b28717e4c36afdc67fc04d6500f">
-      <bendpoints
-          startX="192"
-          startY="-108"
-          endX="-168"
-          endY="-108"/>
-      <archimateRelationship
-          xsi:type="archimate:FlowRelationship"
-          href="FlowRelationship_id-d6898e3c7d2e4ea4a56cb41279be210d.xml#id-d6898e3c7d2e4ea4a56cb41279be210d"/>
-    </sourceConnections>
+      id="id-6d561749a7ff456f985fc58c82916af4"
+      targetConnections="id-ead42fd16da746ae94c7ad68655b21ff">
     <bounds
         x="12"
         y="12"
@@ -33,7 +20,21 @@
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
       id="id-f11a8b28717e4c36afdc67fc04d6500f"
-      targetConnections="id-52b577b231374624acab9eaedeb0f5f9 id-f0a2e0e2c4374ccaa7419029c539848c">
+      targetConnections="id-52b577b231374624acab9eaedeb0f5f9">
+    <sourceConnections
+        xsi:type="archimate:DiagramModelArchimateConnection"
+        id="id-ead42fd16da746ae94c7ad68655b21ff"
+        source="id-f11a8b28717e4c36afdc67fc04d6500f"
+        target="id-6d561749a7ff456f985fc58c82916af4">
+      <bendpoints
+          startX="-180"
+          startY="-120"
+          endX="180"
+          endY="-120"/>
+      <archimateRelationship
+          xsi:type="archimate:FlowRelationship"
+          href="FlowRelationship_id-5b482866380f47edb459f479361b5339.xml#id-5b482866380f47edb459f479361b5339"/>
+    </sourceConnections>
     <bounds
         x="372"
         y="12"

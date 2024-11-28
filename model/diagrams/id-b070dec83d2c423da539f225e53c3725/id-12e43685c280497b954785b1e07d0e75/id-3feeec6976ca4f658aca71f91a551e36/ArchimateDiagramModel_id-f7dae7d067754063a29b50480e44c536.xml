@@ -6,7 +6,8 @@
     documentation="====Scenario====&#xD;&#xA;Tijdens de uitvoering van de onderhoudsorder (status : In behandeling/In uitvoering) wil de de klant(bediening) het onderhoudsverzoek annuleren. Omdat de onderhoudsorder al is uitgezet zal de annulering door &quot;Uitvoeren onderhoudsorder&quot; bevestigd moeten worden. Met eventuele fiananciele afhandeling.">
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
-      id="id-711b3c2aa3d74260b410c9936badcd9b">
+      id="id-711b3c2aa3d74260b410c9936badcd9b"
+      targetConnections="id-55913ce59b244786b0ec3b498184efd2">
     <sourceConnections
         xsi:type="archimate:DiagramModelArchimateConnection"
         id="id-4832ffc902304f7c85aba2ace8d79cf0"
@@ -15,20 +16,6 @@
       <archimateRelationship
           xsi:type="archimate:FlowRelationship"
           href="FlowRelationship_id-a98a8de3ad414ac1991e32c85631d498.xml#id-a98a8de3ad414ac1991e32c85631d498"/>
-    </sourceConnections>
-    <sourceConnections
-        xsi:type="archimate:DiagramModelArchimateConnection"
-        id="id-de6e12d203124909b6b439b52838a913"
-        source="id-711b3c2aa3d74260b410c9936badcd9b"
-        target="id-11bbed3777a84e43bd6a01af0086e727">
-      <bendpoints
-          startX="180"
-          startY="54"
-          endX="-180"
-          endY="54"/>
-      <archimateRelationship
-          xsi:type="archimate:FlowRelationship"
-          href="FlowRelationship_id-d6898e3c7d2e4ea4a56cb41279be210d.xml#id-d6898e3c7d2e4ea4a56cb41279be210d"/>
     </sourceConnections>
     <bounds
         x="12"
@@ -42,7 +29,7 @@
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
       id="id-11bbed3777a84e43bd6a01af0086e727"
-      targetConnections="id-4832ffc902304f7c85aba2ace8d79cf0 id-d400a347f1c64fa8ad868b6e0147f62e id-de6e12d203124909b6b439b52838a913">
+      targetConnections="id-4832ffc902304f7c85aba2ace8d79cf0 id-d400a347f1c64fa8ad868b6e0147f62e">
     <sourceConnections
         xsi:type="archimate:DiagramModelArchimateConnection"
         id="id-b25f9ea85ca44adea90f00d11d3c6eb5"
@@ -51,6 +38,20 @@
       <archimateRelationship
           xsi:type="archimate:FlowRelationship"
           href="FlowRelationship_id-b7281675e29a45069156b5f7545afdcf.xml#id-b7281675e29a45069156b5f7545afdcf"/>
+    </sourceConnections>
+    <sourceConnections
+        xsi:type="archimate:DiagramModelArchimateConnection"
+        id="id-55913ce59b244786b0ec3b498184efd2"
+        source="id-11bbed3777a84e43bd6a01af0086e727"
+        target="id-711b3c2aa3d74260b410c9936badcd9b">
+      <bendpoints
+          startX="-180"
+          startY="54"
+          endX="180"
+          endY="54"/>
+      <archimateRelationship
+          xsi:type="archimate:FlowRelationship"
+          href="FlowRelationship_id-5b482866380f47edb459f479361b5339.xml#id-5b482866380f47edb459f479361b5339"/>
     </sourceConnections>
     <bounds
         x="372"

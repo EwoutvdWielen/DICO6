@@ -6,7 +6,8 @@
     documentation="In het geval dat er een onduidelijk defect is kan een aparte opdracht verstuurd worden naar de aannemer waarin gevraagd wordt om het defect te inspecteren en op basis daarvan te besluiten wat de vervolgstappen zijn. &#xD;&#xA;Het resultaat kan zijn:&#xD;&#xA;- herstel van het defect wanneer blijkt dat deze binnen de afsprakenset met de aannemer valt. Het herstel van het defect vindt plaats binnen dezelfde onderhoudsorder&#xD;&#xA;- een offerte voor het herstel wanneer het defect niet binnen de gemaakte afspraken valt. Een offerte wordt gekoppeld aan de onderhoudsorder (zie scenario's rondom offerte)&#xD;&#xA;Om die reden kan een dergelijk inspectieopdracht gezien worden als een reguliere onderhoudsorder. Dit scenario is daarmee opportuun echter zal dit niet als een 'inspectieopdracht' worden gekenmerkt. ">
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
-      id="id-5339760cc1a6454283e43533204253a7">
+      id="id-5339760cc1a6454283e43533204253a7"
+      targetConnections="id-b9a9796c91e6410ea38767e75f99bee4">
     <sourceConnections
         xsi:type="archimate:DiagramModelArchimateConnection"
         id="id-6bc8c9baa7dd452c9535037dba5e87cb"
@@ -63,15 +64,6 @@
           xsi:type="archimate:FlowRelationship"
           href="FlowRelationship_id-33b852cc9d934051b8c10ba8a6a58987.xml#id-33b852cc9d934051b8c10ba8a6a58987"/>
     </sourceConnections>
-    <sourceConnections
-        xsi:type="archimate:DiagramModelArchimateConnection"
-        id="id-0cfa4d3615d24930825bd9a392002598"
-        source="id-5339760cc1a6454283e43533204253a7"
-        target="id-4e1bfb12204041d4bb7d880623294883">
-      <archimateRelationship
-          xsi:type="archimate:FlowRelationship"
-          href="FlowRelationship_id-d6898e3c7d2e4ea4a56cb41279be210d.xml#id-d6898e3c7d2e4ea4a56cb41279be210d"/>
-    </sourceConnections>
     <bounds
         x="12"
         y="12"
@@ -84,7 +76,7 @@
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
       id="id-4e1bfb12204041d4bb7d880623294883"
-      targetConnections="id-629cb3eb29194e05a5b14e24bbc519f1 id-5aa7769875234e32ac27aea5db0a7d46 id-6bc8c9baa7dd452c9535037dba5e87cb id-9992c58edbf0439193bfb5ba538f3511 id-a44a821c56404c4488813d21d6dffb5c id-72b1987241fd4784a81f63c732229e72 id-0cfa4d3615d24930825bd9a392002598">
+      targetConnections="id-5aa7769875234e32ac27aea5db0a7d46 id-6bc8c9baa7dd452c9535037dba5e87cb id-9992c58edbf0439193bfb5ba538f3511 id-a44a821c56404c4488813d21d6dffb5c id-72b1987241fd4784a81f63c732229e72">
     <sourceConnections
         xsi:type="archimate:DiagramModelArchimateConnection"
         id="id-a0c3c4091a1341bb90c4dc3bd2780fed"
@@ -127,6 +119,15 @@
           xsi:type="archimate:FlowRelationship"
           href="FlowRelationship_id-9015e60641a84f0fb0dbfdb747d5ce81.xml#id-9015e60641a84f0fb0dbfdb747d5ce81"/>
     </sourceConnections>
+    <sourceConnections
+        xsi:type="archimate:DiagramModelArchimateConnection"
+        id="id-b9a9796c91e6410ea38767e75f99bee4"
+        source="id-4e1bfb12204041d4bb7d880623294883"
+        target="id-5339760cc1a6454283e43533204253a7">
+      <archimateRelationship
+          xsi:type="archimate:FlowRelationship"
+          href="FlowRelationship_id-5b482866380f47edb459f479361b5339.xml#id-5b482866380f47edb459f479361b5339"/>
+    </sourceConnections>
     <bounds
         x="372"
         y="12"
@@ -140,20 +141,6 @@
       xsi:type="archimate:DiagramModelArchimateObject"
       id="id-3d08258f7dfe45b998becd7b1b434e12"
       targetConnections="id-a0c3c4091a1341bb90c4dc3bd2780fed id-5d416c3dd4b043c69ea37dc310818f5f id-37c0fc0a1997441bbc80f7b2a99f5fc0">
-    <sourceConnections
-        xsi:type="archimate:DiagramModelArchimateConnection"
-        id="id-629cb3eb29194e05a5b14e24bbc519f1"
-        source="id-3d08258f7dfe45b998becd7b1b434e12"
-        target="id-4e1bfb12204041d4bb7d880623294883">
-      <bendpoints
-          startX="-204"
-          startY="-48"
-          endX="192"
-          endY="-48"/>
-      <archimateRelationship
-          xsi:type="archimate:FlowRelationship"
-          href="FlowRelationship_id-0cddb8b6200f45c98bbbb098f4b41781.xml#id-0cddb8b6200f45c98bbbb098f4b41781"/>
-    </sourceConnections>
     <sourceConnections
         xsi:type="archimate:DiagramModelArchimateConnection"
         id="id-5aa7769875234e32ac27aea5db0a7d46"
