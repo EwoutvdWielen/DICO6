@@ -1,7 +1,7 @@
 <archimate:FlowRelationship
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Nieuw offerteaanvraag uitgezet"
+    name="Vertrekken nieuw offerteaanvraag"
     id="id-97b43d0e56bc4504b8f9a4731fae5954"
     documentation="POST MaintenanceOrder&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: Event: &quot;onderhoudsorder.offerteaanvraag&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;status=&quot;Geregistreerd&quot;&#xD;&#xA;&#x9;soort = offerte&#xD;&#xA;&#x9;link naar Onderhoudsverzoek&#xD;&#xA;&#x9;onderhoudsregels&#xD;&#xA;&#x9;defecten&#xD;&#xA;}&#xD;&#xA;">
   <source

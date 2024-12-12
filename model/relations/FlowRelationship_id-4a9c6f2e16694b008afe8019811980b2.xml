@@ -3,7 +3,7 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Uitbrengen offerte"
     id="id-4a9c6f2e16694b008afe8019811980b2"
-    documentation="PATCH MaintenanceOrder/{id of order}&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.offerteuitgebracht&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;status&quot; : &quot;OFF&quot;,&#xD;&#xA;&#x9;&quot;offerte_uitgebracht&quot;&#xD;&#xA;}">
+    documentation="POST Onderhoudsorder/{id van offerteaanvraag}/Offerte&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.offerte.uitgebracht&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;offerte gegevens&quot;&#xD;&#xA;}">
   <source
       xsi:type="archimate:BusinessProcess"
       href="BusinessProcess_id-cddfc477dcea47d4b8eac58d326f7c8b.xml#id-cddfc477dcea47d4b8eac58d326f7c8b"/>

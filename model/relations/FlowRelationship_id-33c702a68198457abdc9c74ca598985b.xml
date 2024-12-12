@@ -3,7 +3,7 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Bevestigen afspraakoptie"
     id="id-33c702a68198457abdc9c74ca598985b"
-    documentation="PATCH AfspraakOpties/{id of option}&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;planning.aangemaakt&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;maintenanceorder&quot; : {&#xD;&#xA;&#x9;&#x9;&quot;id&quot; : &quot;id of order&quot;&#xD;&#xA;}">
+    documentation="PATCH AfspraakOpties/{id of option}&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;afspraakoptie.bevestigd&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;maintenanceorder&quot; : {&#xD;&#xA;&#x9;&#x9;&quot;id&quot; : &quot;id of order&quot;&#xD;&#xA;}">
   <source
       xsi:type="archimate:BusinessProcess"
       href="BusinessProcess_id-8ce4af2094e7428f80d5795d57fd0600.xml#id-8ce4af2094e7428f80d5795d57fd0600"/>

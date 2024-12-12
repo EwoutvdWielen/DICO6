@@ -3,7 +3,7 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Vastleggen afspraak"
     id="id-1367bacdfcff49df8052c7914d8fac4c"
-    documentation="POST MaintenanceOrder/{id of order}/Planning&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.planning.aangemaakt&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;optie&quot; : {&#xD;&#xA;&#x9;&#x9;&quot;id&quot; : &quot;string&quot;&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;of&#xD;&#xA;&#xD;&#xA;POST MaintenanceRequest/{id of request}/MaintenanceOrder/{id of order}/Planning&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsverzoek.onderhoudsorder.planning.aangemaakt&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;optie&quot; : {&#xD;&#xA;&#x9;&#x9;&quot;id&quot; : &quot;string&quot;&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;">
+    documentation="POST MaintenanceOrder/{id of order}/Planning&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.planning.vastgelegd&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;optie&quot; : {&#xD;&#xA;&#x9;&#x9;&quot;id&quot; : &quot;string&quot;&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;of&#xD;&#xA;&#xD;&#xA;POST MaintenanceRequest/{id of request}/MaintenanceOrder/{id of order}/Planning&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsverzoek.onderhoudsorder.planning.aangemaakt&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;optie&quot; : {&#xD;&#xA;&#x9;&#x9;&quot;id&quot; : &quot;string&quot;&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;">
   <source
       xsi:type="archimate:BusinessProcess"
       href="BusinessProcess_id-b00d1116ab0a4b0d8fb4112682ec33ff.xml#id-b00d1116ab0a4b0d8fb4112682ec33ff"/>

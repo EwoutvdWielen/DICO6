@@ -3,7 +3,7 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Inspectie uitgevoerd"
     id="id-011b6fb73e554fcfa8c2ddd747164a54"
-    documentation="POST InspectionReport&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;inspectierapport.aangemaakt&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;onderhoudsorder&quot; : {&#xD;&#xA;&#x9;&#x9;&quot;id&quot; : &quot;id van de onderliggende inspectieorder&quot;&#xD;&#xA;&#x9;},&#xD;&#xA;&#x9;&quot;regels&quot; : [&#xD;&#xA;&#x9;&#x9;{  &quot;inspectieregel&quot;, &#xD;&#xA;&#x9;&#x9;&#x9;&quot;defecten&quot; : [&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;{ &quot;LEDO informatie&quot; },&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;{ &quot;LEDO informatie&quot; }&#xD;&#xA;&#x9;&#x9;&#x9;]&quot; ),&#xD;&#xA;&#x9;&#x9;{ &quot;inspectieregel&quot; )&#xD;&#xA;&#x9;]&#xD;&#xA;}">
+    documentation="POST Onderhoudsorder/{id van de order}/InspectieRapport&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.inspectierapport.aangemaakt&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;onderhoudsorder&quot; : {&#xD;&#xA;&#x9;&#x9;&quot;id&quot; : &quot;id van de onderliggende inspectieorder&quot;&#xD;&#xA;&#x9;},&#xD;&#xA;&#x9;&quot;regels&quot; : [&#xD;&#xA;&#x9;&#x9;{  &quot;inspectieregel&quot;, &#xD;&#xA;&#x9;&#x9;&#x9;&quot;defecten&quot; : [&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;{ &quot;LEDO informatie&quot; },&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;{ &quot;LEDO informatie&quot; }&#xD;&#xA;&#x9;&#x9;&#x9;]&quot; ),&#xD;&#xA;&#x9;&#x9;{ &quot;inspectieregel&quot; )&#xD;&#xA;&#x9;]&#xD;&#xA;}">
   <source
       xsi:type="archimate:BusinessProcess"
       href="BusinessProcess_id-cddfc477dcea47d4b8eac58d326f7c8b.xml#id-cddfc477dcea47d4b8eac58d326f7c8b"/>

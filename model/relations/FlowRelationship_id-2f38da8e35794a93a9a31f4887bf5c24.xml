@@ -3,7 +3,7 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Verzoek annuleren afspraak"
     id="id-2f38da8e35794a93a9a31f4887bf5c24"
-    documentation="PATCH MaintenanceOrder/{id of order}&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.verzoekannulerenafspraak&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;status&quot; : &quot;VAA&quot;,&#xD;&#xA;&#x9;&quot;verzoek tot annuleren afspraak&quot;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;of &#xD;&#xA;&#xD;&#xA;PATCH MaintenanceRequest/{id of request}/order/{id of order}&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsverzoek.onderhoudsorder.verzoekannulerenafspraak&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;status&quot; : &quot;VAA&quot;,&#xD;&#xA;&#x9;&quot;verzoek tot annuleren afspraak&quot;&#xD;&#xA;}">
+    documentation="PATCH MaintenanceOrder/{id of order}/Planning/{id van de afspraak}&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.planning.verzoekannuleren&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;status&quot; : &quot;VAA&quot;,&#xD;&#xA;&#x9;&quot;verzoek tot annuleren afspraak&quot;&#xD;&#xA;}">
   <source
       xsi:type="archimate:BusinessProcess"
       href="BusinessProcess_id-b00d1116ab0a4b0d8fb4112682ec33ff.xml#id-b00d1116ab0a4b0d8fb4112682ec33ff"/>

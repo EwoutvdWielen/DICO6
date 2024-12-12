@@ -1,7 +1,7 @@
 <archimate:FlowRelationship
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Annuleren "
+    name="Annuleren order"
     id="id-2dc25d42931c48cb852d1ba0048d6ed3"
     documentation="PATCH MaintenanceOrder/{id of order}&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.geannuleerd&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;status&quot; : &quot;ANN&quot;,&#xD;&#xA;&#x9;&quot;geannuleerd&quot;&#xD;&#xA;}">
   <source

@@ -1,7 +1,7 @@
 <archimate:FlowRelationship
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Opvragen bestaand onderhoudsverzoek"
+    name="Opvragen onderhoudsverzoek"
     id="id-d6898e3c7d2e4ea4a56cb41279be210d"
     documentation="GET MaintenanceRequest/{id of request}&#xD;&#xA;&#xD;&#xA;Response:&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;id&quot; :  &quot;string&quot;,&#xD;&#xA;&#x9;&quot;code&quot; : &quot;string&quot;, &#xD;&#xA;&#x9;&quot;omschrijving&quot; : &quot;string&quot;,&#xD;&#xA;&#x9;&quot;status&quot; : {&#xD;&#xA;&#x9;&#x9;&quot;code&quot; : &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&quot;naam&quot; : &quot;string&quot;&#xD;&#xA;&#x9;},&#xD;&#xA;&#x9;&quot;opdrachtdatum&quot;: &quot;&quot;,&#xD;&#xA;&#x9;&quot;orders&quot; : [&#xD;&#xA;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;id&quot; :  &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;afspraken&quot; : [&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;id&quot; : &quot;string&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;datum_tijd_tijdvak_informatie&quot; : &quot;string&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;]&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;]&#xD;&#xA;}">
   <source

@@ -3,7 +3,7 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Meerwerk afgewezen"
     id="id-9196108bc66b45fda8299ecef60fb373"
-    documentation="PATCH MaintenanceOrder/{id of order}&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.reactievereist&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;status&quot; : &quot;code waarin kenbaar is gemaakt dat de aannemer de order weer verder af kan handelen&quot;,&#xD;&#xA;&#x9;&quot;aanvullende info waaronder de afwijzing van het meerwerk&quot;&#xD;&#xA;}">
+    documentation="PATCH MaintenanceOrder/{id of order}&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.reactieverstrekt&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;status&quot; : &quot;code waarin kenbaar is gemaakt dat de aannemer de order weer verder af kan handelen&quot;,&#xD;&#xA;&#x9;&quot;aanvullende info waaronder de afwijzing van het meerwerk&quot;&#xD;&#xA;}">
   <source
       xsi:type="archimate:BusinessProcess"
       href="BusinessProcess_id-8ce4af2094e7428f80d5795d57fd0600.xml#id-8ce4af2094e7428f80d5795d57fd0600"/>

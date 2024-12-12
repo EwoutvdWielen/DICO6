@@ -1,9 +1,7 @@
 <archimate:FlowRelationship
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Verwijderen afspraak"
-    id="id-3bbd53a4e1c3413d9a2127b69628e13c"
-    documentation="DELETE Planning/{id of planning}">
+    id="id-6c0bd67809174e169c3968b024f90d34">
   <source
       xsi:type="archimate:BusinessProcess"
       href="BusinessProcess_id-8ce4af2094e7428f80d5795d57fd0600.xml#id-8ce4af2094e7428f80d5795d57fd0600"/>
