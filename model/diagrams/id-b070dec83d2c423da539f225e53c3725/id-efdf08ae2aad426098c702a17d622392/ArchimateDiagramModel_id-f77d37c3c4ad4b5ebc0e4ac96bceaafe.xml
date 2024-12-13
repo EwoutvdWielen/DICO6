@@ -23,34 +23,6 @@
     </sourceConnections>
     <sourceConnections
         xsi:type="archimate:DiagramModelArchimateConnection"
-        id="id-9b40b8c367794b24af03f6db39d0f14d"
-        source="id-16bd2feb20f94899a30e51b77c608451"
-        target="id-8df41db705094f13a8e928a09d027893">
-      <bendpoints
-          startX="158"
-          startY="38"
-          endX="-202"
-          endY="38"/>
-      <archimateRelationship
-          xsi:type="archimate:FlowRelationship"
-          href="FlowRelationship_id-109aa53337e2464da2e0dfae93624e4d.xml#id-109aa53337e2464da2e0dfae93624e4d"/>
-    </sourceConnections>
-    <sourceConnections
-        xsi:type="archimate:DiagramModelArchimateConnection"
-        id="id-e76a6e941d584d01b84bc532ecb1dcbc"
-        source="id-16bd2feb20f94899a30e51b77c608451"
-        target="id-8df41db705094f13a8e928a09d027893">
-      <bendpoints
-          startX="170"
-          startY="74"
-          endX="-190"
-          endY="74"/>
-      <archimateRelationship
-          xsi:type="archimate:FlowRelationship"
-          href="FlowRelationship_id-1367bacdfcff49df8052c7914d8fac4c.xml#id-1367bacdfcff49df8052c7914d8fac4c"/>
-    </sourceConnections>
-    <sourceConnections
-        xsi:type="archimate:DiagramModelArchimateConnection"
         id="id-2680dcd1fdd0443a98e5ee64166cdf64"
         source="id-16bd2feb20f94899a30e51b77c608451"
         target="id-8df41db705094f13a8e928a09d027893">
@@ -75,35 +47,7 @@
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
       id="id-8df41db705094f13a8e928a09d027893"
-      targetConnections="id-25430f11c82b43c3bebdb37c48f5d4bd id-26a8b2d745974643b53861b6c0651a00 id-9b40b8c367794b24af03f6db39d0f14d id-e76a6e941d584d01b84bc532ecb1dcbc id-2680dcd1fdd0443a98e5ee64166cdf64">
-    <sourceConnections
-        xsi:type="archimate:DiagramModelArchimateConnection"
-        id="id-ddbe4dcd0f9e4052b2e06f3acbaff38b"
-        source="id-8df41db705094f13a8e928a09d027893"
-        target="id-6bc1f76123f447399e700e541bab82dc">
-      <bendpoints
-          startX="194"
-          startY="50"
-          endX="-202"
-          endY="50"/>
-      <archimateRelationship
-          xsi:type="archimate:FlowRelationship"
-          href="FlowRelationship_id-e6279a1b8fcb4adeb3cac35695bc524e.xml#id-e6279a1b8fcb4adeb3cac35695bc524e"/>
-    </sourceConnections>
-    <sourceConnections
-        xsi:type="archimate:DiagramModelArchimateConnection"
-        id="id-aca2fc82becd4b17af893eec926a4084"
-        source="id-8df41db705094f13a8e928a09d027893"
-        target="id-6bc1f76123f447399e700e541bab82dc">
-      <bendpoints
-          startX="206"
-          startY="86"
-          endX="-190"
-          endY="86"/>
-      <archimateRelationship
-          xsi:type="archimate:FlowRelationship"
-          href="FlowRelationship_id-33c702a68198457abdc9c74ca598985b.xml#id-33c702a68198457abdc9c74ca598985b"/>
-    </sourceConnections>
+      targetConnections="id-25430f11c82b43c3bebdb37c48f5d4bd id-26a8b2d745974643b53861b6c0651a00 id-2680dcd1fdd0443a98e5ee64166cdf64">
     <sourceConnections
         xsi:type="archimate:DiagramModelArchimateConnection"
         id="id-8fead8f3493b4a91b2a641aef907fdf3"
@@ -139,7 +83,7 @@
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
       id="id-6bc1f76123f447399e700e541bab82dc"
-      targetConnections="id-ddbe4dcd0f9e4052b2e06f3acbaff38b id-aca2fc82becd4b17af893eec926a4084 id-8fead8f3493b4a91b2a641aef907fdf3">
+      targetConnections="id-8fead8f3493b4a91b2a641aef907fdf3">
     <sourceConnections
         xsi:type="archimate:DiagramModelArchimateConnection"
         id="id-25430f11c82b43c3bebdb37c48f5d4bd"
@@ -167,10 +111,10 @@
       xsi:type="archimate:DiagramModelNote"
       id="id-7eee627705b5425e9ee711829b06620b"
       textAlignment="1"
-      content="Meerdere defecten gemeld, uitvoering bij één aannemer met één bezoek. Afspraak door de corporatie">
+      content="Meerdere defecten gemeld, uitvoering bij één aannemer met één bezoek.">
     <bounds
-        x="252"
-        y="372"
+        x="228"
+        y="360"
         width="445"
         height="64"/>
   </children>
