@@ -23,20 +23,6 @@
     </sourceConnections>
     <sourceConnections
         xsi:type="archimate:DiagramModelArchimateConnection"
-        id="id-9436b2938b91457b806a4827002428da"
-        source="id-88e91ba9065c4b458bbbded159c14d46"
-        target="id-c37716a00ed448f096593111a06dd49b">
-      <bendpoints
-          startX="206"
-          startY="14"
-          endX="-190"
-          endY="14"/>
-      <archimateRelationship
-          xsi:type="archimate:FlowRelationship"
-          href="FlowRelationship_id-1367bacdfcff49df8052c7914d8fac4c.xml#id-1367bacdfcff49df8052c7914d8fac4c"/>
-    </sourceConnections>
-    <sourceConnections
-        xsi:type="archimate:DiagramModelArchimateConnection"
         id="id-26cd251128964b528686783653f96189"
         source="id-88e91ba9065c4b458bbbded159c14d46"
         target="id-c37716a00ed448f096593111a06dd49b">
@@ -55,10 +41,10 @@
         source="id-88e91ba9065c4b458bbbded159c14d46"
         target="id-c37716a00ed448f096593111a06dd49b">
       <bendpoints
-          startX="206"
-          startY="50"
-          endX="-190"
-          endY="50"/>
+          startX="194"
+          startY="14"
+          endX="-202"
+          endY="14"/>
       <archimateRelationship
           xsi:type="archimate:FlowRelationship"
           href="FlowRelationship_id-33b852cc9d934051b8c10ba8a6a58987.xml#id-33b852cc9d934051b8c10ba8a6a58987"/>
@@ -89,21 +75,7 @@
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
       id="id-c37716a00ed448f096593111a06dd49b"
-      targetConnections="id-6b96aaaf9ca5465fb87218700907816a id-d6208852ab094a13980e713a8f15eb93 id-9436b2938b91457b806a4827002428da id-26cd251128964b528686783653f96189 id-59eb15a2598643d1af60851aec110eb7 id-612fd77ecd034f938f62c52fa68d4ebd">
-    <sourceConnections
-        xsi:type="archimate:DiagramModelArchimateConnection"
-        id="id-bf62dd60c1994afdb4be17677a04aace"
-        source="id-c37716a00ed448f096593111a06dd49b"
-        target="id-65b474527b30416e9678d113ff4ce453">
-      <bendpoints
-          startX="206"
-          startY="26"
-          endX="-214"
-          endY="26"/>
-      <archimateRelationship
-          xsi:type="archimate:FlowRelationship"
-          href="FlowRelationship_id-33c702a68198457abdc9c74ca598985b.xml#id-33c702a68198457abdc9c74ca598985b"/>
-    </sourceConnections>
+      targetConnections="id-6b96aaaf9ca5465fb87218700907816a id-d6208852ab094a13980e713a8f15eb93 id-26cd251128964b528686783653f96189 id-59eb15a2598643d1af60851aec110eb7 id-612fd77ecd034f938f62c52fa68d4ebd">
     <sourceConnections
         xsi:type="archimate:DiagramModelArchimateConnection"
         id="id-ca321ed9a9904e10ac6e13d54499e7f0"
@@ -158,7 +130,7 @@
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
       id="id-65b474527b30416e9678d113ff4ce453"
-      targetConnections="id-bf62dd60c1994afdb4be17677a04aace id-ca321ed9a9904e10ac6e13d54499e7f0 id-c22237d5654645c79cd138b082c59a14">
+      targetConnections="id-ca321ed9a9904e10ac6e13d54499e7f0 id-c22237d5654645c79cd138b082c59a14">
     <sourceConnections
         xsi:type="archimate:DiagramModelArchimateConnection"
         id="id-6b96aaaf9ca5465fb87218700907816a"
@@ -188,8 +160,8 @@
       textAlignment="1"
       content="Afspraakopties worden opgevraagd op basis van onderhoudslocatie, discipline en periode. &#xD;&#xA;&#xD;&#xA;Bevestiging (reservering) van de afspraak kan apart via &quot;Bevestigen afspraakoptie&quot; maar kan ook gelijk met opvragen van de nieuwe order">
     <bounds
-        x="336"
-        y="372"
+        x="324"
+        y="360"
         width="335"
         height="105"/>
   </children>

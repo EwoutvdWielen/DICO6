@@ -184,9 +184,9 @@
         target="id-3a3c58a4e4494329b981b371a9f0871b">
       <bendpoints
           startX="-216"
-          startY="-180"
+          startY="-216"
           endX="180"
-          endY="-180"/>
+          endY="-216"/>
       <archimateRelationship
           xsi:type="archimate:FlowRelationship"
           href="FlowRelationship_id-011b6fb73e554fcfa8c2ddd747164a54.xml#id-011b6fb73e554fcfa8c2ddd747164a54"/>
@@ -221,5 +221,16 @@
         y="300"
         width="217"
         height="47"/>
+  </children>
+  <children
+      xsi:type="archimate:DiagramModelNote"
+      id="id-f2d2db0611904c6ca933fa6018b27a85"
+      textAlignment="1"
+      content="Onderhoudsorder is van het soort &quot;Offerteaanvraag&quot;">
+    <bounds
+        x="528"
+        y="84"
+        width="175"
+        height="44"/>
   </children>
 </archimate:ArchimateDiagramModel>

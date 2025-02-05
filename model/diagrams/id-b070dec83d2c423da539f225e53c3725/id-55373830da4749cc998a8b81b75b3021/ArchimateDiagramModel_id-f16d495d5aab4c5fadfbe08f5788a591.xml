@@ -1,17 +1,148 @@
 <archimate:ArchimateDiagramModel
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Scenario 3: Intake inspectie met afspraak bij mutatie"
+    name="Scenario 3: Uitvoeren inspecties bij mutatie"
     id="id-f16d495d5aab4c5fadfbe08f5788a591">
   <children
       xsi:type="archimate:DiagramModelNote"
       id="id-a2a35a0c94e24b27b983150c9a581390"
       textAlignment="1"
-      content="Gelijk aan scenario 1. Intake | Scenario 1: Intake bij mutatie">
+      content="Voorinspectie uitgevoerd">
     <bounds
-        x="180"
-        y="24"
-        width="419"
-        height="49"/>
+        x="528"
+        y="60"
+        width="157"
+        height="25"/>
+  </children>
+  <children
+      xsi:type="archimate:DiagramModelArchimateObject"
+      id="id-28d86015ea3345adb746021f9bb0f992"
+      targetConnections="id-c78c7e8224774f9aa74a6b1a479cd149 id-4c43f978da3541db926f7a12e67b3f20">
+    <bounds
+        x="12"
+        y="12"
+        width="120"
+        height="313"/>
+    <archimateElement
+        xsi:type="archimate:BusinessProcess"
+        href="BusinessProcess_id-b00d1116ab0a4b0d8fb4112682ec33ff.xml#id-b00d1116ab0a4b0d8fb4112682ec33ff"/>
+  </children>
+  <children
+      xsi:type="archimate:DiagramModelArchimateObject"
+      id="id-8a6216c62e0441808a97009c905aa2c1"
+      targetConnections="id-93f309f9a0714104b53df0db3fa987db id-278b561027464524b32913c0f5969901">
+    <sourceConnections
+        xsi:type="archimate:DiagramModelArchimateConnection"
+        id="id-c78c7e8224774f9aa74a6b1a479cd149"
+        source="id-8a6216c62e0441808a97009c905aa2c1"
+        target="id-28d86015ea3345adb746021f9bb0f992">
+      <bendpoints
+          startX="-180"
+          startY="-48"
+          endX="180"
+          endY="-48"/>
+      <archimateRelationship
+          xsi:type="archimate:FlowRelationship"
+          href="FlowRelationship_id-5b482866380f47edb459f479361b5339.xml#id-5b482866380f47edb459f479361b5339"/>
+    </sourceConnections>
+    <sourceConnections
+        xsi:type="archimate:DiagramModelArchimateConnection"
+        id="id-4c43f978da3541db926f7a12e67b3f20"
+        source="id-8a6216c62e0441808a97009c905aa2c1"
+        target="id-28d86015ea3345adb746021f9bb0f992">
+      <bendpoints
+          startX="-180"
+          startY="132"
+          endX="180"
+          endY="132"/>
+      <archimateRelationship
+          xsi:type="archimate:FlowRelationship"
+          href="FlowRelationship_id-5b482866380f47edb459f479361b5339.xml#id-5b482866380f47edb459f479361b5339"/>
+    </sourceConnections>
+    <sourceConnections
+        xsi:type="archimate:DiagramModelArchimateConnection"
+        id="id-a55726a2a9b140a68b862434c0637a19"
+        source="id-8a6216c62e0441808a97009c905aa2c1"
+        target="id-ea3e3e9f19344ae88a78122c404073f4">
+      <bendpoints
+          startX="180"
+          startY="-36"
+          endX="-181"
+          endY="-36"/>
+      <archimateRelationship
+          xsi:type="archimate:FlowRelationship"
+          href="FlowRelationship_id-ac77550b241b4d8c816ad1e1315dd22b.xml#id-ac77550b241b4d8c816ad1e1315dd22b"/>
+    </sourceConnections>
+    <bounds
+        x="372"
+        y="12"
+        width="120"
+        height="313"/>
+    <archimateElement
+        xsi:type="archimate:BusinessProcess"
+        href="BusinessProcess_id-8ce4af2094e7428f80d5795d57fd0600.xml#id-8ce4af2094e7428f80d5795d57fd0600"/>
+  </children>
+  <children
+      xsi:type="archimate:DiagramModelArchimateObject"
+      id="id-ea3e3e9f19344ae88a78122c404073f4"
+      targetConnections="id-a55726a2a9b140a68b862434c0637a19">
+    <sourceConnections
+        xsi:type="archimate:DiagramModelArchimateConnection"
+        id="id-93f309f9a0714104b53df0db3fa987db"
+        source="id-ea3e3e9f19344ae88a78122c404073f4"
+        target="id-8a6216c62e0441808a97009c905aa2c1">
+      <bendpoints
+          startX="-181"
+          startY="120"
+          endX="180"
+          endY="120"/>
+      <archimateRelationship
+          xsi:type="archimate:FlowRelationship"
+          href="FlowRelationship_id-c1f912d06c0649a7b7b40302dc97c04b.xml#id-c1f912d06c0649a7b7b40302dc97c04b"/>
+    </sourceConnections>
+    <sourceConnections
+        xsi:type="archimate:DiagramModelArchimateConnection"
+        id="id-278b561027464524b32913c0f5969901"
+        source="id-ea3e3e9f19344ae88a78122c404073f4"
+        target="id-8a6216c62e0441808a97009c905aa2c1">
+      <bendpoints
+          startX="-181"
+          startY="-72"
+          endX="180"
+          endY="-72"/>
+      <archimateRelationship
+          xsi:type="archimate:FlowRelationship"
+          href="FlowRelationship_id-aaadd83f16e34e83bed058596a6daeab.xml#id-aaadd83f16e34e83bed058596a6daeab"/>
+    </sourceConnections>
+    <bounds
+        x="733"
+        y="12"
+        width="120"
+        height="313"/>
+    <archimateElement
+        xsi:type="archimate:BusinessProcess"
+        href="BusinessProcess_id-52d644ff46c44a0bbbdb0939c19e7acf.xml#id-52d644ff46c44a0bbbdb0939c19e7acf"/>
+  </children>
+  <children
+      xsi:type="archimate:DiagramModelNote"
+      id="id-c27eee36452e46e0a516839f718887a2"
+      textAlignment="1"
+      content="Eindinspectie uitgevoerd">
+    <bounds
+        x="528"
+        y="180"
+        width="157"
+        height="25"/>
+  </children>
+  <children
+      xsi:type="archimate:DiagramModelNote"
+      id="id-79594423718a4b6a80fc70da62de165f"
+      textAlignment="1"
+      content="Status van de Inspectieorder gaat hiermee naar &quot;Administratief afhandelen&quot;">
+    <bounds
+        x="500"
+        y="216"
+        width="214"
+        height="61"/>
   </children>
 </archimate:ArchimateDiagramModel>

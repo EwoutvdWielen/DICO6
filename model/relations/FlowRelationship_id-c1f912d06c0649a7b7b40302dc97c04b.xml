@@ -1,0 +1,13 @@
+<archimate:FlowRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="inspectie uitgevoerd"
+    id="id-c1f912d06c0649a7b7b40302dc97c04b"
+    documentation="POST Onderhoudsorder/{id van de order}/InspectieRapport&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;onderhoudsorder.inspectierapport.aangemaakt&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;onderhoudsorder&quot; : {&#xD;&#xA;&#x9;&#x9;&quot;id&quot; : &quot;id van de onderliggende inspectieorder&quot;&#xD;&#xA;&#x9;},&#xD;&#xA;&#x9;&quot;regels&quot; : [&#xD;&#xA;&#x9;&#x9;{  &quot;inspectieregel&quot;, &#xD;&#xA;&#x9;&#x9;&#x9;&quot;defecten&quot; : [&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;{ &quot;LEDO informatie&quot; },&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;{ &quot;LEDO informatie&quot; }&#xD;&#xA;&#x9;&#x9;&#x9;]&quot; ),&#xD;&#xA;&#x9;&#x9;{ &quot;inspectieregel&quot; )&#xD;&#xA;&#x9;]&#xD;&#xA;}">
+  <source
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_id-52d644ff46c44a0bbbdb0939c19e7acf.xml#id-52d644ff46c44a0bbbdb0939c19e7acf"/>
+  <target
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_id-8ce4af2094e7428f80d5795d57fd0600.xml#id-8ce4af2094e7428f80d5795d57fd0600"/>
+</archimate:FlowRelationship>

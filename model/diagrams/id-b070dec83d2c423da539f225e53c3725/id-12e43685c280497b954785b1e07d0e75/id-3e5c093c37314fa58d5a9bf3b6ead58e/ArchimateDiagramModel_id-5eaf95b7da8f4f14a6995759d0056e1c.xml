@@ -1,7 +1,7 @@
 <archimate:ArchimateDiagramModel
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Meerwerk - Scenario 1: Extra taken binnen mandaat"
+    name="Meerwerk - Scenario 5: Extra taken buiten discipline"
     id="id-5eaf95b7da8f4f14a6995759d0056e1c">
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
@@ -19,7 +19,7 @@
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
       id="id-833a9052cc104269abe61907f1e6ec91"
-      targetConnections="id-ead0c43bba504dd6b0c07ab4ff4d937f">
+      targetConnections="id-e53ee72e995b4d6e87a0d1cc2493e112">
     <sourceConnections
         xsi:type="archimate:DiagramModelArchimateConnection"
         id="id-0f54f95902974b9986d145487c0a6762"
@@ -28,6 +28,20 @@
       <archimateRelationship
           xsi:type="archimate:FlowRelationship"
           href="FlowRelationship_id-5b482866380f47edb459f479361b5339.xml#id-5b482866380f47edb459f479361b5339"/>
+    </sourceConnections>
+    <sourceConnections
+        xsi:type="archimate:DiagramModelArchimateConnection"
+        id="id-3403eaa569c444c6baa56baec79400f7"
+        source="id-833a9052cc104269abe61907f1e6ec91"
+        target="id-18192dbb26074ae490c348fead6e05c5">
+      <bendpoints
+          startX="192"
+          startY="42"
+          endX="-204"
+          endY="42"/>
+      <archimateRelationship
+          xsi:type="archimate:FlowRelationship"
+          href="FlowRelationship_id-9015e60641a84f0fb0dbfdb747d5ce81.xml#id-9015e60641a84f0fb0dbfdb747d5ce81"/>
     </sourceConnections>
     <bounds
         x="372"
@@ -40,20 +54,21 @@
   </children>
   <children
       xsi:type="archimate:DiagramModelArchimateObject"
-      id="id-18192dbb26074ae490c348fead6e05c5">
+      id="id-18192dbb26074ae490c348fead6e05c5"
+      targetConnections="id-3403eaa569c444c6baa56baec79400f7">
     <sourceConnections
         xsi:type="archimate:DiagramModelArchimateConnection"
-        id="id-ead0c43bba504dd6b0c07ab4ff4d937f"
+        id="id-e53ee72e995b4d6e87a0d1cc2493e112"
         source="id-18192dbb26074ae490c348fead6e05c5"
         target="id-833a9052cc104269abe61907f1e6ec91">
       <bendpoints
           startX="-204"
-          startY="-54"
+          startY="-42"
           endX="192"
-          endY="-54"/>
+          endY="-42"/>
       <archimateRelationship
           xsi:type="archimate:FlowRelationship"
-          href="FlowRelationship_id-a350a2273e6643b1ad4638da561a3eba.xml#id-a350a2273e6643b1ad4638da561a3eba"/>
+          href="FlowRelationship_id-3bbe02165a804f36a17a652dd77dac62.xml#id-3bbe02165a804f36a17a652dd77dac62"/>
     </sourceConnections>
     <bounds
         x="768"
@@ -63,5 +78,38 @@
     <archimateElement
         xsi:type="archimate:BusinessProcess"
         href="BusinessProcess_id-cddfc477dcea47d4b8eac58d326f7c8b.xml#id-cddfc477dcea47d4b8eac58d326f7c8b"/>
+  </children>
+  <children
+      xsi:type="archimate:DiagramModelNote"
+      id="id-4a0c9f2bf7e544c3a825b734f1d2cd3b"
+      textAlignment="1"
+      content="Tijdens uitvoering van de onderhoudsorder">
+    <bounds
+        x="540"
+        y="36"
+        width="181"
+        height="40"/>
+  </children>
+  <children
+      xsi:type="archimate:DiagramModelNote"
+      id="id-789ab7f0aa8948f288bd94b8bbaba7cc"
+      textAlignment="1"
+      content="Verstrekken order aan andere partij">
+    <bounds
+        x="528"
+        y="144"
+        width="205"
+        height="25"/>
+  </children>
+  <children
+      xsi:type="archimate:DiagramModelNote"
+      id="id-7c4424a279384661b9d370a57b84598e"
+      textAlignment="1"
+      content="Uitvoeren onderhoudsorder heeft een order uitgevoerd en constateert dat er aanvullende werkzaamheden moeten worden uitgevoerd maar kan/wil dit niet zelf. &#xD;&#xA;&#xD;&#xA;Bijvoorbeeld na reparatiewerkzaamheden aan de waterleiding moet de ruimte schoongemaakt worden. In dat geval meldt zij dit aan Regisseren onderhoud als opmerking en voegt Regisseren onderhoud een defect toe aan het onderhoudsverzoek. Voor dit defect kan een nieuwe onderhoudsorder aangemaakt worden en toegewezen worden aan een schoonmaakbedrijf. ">
+    <bounds
+        x="131"
+        y="288"
+        width="674"
+        height="97"/>
   </children>
 </archimate:ArchimateDiagramModel>

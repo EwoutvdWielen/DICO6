@@ -225,15 +225,4 @@
         width="175"
         height="44"/>
   </children>
-  <children
-      xsi:type="archimate:DiagramModelNote"
-      id="id-89bf8f46908e40b8875b3ff58fbe7e56"
-      textAlignment="1"
-      content="Scenario waarin een offerteaanvraag uitgezet wordt bij aannemer 1 (onderhoudsorder van het soort &quot;Offerteaanvraag&quot;) die de offerteaanvraag weigert. Vervolgens (nieuwe) offerteaanvraag naar aannemer 2 die de offerte uitbrengt en de opdracht gegund krijgt (=nieuwe onderhoudsorder)">
-    <bounds
-        x="252"
-        y="564"
-        width="445"
-        height="80"/>
-  </children>
 </archimate:ArchimateDiagramModel>

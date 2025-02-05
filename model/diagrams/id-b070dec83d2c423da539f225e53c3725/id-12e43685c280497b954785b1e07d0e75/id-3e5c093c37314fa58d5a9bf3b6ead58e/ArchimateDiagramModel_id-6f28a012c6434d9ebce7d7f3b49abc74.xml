@@ -11,7 +11,7 @@
         x="12"
         y="12"
         width="120"
-        height="529"/>
+        height="277"/>
     <archimateElement
         xsi:type="archimate:BusinessProcess"
         href="BusinessProcess_id-b00d1116ab0a4b0d8fb4112682ec33ff.xml#id-b00d1116ab0a4b0d8fb4112682ec33ff"/>
@@ -66,7 +66,7 @@
         x="372"
         y="12"
         width="120"
-        height="529"/>
+        height="277"/>
     <archimateElement
         xsi:type="archimate:BusinessProcess"
         href="BusinessProcess_id-8ce4af2094e7428f80d5795d57fd0600.xml#id-8ce4af2094e7428f80d5795d57fd0600"/>
@@ -93,7 +93,7 @@
         x="768"
         y="12"
         width="120"
-        height="529"/>
+        height="277"/>
     <archimateElement
         xsi:type="archimate:BusinessProcess"
         href="BusinessProcess_id-cddfc477dcea47d4b8eac58d326f7c8b.xml#id-cddfc477dcea47d4b8eac58d326f7c8b"/>

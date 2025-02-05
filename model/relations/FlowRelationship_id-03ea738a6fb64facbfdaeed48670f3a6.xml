@@ -1,0 +1,13 @@
+<archimate:FlowRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Bevestigen afspraakopties"
+    id="id-03ea738a6fb64facbfdaeed48670f3a6"
+    documentation="PATCH AfspraakOpties/{id of option}&#xD;&#xA;Parameters&#xD;&#xA;&#x9;X-Process-Event: &quot;afspraakoptie.bevestigd&quot;&#xD;&#xA;Body&#xD;&#xA;{&#xD;&#xA;&#x9;&quot;maintenanceorder&quot; : {&#xD;&#xA;&#x9;&#x9;&quot;id&quot; : &quot;id of order&quot;&#xD;&#xA;}">
+  <source
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_id-8ce4af2094e7428f80d5795d57fd0600.xml#id-8ce4af2094e7428f80d5795d57fd0600"/>
+  <target
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_id-52d644ff46c44a0bbbdb0939c19e7acf.xml#id-52d644ff46c44a0bbbdb0939c19e7acf"/>
+</archimate:FlowRelationship>
